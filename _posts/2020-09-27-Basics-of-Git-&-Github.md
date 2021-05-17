@@ -1,8 +1,22 @@
 ---
 layout: post
 title: Basics of Git & Github
-last-updated: 2020-09-30
+subtitle: last update 2021-05-16
 ---
+
+**UPDATE 20210516**
+
+An easy way to push your work to your GitHub account:
+
+1. Create a repo on your GitHub account
+2. Open the local folder with Git bash, if you are under a Windows environment; for Linux and mac, ignore this
+3. `git init` initiate your repo
+4. `git add .` add all files to a staging area
+5. `git commit -m "your comment"`, if you type `git commit` then you will enter the `vim` interface, type `i` to enter the editing mode, type `esc` to quit the editing mode, type `:wq` to save and quit the `vim` interface **in Windows** 
+6. `git remote add origin your-repo-link` copy and paste the repo link showed in the GitHub, this step is to connect your local folder to the remote GitHub repo
+7. `git push -u origin master` push the file to the remote repository
+
+-------------------------------------------
 
 *This blog will only introduce some basic and necessary knowledge about `git` and `Github`.*
 
