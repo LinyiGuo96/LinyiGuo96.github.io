@@ -16,6 +16,10 @@ An easy way to push your work to your GitHub account:
 6. `git remote add origin your-repo-link` copy and paste the repo link showed in the GitHub, this step is to connect your local folder to the remote GitHub repo
 7. `git push -u origin master` push the file to the remote repository
 
+Here are some other notes:
+
+- If there are already some files in your repo and you want to upload your local files to the same repo, then try `git pull origin master` first. If succeed, try push again; if fail, try `git pull --rebase origin master` and then push again
+
 -------------------------------------------
 
 *This blog will only introduce some basic and necessary knowledge about `git` and `Github`.*
