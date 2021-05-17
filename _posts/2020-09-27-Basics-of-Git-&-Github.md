@@ -19,6 +19,7 @@ An easy way to push your work to your GitHub account:
 Here are some other notes:
 
 - If there are already some files in your repo and you want to upload your local files to the same repo, then try `git pull origin master` first. If succeed, try push again; if fail, try `git pull --rebase origin master` and then push again
+- If you forked someone's repo to your GitHub, then the commits you made within that repo will not be calculated as your contribution. To make your contribution visiable, you can copy and push them to another repo you created
 
 -------------------------------------------
 
