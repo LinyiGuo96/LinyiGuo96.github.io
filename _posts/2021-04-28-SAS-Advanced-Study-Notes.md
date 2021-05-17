@@ -140,6 +140,10 @@ order by ...;
 quit;
 ```
 
+And we could also use the _subquery_ in the `select` clause. 
+
+In a word, a subquery is very commonly used in `proc sql` process.
+
 
 
 
