@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basics of Git & Github
+title: Basics of Git & GitHub
 subtitle: last update 2021-05-16
 ---
 
