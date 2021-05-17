@@ -15,7 +15,7 @@ If you are preparing the SAS Adv Exam recently, this article could be helpful an
 # TABLE
 
 - [PROC SQL Step](#proc-sql-step)
-- [SAS Macro Language]()
+- [SAS Macro Language](#sas-macro-language)
 - [Advanced Functions and Perl Regular Expression](#advanced-functions-and-perl-regular-expression)
 - [Array]()
 - [Hash]()
@@ -144,8 +144,49 @@ And we could also use the _subquery_ in the `select` clause.
 
 In a word, a subquery is very commonly used in `proc sql` process.
 
+## Macro variables
 
+When we talked about the macro variable before, we means something like `%let x=10;`. In a SAS SQL process, we could assign the returned values to macro variables directly. A simple example is:
 
+```
+proc sql;
+
+select var1
+into :mac1
+from table1
+...;
+
+quit;
+```
+
+We could also define multiple macro variables in the same process:
+
+```
+proc sql;
+
+select var1, var2, var3
+into :mac1 - :mac3
+from table1
+...;
+
+quit;
+```
+
+**Note**: the syntax above will only assign the value at the first row to macro variables. To assign a list of values to a macro varible, we could use `separated by` keywords to specify a character to delimit the values as following:
+
+```
+proc sql;
+
+select var1
+into :macro1 separated by ', '
+from ...;
+
+quit;
+```
+
+I will introduce more advanced knowledge about `macro` in the next section.
+
+# SAS Macro Language
 
 
 
