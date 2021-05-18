@@ -17,10 +17,9 @@ If you are preparing the SAS Adv Exam recently, this article could be helpful an
 - [PROC SQL Step](#proc-sql-step)
 - [SAS Macro Language](#sas-macro-language)
 - [Advanced Functions and Perl Regular Expression](#advanced-functions-and-perl-regular-expression)
-- [Array]()
-- [Hash]()
-- [Custome Formats]()
-- [PROC FCMP procedure]()
+- [Array](#array)
+- [Hash](#hash)
+- [PROC FCMP procedure](#proc-fcmp-procedure)
 
 # Proc SQL Step
 
@@ -188,6 +187,13 @@ I will introduce more advanced knowledge about `macro` in the next section.
 
 # SAS Macro Language
 
+When processing data, we sometimes need to repeat the same/similar work over different datasets in one project. Within a typical SAS program, we usually need to
+- write multiple `data` and `proc` steps, and then modify the variable values for each dataset
+- if there are something we want to modify later, we need to modify many places
+
+But a `macro` function would help us save much time and energy. 
+
+**TBC**
 
 
 # Advanced Functions and Perl Regular Expression
@@ -217,8 +223,8 @@ FIND(string, substring<, modifier(s)><, start-position>) | returns the starting 
 FINDC(string, character-list<, modifier(s)><, start-position>) | returns the starting position where a character from a list of characters is found in a string
 FINDW(string, character-list<, modifier(s)><, start-position>) | returns the starting position of a word in a string or the number of the word in a string
 
+# Array
 
+# Hash
 
-
-
-### TBC
+# PROC FCMP PROCEDURE
