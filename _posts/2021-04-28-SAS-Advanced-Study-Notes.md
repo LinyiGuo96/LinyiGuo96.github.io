@@ -229,7 +229,7 @@ Perl regular expression (abbr _PRX_) is used to define and search some specific 
 
 In PRX, we need to use different metacharaters to define our text pattern. For example, we could use `/\d{3}-\d{3}-\d{4}/` to detect the phone numbers in North America, or we could use `/647-\d{3}-d{4}/` and `/416-\d{3}-\d{4}/` to retrieve phone numbers in Toronto area. We could do more complex work with _PRX_. Here is the list of common metacharaters:
 
-![metacharacter](/img/post/metacharater.png)
+![](img/post/metacharacter.png)
 
 `prxmatch` is the function we used to check whether objects satisfy the specific pattern that we defined, and returns `0` if not match or _the beginning position_ if match. 
 
