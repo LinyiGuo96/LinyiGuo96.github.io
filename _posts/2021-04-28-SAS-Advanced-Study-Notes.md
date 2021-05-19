@@ -223,6 +223,37 @@ FIND(string, substring<, modifier(s)><, start-position>) | returns the starting 
 FINDC(string, character-list<, modifier(s)><, start-position>) | returns the starting position where a character from a list of characters is found in a string
 FINDW(string, character-list<, modifier(s)><, start-position>) | returns the starting position of a word in a string or the number of the word in a string
 
+## Perl Regular Expression
+
+Perl regular expression (abbr _PRX_) is used to define and search some specific patterns. Personally, its function is kinda similar to the current hot topic NLP (natural language programming), at least they are both used to detect and solve problems in text, although NLP is definitely a more comprehensive and broader field.
+
+In PRX, we need to use different metacharaters to define our text pattern. For example, we could use `/\d{3}-\d{3}-\d{4}/` to detect the phone numbers in North America, or we could use `/647-\d{3}-d{4}/` and `/416-\d{3}-\d{4}/` to retrieve phone numbers in Toronto area. We could do more complex work with _PRX_. Here is the list of common metacharaters:
+
+![metacharacter](/img/post/metacharater.png)
+
+`prxmatch` is the function we used to check whether objects satisfy the specific pattern that we defined, and returns `0` if not match or _the beginning position_ if match. 
+
+```
+LOC = PRXMATCH(perl-regular-expression, source);
+```
+
+The `source` could be a character constant, a column or an expression. Remember when we are hard-coding the perl regular expression, we need to enclose it with quotation marks. The new column `LOC` above is the start position of the pattern defined.
+
+`prxchange` is the function we used to locate and substitute a specific pattern. Its syntax is as following, where `times` defines the times that we want to search for and substitute the matching pattern, and `-1` means all places. Different from `prxmatch`, we need to name the subtitution we want in the perl regular expression.
+
+```
+PRXCHANGE(perl-regular-expression, times, source)
+```
+
+Here is an example:
+
+```
+new_country = prxchange('/ CH(N.|N|.) / China /i', -1, Country);
+```
+
+With the statement above, I could substitute all `CH`, `CHN`, `CH.`, `CHN.` in the `country` column with `China`, and assign them to a new column `new_country` (`i` here stands for case-insensitive). You may need to be careful with the spaces when subtituting.
+
+
 # Array
 
 # Hash
