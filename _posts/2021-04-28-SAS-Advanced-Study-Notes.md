@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SAS Advanced Study Notes
-subtitle: last update 2021-05-17
+subtitle: last update 2021-05-20
 bigimg:
 - "/img/sas.png" : "SAS Printscreen"
 ---
@@ -10,7 +10,7 @@ bigimg:
 
 Since my SAS Advanced Exam is approching (May 7, 2021), I wish to use this blog to summarize several key procedures such as `SQL` and `Macro` that would be tested in this exam.
 
-If you are preparing the SAS Adv Exam recently, this article could be helpful and you're also welcome to send me your feedback via any type of contacts below, thank you :)
+If you are preparing the SAS Adv Exam recently, this article could be helpful and you're also welcome to send me your feedback via any type of contacts at the bottom, thank you :)
 
 # TABLE
 
@@ -301,12 +301,53 @@ array Country[5] $ 8 Coun1-cont5;
 
 # Hash
 
-In SQL, there is always a primary key column in each table. The values of that column are unique and could determine each record in a table. In SAS we don't have such a column, 
-but with `hash` table we could build one. 
+In SQL, there is always a primary key column in each table. The values of that column are unique and could determine each record in a table. In SAS we don't have such a column, but with `hash` table we could do similar work. The official document of `hash` is [here](https://documentation.sas.com/doc/en/lrcon/9.4/n1b4cbtmb049xtn1vh9x4waiioz4.htm). 
 
 A `hash` table is usually used for lookup. By specifying the key's value, we could retrieve its related information from a hash table. Here is an intact example regarding using `hash` table:
 
 ![hash1](/img/post/hash2.png)
+
+Briefly, we need to define a `hash` table at first. This table could be loaded from other datasets by `dataset` argument or a null table, since we could add data into it after defining it. Like we have seen above, here is the syntax:
+```
+data ...;
+
+/* build the hash table at the beginning */
+if _N_=1 then do;
+      /* initialize the pdv*/
+      if 0 then set lib.table;
+      /* initialize the hash table and load the dataset*/
+      DECLARE HASH hash-table-name(<dataset: 'lib.table'>);
+      /* define the keys */
+      hash-table-name.definekey('key-variable');
+      /* define the data*/
+      hash-table-name.definedata('variable1', 'variabl2', 'variable3');
+      /* end */
+      hash-table-name.definedone();
+end;
+
+...statements...;
+run;
+```
+
+And then we need to merge the data of hash table with another table of interest. We could achieve this by using `hash.find` method. `hash.find(key:key-column);` returns `0` if the record exists in the hash table, or returns a non-zero value.
+
+```
+data work.newtable;
+if _N_=1 then do;
+      if 0 then set lib.table;
+      DECLARE HASH h(dataset: 'lib.table');
+      h.definekey('key-variable-name');
+      h.definedata('variable1', 'variabl2', 'variable3');
+      h.definedone();
+end;
+
+set table2;
+rc = h.find();
+if rc = 0 then output newtable;
+run;
+```
+
+
 
 # PROC FCMP PROCEDURE
 
