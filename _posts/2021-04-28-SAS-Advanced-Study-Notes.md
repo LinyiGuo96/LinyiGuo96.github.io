@@ -253,9 +253,72 @@ new_country = prxchange('/ CH(N.|N|.) / China /i', -1, Country);
 
 With the statement above, I could substitute all `CH`, `CHN`, `CH.`, `CHN.` in the `country` column with `China`, and assign them to a new column `new_country` (`i` here stands for case-insensitive). You may need to be careful with the spaces when subtituting.
 
-
 # Array
+
+Unlike other languages such as Python or R, `array` in SAS is a _temporary_ list of columns. By doing this, we could access multiple columns within a loop instead of hard-coding them manually. Its syntax is as following:
+
+```
+ARRAY array-name[number-of-columns] <column-names>;
+
+/* For example */
+
+array xyz[3] col_a col_b col_c;
+array xyz[3] col_a -- col_c; * character name
+array xyz[3] col1 - col3; * number name
+array xyz[3] col: ;
+array xyz[*] col: ;
+```
+
+As we can see, we have many ways to define an array in SAS. When we don't know how mnay columns would be in an array, we could use `*` to substitute the number. Meanwhile, we could also custom the start point of the array instead of 1 as following:
+
+```
+array col_arr[5:9] col5 - col9;
+```
+
+Also, we could also use array to rotate a table:
+
+![array1](/img/post/array1.png)
+
+And we could define an array with initial values or a temporary array. Sometimes, we need to compare columns with some fixed values like an average, and we don't want to keep these fixed values in our table, then we could use a temporary array with initial values like following, otherwise these fixed values will exist as columns in our table unless we drop them specifically.
+
+```
+array col_arr[5] _temporary_ (1,2,3,4,5);
+```
+
+We can also define a two-dim array. The difference is we need to name both numbers of rows and columns. A two-dim array with initial values is like a table in SAS, and in this case, the initial values are assigned by row.
+
+```
+array new_arr[2, 3] (1,2,3,4,5,6);
+```
+
+Except we could define a null array and then assign values to every element within it. 
+
+And when creating a `character` array, we need to add a dollar sign `$` following a character length, such as:
+
+```
+array Country[5] $ 8 Coun1-cont5;
+```
 
 # Hash
 
+In SQL, there is always a primary key column in each table. The values of that column are unique and could determine each record in a table. In SAS we don't have such a column, 
+but with `hash` table we could build one. 
+
+A `hash` table is usually used for lookup. By specifying the key's value, we could retrieve its related information from a hash table. Here is an intact example regarding using `hash` table:
+
+![hash1](/img/post/hash2.png)
+
 # PROC FCMP PROCEDURE
+
+Like many other language, we could also define our own functions in SAS, this process is called `PROC FCMP`. Its syntax is as following:
+
+```
+PROC FCMP OUTLIB=libref.table.package;
+      FUNCTION func-name(arguments) <$> <length>;
+            ...STATEMENTS...;
+            RETURN(expression);
+      ENDSUB;
+RUN;
+```
+
+Note, `package` here is a collection of functions that have unique names, and they are also not allowed to have the same name of SAS build-in functions.
