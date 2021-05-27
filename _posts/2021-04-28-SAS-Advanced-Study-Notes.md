@@ -347,6 +347,7 @@ if rc = 0 then output newtable;
 run;
 ```
 
+Notice, we didn't explicitly tell SAS that we want to add the data in the hash table `h` to our `newtable`, this work would be automatically processed when we invoke the `h.find()` statement.
 
 
 # PROC FCMP PROCEDURE
