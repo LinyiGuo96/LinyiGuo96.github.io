@@ -1,6 +1,21 @@
+```
+title: SAS Working Notes
+subtitle: Last update 2021-06-16
+layout: post
+```
+
+
 This blog is used to record my daily working notes related to SAS. 
 
+# Table
+
+-[JUNE](#june)
+
 # June
+
+_20210616_
+
+I have to admit that an actual industrial project is trully different from what I expected, when I was a new graduate. But anothing truth is, although the procedure is far more complex, the real technical part, in my opinion, is still the same.
 
 **CALL SYMPUT**: Assigns a value produced in a DATA step to a macro variable.
 
