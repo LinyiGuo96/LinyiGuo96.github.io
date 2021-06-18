@@ -1,8 +1,10 @@
-```
-title: SAS Working Notes
-subtitle: Last update 2021-06-16
+---
 layout: post
-```
+title: SAS Working Notes
+subtitle: last update 2021-06-18
+bigimg:
+- "/img/sas.png" : "SAS Printscreen"
+---
 
 
 This blog is used to record my daily working notes related to SAS. 
@@ -95,9 +97,45 @@ options fmtsearch=(raw tab ana) sasautos = ('!SASROOT/sasautos/' "&wkdir/macros/
 ```
 
 
+_20210618_
 
+Remember **CALL SYMPUT**: Assigns a value produced in a DATA step to a macro variable. 
 
+```
+CALL SYMPUT(macro-variable, value);
+```
 
+Now, **CALL SYMPUTX**: Assigns a value to a macro variable, and removes both leading and trailing blanks.
+
+```
+CALL SYMPUTX(macro-variable, value <, symbol-table>);
+```
+
+which is doing the same work as 
+
+```
+call symput(macro, trim(left(value)));
+```
+
+**NOBS**: a SAS automatic variable which contains the number of records in the data set named in the set statement.
+
+```
+data _NULL_;
+	if 0 then set sashelp.class nobs=n;
+	call symputx('nrows',n);
+	stop;
+run;
+%put nobs=&nrows;
+```
+
+**PUT**: Use the PUT function to convert a numeric value to a character value. You cannot use the PUT function to directly change the type of variable in a data set from numeric to character. However, you can create a new character variable as the result of the PUT function. 
+
+**INPUT**: The INPUT function enables you to convert the value of source by using a specified informat. The informat determines whether the result is numeric or character. Use INPUT to convert character values to numeric values or other character values.
+
+```
+PUT(source, format.);
+INPUT(source, <? | ??> informat.);
+```
 
 
 
