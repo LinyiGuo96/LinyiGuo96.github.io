@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SAS Working Notes
-subtitle: last update 2021-06-18
+subtitle: last update 2021-06-22
 bigimg:
 - "/img/sas.png" : "SAS Printscreen"
 ---
@@ -15,7 +15,7 @@ This blog is used to record my daily working notes related to SAS.
 
 # June
 
-_20210616_
+## _20210616_
 
 I have to admit that an actual industrial project is truly different from what I expected, when I was a new graduate. Anothing truth is, although the procedure is far more complex, the real technical part, in my opinion, is still the same.
 
@@ -54,7 +54,7 @@ Guess what happened next? His manager told G to finish this dataset by the end o
 The much more ridiculous thing is, when G submitted the work at 5:30 pm (he was expected to leave at 5 pm) and came back after dinner, he found his manager skyped him at 5:45 pm asking his phone number. 
 
 
-_20210617_
+## _20210617_
 
 **%sysfunc()**: Execute SAS functions or user-written functions.
 
@@ -97,7 +97,7 @@ options fmtsearch=(raw tab ana) sasautos = ('!SASROOT/sasautos/' "&wkdir/macros/
 ```
 
 
-_20210618_
+## _20210618_
 
 Remember **CALL SYMPUT**: Assigns a value produced in a DATA step to a macro variable. 
 
@@ -133,9 +133,24 @@ run;
 **INPUT**: The INPUT function enables you to convert the value of source by using a specified informat. The informat determines whether the result is numeric or character. Use INPUT to convert character values to numeric values or other character values.
 
 ```
-PUT(source, format.);
-INPUT(source, <? | ??> informat.);
+var1 = PUT(source, format.);
+var2 = INPUT(source, <? | ??> informat.);
 ```
+
+## _20210621_
+
+Sick.
+
+## _20210622_
+
+**best.**: SAS chooses the best notation when a format is not specified for writing a numeric value. For example,
+```
+var = put(x, best.);
+```
+
+**_name_**: appears when using a tranpose step, so let's talk about the transpose step.
+
+**PROC TRANSPOSE**: 
 
 
 
