@@ -150,7 +150,24 @@ var = put(x, best.);
 
 **_name_**: appears when using a tranpose step, so let's talk about the transpose step.
 
+## _20210623_
+
 **PROC TRANSPOSE**: 
+
+**STRIP**: Returns a character string with all leading and trailing blanks removed.
+
+**Put proc sort into a data step**
+
+```
+data ...;
+
+statements;
+
+proc sort; 
+by ...;
+
+run;
+```
 
 
 
