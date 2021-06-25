@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SAS Working Notes
-subtitle: last update 2021-06-22
+subtitle: last update 2021-06-24
 bigimg:
 - "/img/sas.png" : "SAS Printscreen"
 ---
@@ -168,6 +168,14 @@ by ...;
 
 run;
 ```
+
+## _20210624_
+
+**index(source, string);**: Searches a character expression for a string of characters, and returns the position of the string's first character for the first occurrence of the string.
+
+## _20210625_
+
+
 
 
 
