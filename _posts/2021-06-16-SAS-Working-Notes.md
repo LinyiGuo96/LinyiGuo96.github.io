@@ -195,6 +195,22 @@ run;
 
 ## _20210629_
 
+I have been struggled with three variables for a whole day, they are VISIT, VISITNUM and VISITDY. I am still confused with how to program these three variables when I wrote this line. There are several documents/sheets involving, I need to refer to different document from time to time... And then I lost myself. It could be something wrong with the guide, or more possibly, I sucked. 
+
+Okay, anyway, let me reorganize my mind. I have several resoueces here: 
+- The original dataset sheet (IE/PE), which requires me to add these three variables
+- The METHODS sheet told me how to program VISIT
+- The (TV) sheet should be referred to generate VISIT
+- Some other datasets including TV and SV
+
+Now, when I worked on the VISITNUM & VISITDY, the programming notes said "Assign from MAPPING.TV.VISITNUM for Schedule visits for Unschedule visits mapp from MAPPING.SV.VISITNUM". So I had my first question here, how could I tell whether it is schedule or not? I didn't see any variable regarding this, if my memory is correct...
+
+Okay let's talk about the VISIT variable, like I said, the METHODS sheet is used to program VISIT, but I met the same problem like I mentioned above, what's schedule and unscheduled visit?
+
+Besides this, it said "Refer to (TV), set VISIT from FOLDERNAME and INSTANCENAME. " Then I got confused again... I guess I know what it means generally but I can't be totally sure about my guess. In a word, I am not very sure about how to assign values to the VISIT variable. 
+
+Now I am waiting for my manager's feedback, hopefully he could help me out.
+
 
 
 
