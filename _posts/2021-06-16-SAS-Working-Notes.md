@@ -179,6 +179,19 @@ SO FAR SO GOOD.
 
 ## _20210628_
 
+**Array**: a list of variables(columns) in SAS. See [here](https://linyiguo96.github.io//2021-04-28-SAS-Advanced-Study-Notes/#array).
+
+**PROC COMPARE**: Compares the contents of two SAS data sets, selected variables in different data sets, or variables within the same data set. See [here](https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/proc/n0c1y14wyd3u7yn1dmfcpaejllsn.htm).
+
+```
+libname proclib 'SAS-library';
+options nodate pageno=1 linesize=80 pagesize=40;
+proc compare base=proclib.one compare=proclib.two nosummary;
+   var gr1;
+   with gr2;
+   title 'Comparison of Variables in Different Data Sets';
+run;
+```
 
 
 
