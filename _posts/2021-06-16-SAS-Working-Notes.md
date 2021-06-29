@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SAS Working Notes
-subtitle: last update 2021-06-24
+subtitle: last update 2021-06-29
 bigimg:
 - "/img/sas.png" : "SAS Printscreen"
 ---
@@ -192,6 +192,8 @@ proc compare base=proclib.one compare=proclib.two nosummary;
    title 'Comparison of Variables in Different Data Sets';
 run;
 ```
+
+## _20210629_
 
 
 
