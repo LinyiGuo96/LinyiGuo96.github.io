@@ -221,7 +221,9 @@ One of the most challenging things I met so far is the meaning of various terms 
 
 ## _20210630_
 
+Finally finished the problem I mentioned above... Next step is to work on the CV and PR...
 
+This is the first time that I don't have an example even the raw data when dealing with a sdtm dataset. I guess I need to spend more time on them for the moment.
 
 
 
