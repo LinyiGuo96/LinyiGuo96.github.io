@@ -211,6 +211,10 @@ Besides this, it said "Refer to (TV), set VISIT from FOLDERNAME and INSTANCENAME
 
 Now I am waiting for my manager's feedback, hopefully he could help me out.
 
+One of the most challenging things I met so far is the meaning of various terms and abbreviations... Because the project is related to clinical research, it always involves with kinds of trials and treatments. To some extent, those abbreviations bring much more problems for me. Oh, the standard could be referred to CDISC (Clinical Data Interchange Standards Consortium).
+
+
+
 
 
 
