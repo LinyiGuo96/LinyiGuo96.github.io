@@ -226,9 +226,19 @@ Finally finished the problem I mentioned above... Next step is to work on the CV
 This is the first time that I don't have an example even the raw data when dealing with a sdtm dataset. I guess I need to spend more time on them for the moment.
 
 
+# July
 
+## _20210701_
 
+Today is Canada Day, as well as CPC(Communist Party of China) Founding Day.
 
+## _20210702_
+
+Jokes on myself. The CV(Cardiovascular System) dataset is based on the raw ECHO(Echocardiogram/MUGA) instead of cv (actually there is no raw data called CV.)
+
+Until just now I figured out several variables only. The worse thing is, the person who are expected to help and lead me with the programming rejected to provide his help. And the person he assigned to me for asking is in a totally opposite working time zone. Well, what a lucky dog as i am!
+
+**in operator**: note add `,` among values, such as `x in ('a', 'b', 'c');`.
 
 
 
