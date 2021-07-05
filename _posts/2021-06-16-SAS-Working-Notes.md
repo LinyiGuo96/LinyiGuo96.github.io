@@ -240,7 +240,11 @@ Until just now I figured out several variables only. The worse thing is, the per
 
 **in operator**: note add `,` among values, such as `x in ('a', 'b', 'c');`.
 
+## _20210705_
 
+Now it is 3:40 am, and I am working. Yes, because I want to finish these two datasets, but until now, I am still confused about the specs in the document.
+
+And again, the worst thing is, I basically have no one to ask. Honestly, I feel very very very terrible now. These whole bunch of things makes me feel like an idiot. 
 
 
 
