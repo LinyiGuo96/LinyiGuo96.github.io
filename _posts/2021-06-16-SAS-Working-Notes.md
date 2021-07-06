@@ -246,6 +246,11 @@ Now it is 3:40 am, and I am working. Yes, because I want to finish these two dat
 
 And again, the worst thing is, I basically have no one to ask. Honestly, I feel very very very terrible now. These whole bunch of things makes me feel like an idiot. 
 
+------------------------------------
+
+I was stuck at somewhere early this morning, around 5 am I guess. Then just now, after digging for a while, I found this dataset is not defined in the _attrib_ document, which is used to add labels, order and normalize variables. See, this is another tricky point as well as one of the hardest things in my work, because it's not guaranteed with 100% that everyone's work is accurate, but usually everyone's work is dependent on others (although no one rely on mine so far). 
+
+Anyway, as a REMINDER: when something wrong with the **%m_attr()** step in your program but no errors happened before, check the _attrib.csv_ file, some variables may be missed over there.
 
 
 
