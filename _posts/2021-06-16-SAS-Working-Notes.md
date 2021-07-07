@@ -248,9 +248,22 @@ And again, the worst thing is, I basically have no one to ask. Honestly, I feel 
 
 ------------------------------------
 
-I was stuck at somewhere early this morning, around 5 am I guess. Then just now, after digging for a while, I found this dataset is not defined in the _attrib_ document, which is used to add labels, order and normalize variables. See, this is another tricky point as well as one of the hardest things in my work, because it's not guaranteed with 100% that everyone's work is accurate, but usually everyone's work is dependent on others (although no one rely on mine so far). 
+I was stuck at somewhere early this morning, around 5 am I guess. Then just now, after digging for a while, I found this dataset is not defined in the _attrib_ document, which is used to add labels, order and normalize variables. See, this is another tricky point as well as one of the hardest things in my work, because it's not guaranteed that everyone's work is accurate 100%, but usually everyone's work is dependent on others (although no one rely on mine so far). 
 
 Anyway, as a REMINDER: when something wrong with the **%m_attr()** step in your program but no errors happened before, check the _attrib.csv_ file, some variables may be missed over there.
+
+## _20210706_
+
+Finally I finished those two datasets, but with the reminder from another team member, I found there are still some problems with my previous work...
+
+Anyway, keep working! BTW, to have a chat with that teammate and don't bother her too much, I worked at midnight again from 11 pm to 12:45 am (July 7th)... I guess next time I should contact her earlier, better before her lunch time. But the result is good. Here is what I learned:
+
+In a raw SDTM dataset, there could be some _datetime_ variables such as **--STDAT** and **--STDAT_RAW** (usually the former one is numeric/datetime type and the latter is character), and in the spec, the programming notes for a **--STDTC** variable could be "_set to --STDAT_". 
+
+**Note**, this doesn't mean you are actually expected to use **--STDAT** to create the required variable, it could be **--STDAT_RAW**. Since they essentially stand for the same thing/date, so you really need to look at the macro **%miso()** and decide which variable you should go with.
+
+## _20210707_
+
 
 
 
