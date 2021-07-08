@@ -1,7 +1,6 @@
 ---
 layout: post
 title: SAS Working Notes
-subtitle: last update 2021-06-29
 bigimg:
 - "/img/sas.png" : "SAS Printscreen"
 ---
@@ -264,6 +263,15 @@ In a raw SDTM dataset, there could be some _datetime_ variables such as **--STDA
 **Note**, this doesn't mean you are actually expected to use **--STDAT** to create the required variable, it could be **--STDAT_RAW**. Since they essentially stand for the same thing/date, so you really need to look at the macro **%miso()** and decide which variable you should go with.
 
 ## _20210707_
+
+Nothing big deal. Revised my previous work and had a meeting. In the next few days, I think I will spend most of my time learning spec of several datasets including DM TA TE TD TI TS and TV. 
+
+## _20210708_
+
+One of the most torturous things as a new statistical programmer at a CRO the is the standards/specifications of various datasets, that is, **CDISC**.
+
+I am glad there are some good articles online, even those written in Chinese. They definitely help me a lot.
+
 
 
 
