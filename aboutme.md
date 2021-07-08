@@ -8,13 +8,11 @@ use-site-title: true
 
 Hi, my name is Linyi (Lincoln) Guo.
 
-I am currently a statistical programmer at [Everest Clinical Research Company](https://www.ecrscorp.com/).
+I am currently a statistical programmer at [Everest Clinical Research Company](https://www.ecrscorp.com/). ~~I am also a project-oriented Data Analyst with 2+ years of experience in data management, data analysis, statistical modeling and machine learning, and own excellent analytical skills with ability to create reports and convey results clearly and succinctly. Demonstrated record of facilitating predictions and performing ad-hoc analysis based on research. Proficient in many data programming languages. Work well both independently and as part of a collaborative team with great communication skills.~~ My goal is to be a **REAL** lifelong learner.
 
 My master's study was majored in statistics and supervised by [Prof. Aaron Smith](http://aix1.uottawa.ca/~asmi28/), who is an excellent and kindly young associate professor at [uOttawa](https://science.uottawa.ca/mathstat/en). Before that, I obtained my bachelor's degree in Mathematics and Applied Mathematics from the [Zhengzhou University](https://en.wikipedia.org/wiki/Zhengzhou_University), China, and my undergraduate thesis was supervised by [Prof. Feng Li](http://www5.zzu.edu.cn/math/info/1054/2133.htm).
 
-I am a project oriented Data Analyst with 2+ years of experience in data management, data analysis, statistical modeling and machine learning. Excellent analytical skills with ability to create reports and convey results clearly and succinctly. Demonstrated record of facilitating predictions and performing ad-hoc analysis based on research. Proficient in many data programming languages. Work well both independently and as part of a collaborative team with great communication skills.
-
-During my leisure time, I like to play soccer, sing and also go to the gym sometimes. I like programming and coding, although debugging are quite annoying from time to time. I like to make friends with different people in different realms at different ages. And I have also promised Gracie that we will take a long trip each year.
+During my leisure time, I like to play soccer, sing and also go to the gym sometimes. I like programming and coding, although debugging are quite annoying from time to time. I like to make friends with different people in different realms at different ages from different countries. And I have also promised Gracie that we will take a long trip each year.
 
 # Working Interests
 
