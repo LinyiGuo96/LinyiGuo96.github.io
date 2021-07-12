@@ -1,12 +1,14 @@
 ---
 layout: post
-title: SAS Working Notes
+title: SAS Advanced Study Notes II
 bigimg:
 - "/img/sas.png" : "SAS Printscreen"
 ---
 
 
-This blog is used to record my daily working notes related to SAS. 
+This blog is mainly used to take notes related to SAS. 
+
+**DECLARE**: All stories and plots mentioned in this article is made-up, including names, locations, time and etc.
 
 # Table
 
@@ -16,8 +18,6 @@ This blog is used to record my daily working notes related to SAS.
 # June
 
 ## _20210616_
-
-I have to admit that an actual industrial project is truly different from what I expected, when I was a new graduate. Anothing truth is, although the procedure is far more complex, the real technical part, in my opinion, is still the same.
 
 **CALL SYMPUT**: Assigns a value produced in a DATA step to a macro variable.
 
@@ -271,6 +271,16 @@ Nothing big deal. Revised my previous work and had a meeting. In the next few da
 One of the most torturous things as a new statistical programmer at a CRO the is the standards/specifications of various datasets, that is, **CDISC**.
 
 I am glad there are some good articles online, even those written in Chinese. They definitely help me a lot.
+
+
+## _20210712_
+
+For some large or complex datasets, we usually need to construct several subsets based on different raw datasets and then merge them together, usually by `subject`. Under this case, we could first make sure the topic variable and finish _general_ variables and those variables defined in the same dataset. Then based on the different data source, we could finish the rest variables group by group. 
+
+---------
+
+OMG I have to say the naming convention of CDISC is soooooo tough. Many of them share the similar abbreviations, although I can find their full names, I am still confused about their relations and differences sometimes. I think this is just due to my lack of knowledge regarding the clinical trials, perhaps.
+
 
 
 
