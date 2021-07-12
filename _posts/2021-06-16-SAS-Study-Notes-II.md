@@ -281,6 +281,50 @@ For some large or complex datasets, we usually need to construct several subsets
 
 OMG I have to say the naming convention of CDISC is soooooo tough. Many of them share the similar abbreviations, although I can find their full names, I am still confused about their relations and differences sometimes. I think this is just due to my lack of knowledge regarding the clinical trials, perhaps.
 
+**COMPRESS(source ,< characters> ,< modifier(s)>)**: Returns a character string with specified characters removed from the original string. Examples:
+
+```
+data one;
+   a='AB C D ';
+   b=compress(a);
+   put b=;
+run;
+```
+> b=ABCD
+
+```
+data _null_;
+   x='123–4567–8901 B 234–5678–9012 c';
+   y=compress(x, 'ABCD', 'l');
+   put y=;
+run;
+```
+> y=123-4567-8901  234-5678-9012
+
+**COMPBL(source)**: Removes multiple blanks from a character string. Note, The `COMPRESS` function removes every occurrence of the specific character from a string. If you specify a blank as the character to remove from the source string, the `COMPRESS` function removes all blanks from the source string, The `COMPBL` function compresses multiple blanks to a single blank and has no effect on a single blank. For example,
+
+```
+data one;
+   string='Hey
+   Diddle Diddle';
+   string=compbl(string);
+   put string=;
+run;
+```
+> string=HeyDiddle Diddle
+
+```
+data one;
+string='125 E Main St';
+length address $10;
+address=compbl(string);
+put address=;
+run;
+```
+> address=125 E Main
+
+
+
 
 
 
