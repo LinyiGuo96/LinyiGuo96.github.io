@@ -333,7 +333,7 @@ Fail to save.
 
 ------
 
-It turns out I should remind myself to submit it after writing any comments everytime.
+It turns out I should remind myself to submit it after making any changes everytime.
 
 
 
