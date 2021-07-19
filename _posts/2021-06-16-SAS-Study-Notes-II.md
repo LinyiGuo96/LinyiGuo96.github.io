@@ -337,11 +337,17 @@ It turns out I should remind myself to submit it after making any changes everyt
 
 ------
 
+## _20210715 - 20210716_
+
+**PUT() VS INPUT()**
+
+- PUT() always creates character variables
+- INPUT() can create character or numeric variables based on the informat
+- The source format must match the source variable type in PUT()
+- The source variable type for INPUT() must always be character variables
 
 
-
-
-
+## _20210719_
 
 
 
