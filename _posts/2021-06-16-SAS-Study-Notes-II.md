@@ -372,11 +372,11 @@ data ...;
 run;
 ```
 
-> Year and Taxyear are assigned the initial value 1999.
-> City1, City2, and City3 are assigned missing values.
-> Citypop1 is assigned the value 10000.
-> Citypop2 is assigned 50000.
-> Citypop3 is assigned 100000.
+> Year and Taxyear are assigned the initial value 1999.  
+> City1, City2, and City3 are assigned missing values.  
+> Citypop1 is assigned the value 10000.  
+> Citypop2 is assigned 50000.  
+> Citypop3 is assigned 100000.  
 
 
 
