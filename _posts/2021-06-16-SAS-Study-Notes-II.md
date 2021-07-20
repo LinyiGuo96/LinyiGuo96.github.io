@@ -360,6 +360,23 @@ _I wrote many things today but since I closed my laptop without saving, they are
 
 
 
+**retain**: Causes a variable that is created by an INPUT or assignment statement to retain its value from one iteration of the DATA step to the next.
+
+```
+data ...;
+   ...
+   array City{3} $ City1-City3;
+   array cp{3} Citypop1-Citypop3;
+   retain Year Taxyear 1999 City ' ' cp (10000,50000,100000);
+   ...
+run;
+```
+
+> Year and Taxyear are assigned the initial value 1999.
+> City1, City2, and City3 are assigned missing values.
+> Citypop1 is assigned the value 10000.
+> Citypop2 is assigned 50000.
+> Citypop3 is assigned 100000.
 
 
 
