@@ -354,4 +354,22 @@ _Please remember to click_ `Commit changes` _before leaving next time! PLEASE!_
 _I wrote many things today but since I closed my laptop without saving, they are just gone._
 
 
+## _20210720_
+
+**IFC(logical-expression, value-returned-when-true, value-returned-when-false <, value-returned-when-missing>)**: Returns a character value based on whether an expression is true, false, or missing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
