@@ -349,8 +349,9 @@ It turns out I should remind myself to submit it after making any changes everyt
 
 ## _20210719_
 
+_Please remember to click_ `Commit changes` _before leaving next time! PLEASE!_
 
-
+_I wrote many things today but since I closed my laptop without saving, they are just gone._
 
 
 
