@@ -14,6 +14,7 @@ This blog is mainly used to take notes related to SAS.
 
 - [JUNE](#june)
 - [JULY](#july)
+- [Reference](#reference)
 
 # June
 
@@ -382,10 +383,19 @@ run;
 
 Although I am very very very unpleasant with my current position, it's still a good chance for me to exercise my mind and tolerance. Keep working, keep asking, please do NOT step back even if your path ahead is full of enemy and challenge.
 
----------------
+## _20210721_
+
+From now I will move forward to study the intervention datasets, which reminds me the sad fact that my notes about the special purpose datasets was gone without saving.
 
 
 
+
+# Reference
+
+Here is a list of articles that I found useful.
+
+
+- [如何判断数据属于哪一个SDTM域?](https://www.jianshu.com/p/422200e246b0)
 
 
 
