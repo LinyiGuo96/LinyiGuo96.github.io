@@ -378,6 +378,13 @@ run;
 > Citypop2 is assigned 50000.  
 > Citypop3 is assigned 100000.  
 
+------------------
+
+Although I am very very very unpleasant with my current position, it's still a good chance for me to exercise my mind and tolerance. Keep working, keep asking, please do NOT step back even if your path ahead is full of enemy and challenge.
+
+---------------
+
+
 
 
 
