@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SAS Advanced Study Notes II
+title: SAS Clinical Trial Study Notes
 bigimg:
 - "/img/sas.png" : "SAS Printscreen"
 ---
@@ -395,7 +395,7 @@ From now I will move forward to study the intervention datasets, which reminds m
 Here is a list of articles that I found useful.
 
 
-- [如何判断数据属于哪一个SDTM域?](https://www.jianshu.com/p/422200e246b0)
+[如何判断数据属于哪一个SDTM域?](https://www.jianshu.com/p/422200e246b0)
 
 
 
