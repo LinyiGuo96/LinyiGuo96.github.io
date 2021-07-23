@@ -387,7 +387,9 @@ Although I am very very very unpleasant with my current position, it's still a g
 
 From now I will move forward to study the intervention datasets, which reminds me the sad fact that my notes about the special purpose datasets was gone without saving.
 
+## _20210722_
 
+Although I still have some questions about the special purpose datasets, I think I should move forward for now, maybe later I will figure them out at some point.
 
 
 # Reference
@@ -397,7 +399,7 @@ Here is a list of articles that I found useful.
 
 [如何判断数据属于哪一个SDTM域?](https://www.jianshu.com/p/422200e246b0)
 
-
+[How can I learn TLF, SDTM, ADAM with SAS on myself?](https://www.quora.com/How-can-I-learn-TLF-SDTM-ADAM-with-SAS-on-myself) and its **related answers** following
 
 
 
