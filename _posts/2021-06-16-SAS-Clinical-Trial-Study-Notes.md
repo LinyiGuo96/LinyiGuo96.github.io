@@ -419,6 +419,8 @@ When some dataset has a supplement dataset, perhaps take a look at the _ValueLev
 
 **nmiss(argument-1 <, argument-2,…, argument-n>)**: Counts the number of missing _numeric_ arguments.
 
+Note: The CMISS function does not convert any argument. The NMISS function converts all arguments to numeric values.
+
 **SCAN(string, count <, character-list <, modifier>>)**: Returns the nth word from a character string. (Remember the order of arguments.)
 
 
