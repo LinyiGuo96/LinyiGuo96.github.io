@@ -395,11 +395,32 @@ Although I still have some questions about the special purpose datasets, I think
 
 Failed to save.
 
+**Exposure Domains**
+
+Clinical trial study designs can range from open label (where subjects and investigators know which product each
+subject is receiving) to blinded (where the subject, investigator, or anyone assessing the outcome is unaware of the
+treatment assignment(s) to reduce potential for bias). To support standardization of various collection methods and
+details, as well as process differences between open-label and blinded studies, two SDTM domains based on the
+Interventions General Observation Class are available to represent details of subject exposure to protocol-specified
+study treatment(s).
+
+- EXPOSURE (EX): An interventions domain that contains the details of a subject's exposure to protocol-specified study treatment. Study
+treatment may be any intervention that is prospectively defined as a test material within a study, and is typically but
+not always supplied to the subject
+- Exposure as Collected (EC): An interventions domain that contains information about protocol-specified study treatment administrations, as collected.
+
 ## _20210726_
 
 When some dataset has a supplement dataset, perhaps take a look at the _ValueLevel_ sheet of it first, so you could prepare the variables required in **SUPP--** while creating the **--** dataset, which will help you save a lot of time.
 
 ------------
+
+**cmiss(argument-1 <, argument-2,…, argument-n>)**: Counts the number of missing arguments.
+
+**nmiss(argument-1 <, argument-2,…, argument-n>)**: Counts the number of missing _numeric_ arguments.
+
+**SCAN(string, count <, character-list <, modifier>>)**: Returns the nth word from a character string. (Remember the order of arguments.)
+
 
 
 
