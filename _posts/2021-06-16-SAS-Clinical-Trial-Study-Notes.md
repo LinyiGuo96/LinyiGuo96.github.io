@@ -397,6 +397,11 @@ Failed to save.
 
 ## _20210726_
 
+When some dataset has a supplement dataset, perhaps take a look at the _ValueLevel_ sheet of it first, so you could prepare the variables required in **SUPP--** while creating the **--** dataset, which will help you save a lot of time.
+
+------------
+
+
 
 
 # Reference
