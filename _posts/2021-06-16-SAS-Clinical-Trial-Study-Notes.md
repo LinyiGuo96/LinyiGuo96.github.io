@@ -423,8 +423,9 @@ Note: The CMISS function does not convert any argument. The NMISS function conve
 
 **SCAN(string, count <, character-list <, modifier>>)**: Returns the nth word from a character string. (Remember the order of arguments.)
 
+## _20210727_
 
-
+**Procedures (PR)**: An interventions domain that contains interventional activity intended to have diagnostic, preventive, therapeutic, or palliative effects.
 
 
 # Reference
