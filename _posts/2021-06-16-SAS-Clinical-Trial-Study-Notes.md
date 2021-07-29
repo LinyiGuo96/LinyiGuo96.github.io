@@ -427,6 +427,28 @@ Note: The CMISS function does not convert any argument. The NMISS function conve
 
 **Procedures (PR)**: An interventions domain that contains interventional activity intended to have diagnostic, preventive, therapeutic, or palliative effects.
 
+## _20210728_
+
+Failed to save... :(
+
+## _20210729_
+
+| Domain Code | Domain Name | Description|
+|------------|---------------|-----------|
+| AE | Adverse Events | An events domain that contains data describing untoward medical occurrences in a patient or subjects that are
+administered a pharmaceutical product and which may not necessarily have a causal relationship with the
+treatment.|
+|BE|Biospecimen Events| |
+|CE|Clinical Events|An events domain that contains clinical events of interest that would not be classified as adverse events.|
+|DE|Device Events| |
+|DS|Disposition|An events domain that contains information encompassing and representing data related to subject disposition.|
+|DT|Device Tracking and Disposition| |
+|DV|Protocol Deviations|An events domain that contains protocol violations and deviations during the course of the study.|
+|HO|Healthcare Encounters|A events domain that contains data for inpatient and outpatient healthcare events (e.g., hospitalization, nursing home stay, rehabilitation facility stay, ambulatory surgery).|
+|MH|Medical History|The medical history dataset includes the subject's prior history at the start of the trial. Examples of subject
+medical history information could include general medical history, gynecological history, and primary diagnosis.|
+
+
 
 # Reference
 
