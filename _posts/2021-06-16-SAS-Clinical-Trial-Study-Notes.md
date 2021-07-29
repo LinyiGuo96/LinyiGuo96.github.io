@@ -436,8 +436,7 @@ Failed to save... :(
 | Domain Code | Domain Name | Description|
 |------------|---------------|-----------|
 | AE | Adverse Events | An events domain that contains data describing untoward medical occurrences in a patient or subjects that are
-administered a pharmaceutical product and which may not necessarily have a causal relationship with the
-treatment.|
+administered a pharmaceutical product and which may not necessarily have a causal relationship with the treatment.|
 |BE|Biospecimen Events| |
 |CE|Clinical Events|An events domain that contains clinical events of interest that would not be classified as adverse events.|
 |DE|Device Events| |
@@ -445,9 +444,10 @@ treatment.|
 |DT|Device Tracking and Disposition| |
 |DV|Protocol Deviations|An events domain that contains protocol violations and deviations during the course of the study.|
 |HO|Healthcare Encounters|A events domain that contains data for inpatient and outpatient healthcare events (e.g., hospitalization, nursing home stay, rehabilitation facility stay, ambulatory surgery).|
-|MH|Medical History|The medical history dataset includes the subject's prior history at the start of the trial. Examples of subject
-medical history information could include general medical history, gynecological history, and primary diagnosis.|
+|MH|Medical History|The medical history dataset includes the subject's prior history at the start of the trial. Examples of subject medical history information could include general medical history, gynecological history, and primary diagnosis.|
 
+
+**Z Format**: Writes standard numeric data with leading 0s.
 
 
 # Reference
