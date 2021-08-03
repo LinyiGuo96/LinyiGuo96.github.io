@@ -462,6 +462,14 @@ When I worked on the TLGs, I found the most difficult point is to find the corre
 
 ## _20210803_
 
+I could find the variables required to build the table but now there is something wrong with the `proc report` process, which is very strange to me.
+
+I checked with another two of my colleagues, they both think finishing 5 listings within two days is a pretty pushing. Well, what can I say? Nothing. Here I am. I am not sure whether I can finish them before the DDL, but I could promise that I would try my best! Cheers!
+
+OK, having said that. Given so many problems I met when dealing with the first listing assignment, I think I better ignore the bugs at first and focus on the variable selections. After constructing the datasets I could then move forward to solving these programming bugs, since most of them are pretty common I believe!
+
+Great, let do it!
+
 # Reference
 
 Here is a list of articles that I found useful.
