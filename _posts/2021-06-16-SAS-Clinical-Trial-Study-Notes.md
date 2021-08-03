@@ -14,6 +14,7 @@ This blog is mainly used to take notes related to SAS.
 
 - [JUNE](#june)
 - [JULY](#july)
+- [August](#august)
 - [Reference](#reference)
 
 # June
@@ -452,6 +453,14 @@ administered a pharmaceutical product and which may not necessarily have a causa
 ## _20210730_
 
 It is great! I got some different work to do now. They are about TLG(TLF), and my job is to do five listings. Let's do it!
+
+Well, it seems that I forgot to save my notes, AGAIN...
+
+# August
+
+When I worked on the TLGs, I found the most difficult point is to find the corresponding variables among the ADAM datasets.
+
+## _20210803_
 
 # Reference
 
