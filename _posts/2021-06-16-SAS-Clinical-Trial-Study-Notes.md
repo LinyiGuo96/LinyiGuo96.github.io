@@ -464,11 +464,22 @@ When I worked on the TLGs, I found the most difficult point is to find the corre
 
 I could find the variables required to build the table but now there is something wrong with the `proc report` process, which is very strange to me.
 
-I checked with another two of my colleagues, they both think finishing 5 listings within two days is a pretty pushing. Well, what can I say? Nothing. Here I am. I am not sure whether I can finish them before the DDL, but I could promise that I would try my best! Cheers!
+I checked with another two of my colleagues, they both think finishing 5 listings within two days is a pretty pushing (actually I believe they need to take two or more days to finish one listing at the beginning). Well, what can I say? Nothing. Here I am. I am not sure whether I can finish them before the DDL, but I could promise that I would try my best! Cheers!
 
 OK, having said that. Given so many problems I met when dealing with the first listing assignment, I think I better ignore the bugs at first and focus on the variable selections. After constructing the datasets I could then move forward to solving these programming bugs, since most of them are pretty common I believe!
 
 Great, let do it!
+
+-------------------
+
+Now it's 11:23 pm. I decided to add my extra work time to my time sheet. I wanna use the F word here but to be a gentleman, I decide to save it until I leave this company, at least this team.
+
+_Btw, because of this new assignment, I ruined my girlfriend party, which is another reason why I don't think I will stay here for a long time. If I worked so hard but still don't get a happy life, then why should I insist on the same work? Time to change._
+
+## _20210804_
+
+Now it's 1:20 am. I guess I may understand a little bit why the team lead think I could finish 5 listings within 2 days. In my opinion, I wish to figure out every detail of each listing, but for them, they just want me to modify the existing example program a little bit to fit the requirement of the TLGs shell. My purpose is to learn during this process, but they just focused on the efficiency and results, instead of what I learned in this process. I believe if one company wish to accomplish more outstanding achievements, they must generously allow their employees to learn and get used to the specific working pattern. Otherwise, this company's culture will never attract other great candidates. 
+
 
 # Reference
 
