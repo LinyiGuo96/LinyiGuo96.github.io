@@ -480,6 +480,45 @@ _Btw, because of this new assignment, I ruined my girlfriend party, which is ano
 
 Now it's 1:20 am. I guess I may understand a little bit why the team lead think I could finish 5 listings within 2 days. In my opinion, I wish to figure out every detail of each listing, but for them, they just want me to modify the existing example program a little bit to fit the requirement of the TLGs shell. My purpose is to learn during this process, but they just focused on the efficiency and results, instead of what I learned in this process. I believe if one company wish to accomplish more outstanding achievements, they must generously allow their employees to learn and get used to the specific working pattern. Otherwise, this company's culture will never attract other great candidates. 
 
+-------------------------
+
+**ODS ESCAPECHAR= 'escape-character';** : specifies the special character that identifies the inline formatting symbol. The escape-character should be one of the following rarely used characters: @, ^, or \. (escape character: 转义字符). 
+
+For example, 
+
+```
+title "test of ^{super ^{style [color=red] red ^{style [color=green] green} and ^{style [color=blue] blue }formatting }} and such" ;
+```
+
+The `^{super<text>` is invoked to start using the superscript function. Then the style function is used to add another style attribute, `^{style [color=red]<text>` for your text.
+
+**Column statement in Report procedure**: `COLUMN column-specification(s);` describes the arrangement of all columns and of headings that span more than one column.
+
+_column-specification(s)_ is one or more of the following:
+
+- report-item(s)
+- report-item-1, report-item-2 <. . . , report-item-n>
+- ('header-1 ' < . . . 'header-n '> report-item(s) )
+- report-item=name
+
+```
+proc report data=grocery;
+	column sector sales,min;
+	define sector/group;
+	define sales/analysis sum;
+run;
+```
+
+
+
+
+
+
+
+
+
+
+
 
 # Reference
 
