@@ -517,6 +517,39 @@ run;
 
 **ANYDTTME Informat**: Reads and extracts _time_ values from various date, time, and datetime forms.
 
+## _20210806_
+
+**COMPUTE Statement in the PROC REPORT procedure**: Starts a compute block containing one or more programming statements that PROC REPORT executes as it builds the report.
+
+The code below would add `your text` just between any titles and the column headings.
+
+```
+compute before _page_;
+   line @1 "~S={bordertopcolor=white borderbottomcolor=black borderbottomwidth=1}Your text.";  
+endcomp;
+```
+
+Here is an example to add a bottom line to the column: (Or try `"^S={borderbottomcolor=black borderbottomwidth=2}Spanned Header"`)
+
+```
+proc report nowd data=sashelp.class 
+  style(report)=[rules=none frame=void] 
+  style(header)=[borderbottomcolor=black borderbottomwidth=2 background=_undef_]
+;
+  column
+    ('^{style[borderbottomcolor=white borderbottomwidth=2
+        bordertopcolor=black bordertopwidth=2]}' name) 
+    ('^{style[borderbottomcolor=black borderbottomwidth=2
+        bordertopcolor=black bordertopwidth=2]spanned header}' 
+    age sex weight height)
+  ;
+
+  compute after _page_ / style={bordertopcolor=black bordertopwidth=2};
+    line ' ';
+  endcomp;
+run;
+```
+
 
 
 
