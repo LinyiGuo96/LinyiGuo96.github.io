@@ -509,6 +509,14 @@ proc report data=grocery;
 run;
 ```
 
+## _20210805_
+
+**ANYDTDTE Informat**: Reads and extracts the _date_ value from various date, time, and datetime forms.
+
+**ANYDTDTM Informat**: Reads and extracts _datetime_ values from various date, time, and datetime forms.
+
+**ANYDTTME Informat**: Reads and extracts _time_ values from various date, time, and datetime forms.
+
 
 
 
