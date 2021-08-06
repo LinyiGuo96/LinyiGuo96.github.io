@@ -550,6 +550,11 @@ proc report nowd data=sashelp.class
 run;
 ```
 
+I think it's good to spend some time writing a **summary** after finishing the five listings:
+
+1. TLGs are mainly based on the analysis datasets (ADaMs), but sometimes they also depend on some SDTM datasets. For example, when worked on the listing for the protocol deviations, I used the DV and SUPPDV in the SDTM. The reason why this happened is simple, because ADaM datasets may not contain all information required for the TLGs.
+2. In the same study, the TLG shells may differ at different stages, but not too much.
+3. Basically, when doing TLGs, there are mainly several parts: i) prepare the title and table settings; ii) prepare your data (this part usually takes the longest time); iii) Generate titles and footnotes; iv) Generate reports (usually takes much time preparing the required format). These four should be quite standard in every study, but not absolutely.
 
 
 
