@@ -556,8 +556,11 @@ I think it's good to spend some time writing a **summary** after finishing the f
 2. In the same study, the TLG shells may differ at different stages, but not too much.
 3. Basically, when doing TLGs, there are mainly several parts: i) prepare the title and table settings; ii) prepare your data (this part usually takes the longest time); iii) Generate titles and footnotes; iv) Generate reports (usually takes much time preparing the required format). These four should be quite standard in every study, but not absolutely.
 
+## _20210809_
 
+Okay, now I got another 5 listings to do, but without examples, which means I have to find the corresponding variables to create the listings by myself. And this is THE PROBLEM. Because I haven't create any ADaM datasets, I don't know which one I should use actually. Anyway, cheers.
 
+So far so good. Except that I have to look through the variable list in the ADaM dataset. One problem is I don't know how to remove the `WARNING` when creating report for a null dataset.
 
 
 
