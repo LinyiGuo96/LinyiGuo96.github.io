@@ -562,8 +562,9 @@ Okay, now I got another 5 listings to do, but without examples, which means I ha
 
 So far so good. Except that I have to look through the variable list in the ADaM dataset. One problem is I don't know how to remove the `WARNING` when creating report for a null dataset.
 
+## _20210810_
 
-
+Refer to this article [Compute Block Basics – Part I Tutorial](https://support.sas.com/resources/papers/proceedings/pdfs/sgf2008/031-2008.pdf) for `Compute block` in the `proc report` process.
 
 
 
@@ -578,7 +579,7 @@ Here is a list of articles that I found useful.
 
 [How can I learn TLF, SDTM, ADAM with SAS on myself?](https://www.quora.com/How-can-I-learn-TLF-SDTM-ADAM-with-SAS-on-myself) and its **related answers** following
 
-
+[Compute Block Basics – Part I Tutorial](https://support.sas.com/resources/papers/proceedings/pdfs/sgf2008/031-2008.pdf)
 
 
 
