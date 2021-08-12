@@ -572,8 +572,34 @@ Refer to this article [Compute Block Basics – Part I Tutorial](https://support
 This is a list of issues I met so far:
 
 1. I am not sure whether the `treatment` should be determined by the variable `cohort`.
+
+> Yes
+
 2. How to output a sentence saying _there is no data_ without generating any `warning` when working in a `proc report` procedure?
+
+> Try to understand the following code:
+```
+%macro empty;
+  %if &nobs =0  %then %do;
+    data final;
+      length col1-col5 $200;
+      subjid="";
+      cohort="";
+      *col0="Number of subjects with any AE";
+      col1="No violation reported.";
+      col2="";
+      col3="";
+      col4="";
+      col5="";
+    run;
+  %end;
+%mend;
+%empty;
+```
+
 3. When working on variables about frequency, sometimes I don't know what the abbreviation stands for. 
+
+> Still not clear, but doesn't matter a lot.
 
 **FILE Statement**: Specifies the current output file for PUT statements. 
 
@@ -584,6 +610,14 @@ FILE file-specification <device-type> <options> <operating-environment-options>;
 **ATTRN(data-set-id, attribute-name)**: Returns the value of a numeric attribute for a SAS data set.
 
 **CMISS(arguments...)**: counts the number of missing values, for character and numeric. 
+
+## _20210812_
+
+My wrist got hurtful again today. I guess this is due to my typing in the previous days... This feeling is terriable. It's so unbearable. But I am glad I basically finished my work yesterday so I got some time to rest it. 
+
+
+
+
 
 # Reference
 
