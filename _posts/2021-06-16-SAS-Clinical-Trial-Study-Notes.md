@@ -456,6 +456,7 @@ It is great! I got some different work to do now. They are about TLG(TLF), and m
 
 Well, it seems that I forgot to save my notes, AGAIN...
 
+
 # August
 
 When I worked on the TLGs, I found the most difficult point is to find the corresponding variables among the ADAM datasets.
@@ -566,7 +567,19 @@ So far so good. Except that I have to look through the variable list in the ADaM
 
 Refer to this article [Compute Block Basics – Part I Tutorial](https://support.sas.com/resources/papers/proceedings/pdfs/sgf2008/031-2008.pdf) for `Compute block` in the `proc report` process.
 
+## _20210811_
 
+This is a list of issues I met so far:
+
+1. I am not sure whether the `treatment` should be determined by the variable `cohort`.
+2. How to output a sentence saying _there is no data_ without generating any `warning` when working in a `proc report` procedure?
+3. When working on variables about frequency, sometimes I don't know what the abbreviation stands for. 
+
+**FILE Statement**: Specifies the current output file for PUT statements. 
+
+```
+FILE file-specification <device-type> <options> <operating-environment-options>;
+```
 
 
 
