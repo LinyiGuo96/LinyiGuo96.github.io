@@ -581,7 +581,9 @@ This is a list of issues I met so far:
 FILE file-specification <device-type> <options> <operating-environment-options>;
 ```
 
+**ATTRN(data-set-id, attribute-name)**: Returns the value of a numeric attribute for a SAS data set.
 
+**CMISS(arguments...)**: counts the number of missing values, for character and numeric. 
 
 # Reference
 
