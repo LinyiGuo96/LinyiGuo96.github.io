@@ -615,6 +615,7 @@ FILE file-specification <device-type> <options> <operating-environment-options>;
 
 My wrist got hurtful again today. I guess this is due to my typing in the previous days... This feeling is terriable. It's so unbearable. But I am glad I basically finished my work yesterday so I got some time to rest it. 
 
+## _20210813_
 
 
 
