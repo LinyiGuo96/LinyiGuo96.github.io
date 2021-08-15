@@ -627,7 +627,7 @@ Here is a list of articles that I found useful.
 
 [如何判断数据属于哪一个SDTM域?](https://www.jianshu.com/p/422200e246b0)
 
-[How can I learn TLF, SDTM, ADAM with SAS on myself?](https://www.quora.com/How-can-I-learn-TLF-SDTM-ADAM-with-SAS-on-myself) and its **related answers** following
+[How can I learn TLF, SDTM, ADAM with SAS on myself?](https://www.quora.com/How-can-I-learn-TLF-SDTM-ADAM-with-SAS-on-myself)
 
 [Compute Block Basics – Part I Tutorial](https://support.sas.com/resources/papers/proceedings/pdfs/sgf2008/031-2008.pdf)
 
