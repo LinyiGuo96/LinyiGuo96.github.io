@@ -597,6 +597,8 @@ This is a list of issues I met so far:
 %empty;
 ```
 
+_The core idea is to create a null dataset before the `proc report` process, if the there is no data in the desired dataset._
+
 3. When working on variables about frequency, sometimes I don't know what the abbreviation stands for. 
 
 > Still not clear, but doesn't matter a lot.
@@ -617,6 +619,9 @@ My wrist got hurtful again today. I guess this is due to my typing in the previo
 
 ## _20210813_
 
+Had a meeting with one of my colleagues. Have a better understanding then.
+
+## _20210816_
 
 
 
