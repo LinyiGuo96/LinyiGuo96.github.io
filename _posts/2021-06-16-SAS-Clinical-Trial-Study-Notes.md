@@ -623,6 +623,21 @@ Had a meeting with one of my colleagues. Have a better understanding then.
 
 ## _20210816_
 
+Modify previous programs.
+
+## _20210817_
+
+Modify previous programs.
+
+Well, it seems that I have to be more careful about the details in the specs/shells.
+
+## _20210818_
+
+How to solve **WARNING: Multiple lengths were specified for the BY variable USUBJID by input data sets. This might cause unexpected results.** ?
+
+**Ans**
+
+The fix if you actually have data issues can be very simple by adding a length statement before the SET statement. The length statement should use the larger value that appears for either data set.
 
 
 
