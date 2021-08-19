@@ -639,6 +639,9 @@ How to solve **WARNING: Multiple lengths were specified for the BY variable USUB
 
 The fix if you actually have data issues can be very simple by adding a length statement before the SET statement. The length statement should use the larger value that appears for either data set.
 
+## _20210819_
+
+
 
 
 # Reference
