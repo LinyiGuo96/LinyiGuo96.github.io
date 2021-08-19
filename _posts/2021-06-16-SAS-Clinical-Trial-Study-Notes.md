@@ -641,6 +641,22 @@ The fix if you actually have data issues can be very simple by adding a length s
 
 ## _20210819_
 
+Using the `compute` block to add a blank line break in `proc report`:
+
+```
+proc repot ...;
+	column ...;
+	
+	define var1 /order ... ;
+	define ...;
+	...
+	define ...;
+	
+	compute after var1;
+	line " ";
+	endcomp;
+run;
+```
 
 
 
