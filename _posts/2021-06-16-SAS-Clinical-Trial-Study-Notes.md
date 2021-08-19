@@ -658,7 +658,11 @@ proc repot ...;
 run;
 ```
 
+Here is a problem that I met yesterday but haven't figured out:
 
+**How to display the ordered variable at the first row across pages?**
+
+The optimal solution I found is to use the `spanrows` argument in the `proc report`, but it only fits for the `TAGSETS.RTF` file, excluding the plain rtf file. 
 
 # Reference
 
