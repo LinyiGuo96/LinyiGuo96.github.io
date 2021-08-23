@@ -664,6 +664,10 @@ Here is a problem that I met yesterday but haven't figured out:
 
 The optimal solution I found is to use the `spanrows` argument in the `proc report`, but it only fits for the `TAGSETS.RTF` file, excluding the plain rtf file. 
 
+## *20210823*
+
+
+
 # Reference
 
 Here is a list of articles that I found useful.
