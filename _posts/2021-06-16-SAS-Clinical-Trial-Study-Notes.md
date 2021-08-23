@@ -14,7 +14,7 @@ This blog is mainly used to take notes related to SAS.
 
 - [JUNE](#june)
 - [JULY](#july)
-- [August](#august)
+- [AUGUST](#august)
 - [Reference](#reference)
 
 # June
