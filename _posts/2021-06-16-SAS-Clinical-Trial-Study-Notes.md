@@ -666,6 +666,9 @@ The optimal solution I found is to use the `spanrows` argument in the `proc repo
 
 ## *20210823*
 
+Ridiculous. A jumping clown.
+
+If I can't change my current manager, I will definitely change the job.
 
 
 # Reference
