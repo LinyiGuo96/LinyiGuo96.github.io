@@ -666,7 +666,7 @@ The optimal solution I found is to use the `spanrows` argument in the `proc repo
 
 ## *20210823*
 
-Ridiculous. A jumping clown.
+Ridiculous.
 
 
 # Reference
