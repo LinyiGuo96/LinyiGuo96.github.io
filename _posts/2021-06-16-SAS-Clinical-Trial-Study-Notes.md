@@ -668,6 +668,16 @@ The optimal solution I found is to use the `spanrows` argument in the `proc repo
 
 Ridiculous.
 
+## *20210825*
+
+**COMPRESS(source ,< characters> ,< modifier(s)>)**: Returns a character string with specified characters removed from the original string.
+
+## *20210826*
+
+`time w.d` : time format.
+`tod w.d` : time format with leading zeros.
+
+**PROC PRINTTO <options>; **: Defines destinations, other than ODS destinations, for SAS procedure output and for the SAS log.
 
 # Reference
 
