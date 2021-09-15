@@ -655,6 +655,11 @@ Ridiculous.
 
 **PROC PRINTTO <options>; **: Defines destinations, other than ODS destinations, for SAS procedure output and for the SAS log.
 
+
+# Update Spet 15, 2021	
+
+I have stopped taking notes for a while, but this doesn't mean I didn't learn anything new in the past few days. On the contrary, I think I may have learned more and become more practiced with SAS clinical programming jobs. But after thinking twice, I still decide to make some changes because I realized I am not in favour of my current job and the environment. If possible, I would take some time to record what happened in the last few months.
+	
 # Reference
 
 Here is a list of articles that I found useful.
