@@ -32,7 +32,7 @@ CALL SYMPUT(macro-variable, value);
 
 _I have shared one of my frind G's career stories here before, when I just wrote this blog. But out of respect for his privacy, I decided to delete it._
 
-_There are more than that, but I guess G is too tired to share(complain) his career with me anymore. I believe he knows complaining can't change anything, it's much better to improve and arm ourself in order to get rid of the circle that we are unsatisfied with._
+_There are more than that, but I guess G is too tired to share(complain) his career bullying story with me anymore. I believe he knows complaining can't change anything, it's much better to improve and arm ourself in order to get rid of the circle that we are unsatisfied with._
 
 _"Keep learning" Might He think._
 
