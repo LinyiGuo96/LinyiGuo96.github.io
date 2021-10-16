@@ -113,13 +113,81 @@ plt.title("...")
 plt.show()
 ```
 
+## Specialized Visualization Tools
+
+**Pie Charts**
+
+Our dataset: (Country is the index instead of a variable, and the column `total` is also derived by taking sum.)
+
+_We could using `df = df.set_index('Col1')` to set a column to the index. And then we could use `df.index.names = [None]` to remove the index name. For the table below, we will remove the word `Country` and the blanks within the same row then._
+
+![image](https://user-images.githubusercontent.com/51500878/137569480-c0f419a0-a96b-4def-8e61-14a7fb8dcfe7.png)
+
+We could use the following code to generate a table below.
+
+> df_continents = df_can.groupby('Continent', axis=0).sum()
+
+![image](https://user-images.githubusercontent.com/51500878/137569700-818a4d15-fef0-456d-8ab4-5ac991a2ff96.png)
+
+Then plot:
+
+```python
+df_continents['Total'].plot(kind='pie') 
+
+plt.title('...')
+
+plt.show()
+```
+
+Output:  
+![image](https://user-images.githubusercontent.com/51500878/137569740-f077e0f6-3935-4c1d-9b01-7326d762cf6c.png)
+
+_Note: in many cases, pie charts are not a good choice compared with bar chart, although they may look pretty attractive._
+
+**Box plots**
+
+![image](https://user-images.githubusercontent.com/51500878/137569811-5a8402b3-f83e-41cf-991a-e29673b719cc.png)
+
+Say we want to know the box plot of Japan's immigration:
+
+```python
+df_japan = df_can.loc['Japan', years].transpose()
+
+df_japan.plot(kind='box')
+
+...
+
+plt.show()
+```
+
+Output:  
+![image](https://user-images.githubusercontent.com/51500878/137569909-5e923388-620d-4cbb-8d89-80382c5d3d1b.png)
 
 
+**Scatter Plots**
 
+![image](https://user-images.githubusercontent.com/51500878/137569994-a1859538-8ff5-4f07-be89-33110f1c114a.png)
 
+Our data:  ![image](https://user-images.githubusercontent.com/51500878/137570011-62236123-e4f9-4ea7-aa9d-9a135a998102.png)
 
+![image](https://user-images.githubusercontent.com/51500878/137570077-8b82d5ce-7432-49b6-90c7-3e3f3ba2cbf1.png)
 
+Say we want the scatter plot of `total` between 1980 to 2013:
 
+```python
+# we need to specify the x and y axis variables
+df_total.plot(
+    kind='scatter',
+    x='year',
+    y='total',
+)
+
+plt.title("...")
+... ...
+plt.show()
+```
+
+Output:  ![image](https://user-images.githubusercontent.com/51500878/137570178-4c3ce769-da03-447e-a649-4bba7e999f3e.png)
 
 
 
