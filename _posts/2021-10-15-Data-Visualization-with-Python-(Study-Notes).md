@@ -319,4 +319,22 @@ folium.Marker([51.25, -85.32], popup='Ontario').add_to(canada_map)
 canada_map
 ```
 
+**Choropleth Maps**
 
+![image](https://user-images.githubusercontent.com/51500878/137658701-1edc2644-5de7-41cd-8597-3446327c7074.png)
+
+_Geojson File_
+
+![image](https://user-images.githubusercontent.com/51500878/137658826-0f2488f5-741b-46ee-bf84-9724d1c10e13.png)
+
+Say this is our data:
+
+![image](https://user-images.githubusercontent.com/51500878/137658919-405a4125-bf0b-41fd-b351-9ba99790c2ed.png)
+
+Let's create a world map:
+
+![image](https://user-images.githubusercontent.com/51500878/137659215-0ecb383e-ac35-45a8-8c65-5ccd46631c1f.png)
+
+Then add our data:
+
+![image](https://user-images.githubusercontent.com/51500878/137659281-c7c95528-d2cf-4795-810b-dd55d551de23.png)
