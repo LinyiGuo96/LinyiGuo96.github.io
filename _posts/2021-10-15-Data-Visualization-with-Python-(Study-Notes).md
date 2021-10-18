@@ -338,3 +338,95 @@ Let's create a world map:
 Then add our data:
 
 ![image](https://user-images.githubusercontent.com/51500878/137659281-c7c95528-d2cf-4795-810b-dd55d551de23.png)
+
+# Week 4
+
+## Creating Dashboards with Plotly and Dash
+
+**Overview**
+
+- How a dashboard can be used to answer critical business questions.  
+
+- What high-level overview of popular dashboarding tools available in python. 
+
+- How to use basic Plotly, plotly.graph_objects, and plotly express.
+
+- How to use Dash and basic overview of dash components (core and HTML).  
+
+- How to add different elements (like text box, dropdown, graphs, etc) to the dashboard.
+
+- How to add interactivity to dash core and HTML components. 
+
+**Dashboarding Overview**
+
+Using databoards to tell your story, data scientists.
+
+**Web-based Dashboarding**
+
+- Dash from Plotly ![image](https://user-images.githubusercontent.com/51500878/137793444-9e801ab4-abd5-479a-80db-7777c61a62b8.png)
+- Panel ![image](https://user-images.githubusercontent.com/51500878/137793463-fae8fd01-30d2-4dd9-99cc-35b78b88de7d.png)
+- Voila ![image](https://user-images.githubusercontent.com/51500878/137793477-16cbeb14-1e69-4c31-bdb5-9f5c0f0bad43.png)
+- Streamlit ![image](https://user-images.githubusercontent.com/51500878/137793508-5cfd9a8c-8cc9-48ff-9054-c44d62b218c5.png)
+
+**Dashboard Tools**
+
+ ![image](https://user-images.githubusercontent.com/51500878/137793627-6eacc4b8-6c82-4454-ab6c-20a1f2aadc98.png)
+
+Here is a link: [Python dashboarding tools](https://pyviz.org/dashboarding/).
+
+**Intro to Plotly**
+
+- Interactive, open-source 
+- support 40+ chart types
+- includes chart types like statistical, financial, maps, scientific and 3-dimensional
+- can be displayed in Jupyter notebook, saved to HTML, used in developing Python-built web applications
+
+### Plotly sub-modules
+
+Plotly graph objects (low-level interface to figures, traces and layout) `plotly.graph_objects.Figure` and Plotly Express (high-level wrapper).
+
+```python
+import plotly.graph_objects as go
+import plotly.express as px
+import numpy as np
+
+# using numpy to generate samples
+x = np.arange(12)
+y = np.random.randint(50, 500, size=12)
+```
+
+Then the following line to create the figure.   
+_Note Ploty.graph contains a JSON object which has a structure of dict. Here, 'go' is the plotly JSON object. Updating values of 'go' object keywords, chart can be plotted._
+
+```python
+fig = go.Figure(data=go.Scatter(x=x, y=y))
+fig.update_layout(title='...', xaxis_title='Month', yaxis_title='Sales')
+fig.show()
+```
+
+Output: 
+![image](https://user-images.githubusercontent.com/51500878/137795279-e1f6f6c9-a080-4c58-bf9c-a3c776e30580.png)
+
+We can also use `plotly.express` to create the figure:
+
+```python
+fig = px.line(x=x, y=y, title='...', labels=dict(x='Month', y='Sales'))
+fig.show()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
