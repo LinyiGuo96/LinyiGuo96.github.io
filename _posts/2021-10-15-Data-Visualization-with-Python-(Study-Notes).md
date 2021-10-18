@@ -190,4 +190,133 @@ plt.show()
 Output:  ![image](https://user-images.githubusercontent.com/51500878/137570178-4c3ce769-da03-447e-a649-4bba7e999f3e.png)
 
 
+# Week 3
+
+## Advanced Visualization Tools
+
+**Waffle Charts**
+
+![image](https://user-images.githubusercontent.com/51500878/137656144-d7c7c8b2-dba0-4e58-a85e-44b6f6b9cd72.png)
+
+_Not supported by matplotlib. Check PyWaffle._
+
+**Word Clouds**
+
+![image](https://user-images.githubusercontent.com/51500878/137656213-7da638ca-b244-4043-84b4-1b4d15743286.png)
+
+_Not supported by matplotlib._
+
+**Seaborn and Regression Plots**
+
+- Based on Matplotlib
+- Efficient. 20~ lines of code using matplotlib could be replaced by 5 fold using seaborn
+
+Let's look at regression plots. Say this is our data:
+
+![image](https://user-images.githubusercontent.com/51500878/137656448-3003ab20-f143-41ea-a920-22337b77b495.png)
+
+Using `regplot`:
+
+```python
+import seaborn as sns
+ax = sns.regplot(x='year', y='total', data=df_tot)
+```
+
+Output:  
+![image](https://user-images.githubusercontent.com/51500878/137656533-78a40d7f-25c3-4b4c-8f9b-318e05a4c5ea.png)
+
+We can change the color and marker by adding `color='green', marker='+'` into `regplot()`.
+
+
+## Visualizing Geospatial Data
+
+**Intro to Folium**
+
+- Create types of Leaflet maps
+- Binding of data to a map for choropleth visualizations as well as passing visualiztions as markers on the map
+- Has a number of built-in tilesets from OpenStreetMap, Mapbox, and Stamen, and supports custom tilesets with Mapbox API keys
+
+![image](https://user-images.githubusercontent.com/51500878/137657102-98cf7c97-99dd-4751-9b02-124df943db7a.png)
+
+Say we want to center around Canada: (Try changing the `zoom_start` value)  
+![image](https://user-images.githubusercontent.com/51500878/137657209-1b9ab149-f388-4b8a-8408-ecf538c0d9f3.png)
+
+Change map styles by naming `tiles=`:  
+![image](https://user-images.githubusercontent.com/51500878/137657287-b9d36e33-44e6-49e3-af39-217f056130d4.png)
+
+![image](https://user-images.githubusercontent.com/51500878/137657373-166cea2a-fa02-4596-8f7b-ffdda2aadc5d.png)
+
+
+**Maps with Markers**
+
+We have seen how to create map centered around Canada:
+
+```python
+canada_map = folium.Map(location=[56.130, -106.35], zoom_start=4)
+
+canada_map
+```
+
+If we want to add something new to the map, we need to create one thing called `feature group`. At first this group is empty.
+
+```python
+# create a feature group
+ontario = folium.map.FeatureGroup()
+```
+
+Then we need to add styles to this feature group by using `add_child()`:
+
+```python
+# style the feature group
+ontario.add_child(
+    folium.features.CircleMarker(
+    [51.25, 85.32], radius = 5,
+    color = 'red', fill_color = 'Red'
+    )
+)
+```
+
+Now the feature group already has something, let's add the feature group to the map
+
+```python
+canada_map.add_child(ontario)
+```
+
+Output:
+![image](https://user-images.githubusercontent.com/51500878/137658184-1531b91c-d525-40e0-9f04-0787ada0d9c7.png)
+
+To better express the map, add the following code:
+
+```python
+folium.Marker([51.25, -85.32], popup='Ontario').add_to(canada_map)
+```  
+Output:  
+![image](https://user-images.githubusercontent.com/51500878/137658350-9a6e4b95-7b73-46d8-a2c2-2db8f9669e73.png)
+
+Wrap up together:
+
+```python
+canada_map = folium.Map(location=[56.130, -106.35], zoom_start=4)
+
+# create a feature group
+ontario = folium.map.FeatureGroup()
+
+# style the feature group
+ontario.add_child(
+    folium.features.CircleMarker(
+    [51.25, 85.32], radius = 5,
+    color = 'red', fill_color = 'Red'
+    )
+)
+
+# add the feature group to the map
+canada_map.add_child(ontario)
+
+# label the marker
+folium.Marker([51.25, -85.32], popup='Ontario').add_to(canada_map)
+
+# generate the map
+canada_map
+```
+
 
