@@ -414,9 +414,10 @@ fig = px.line(x=x, y=y, title='...', labels=dict(x='Month', y='Sales'))
 fig.show()
 ```
 
+**Side Notes**
 
-
-
+- `df.sample(n= , random_state= )`: randomly select `n` rows(obs) from the dataframe under the random seed `random_state`
+- `line_data = data.groupby('Month')['ArrDelay'].mean().reset_index()` explanation: divide `data` into different groups based on `month` -> extract the `ArrDelay` from the data -> take the `mean` -> generate the index `0,1,2,3...` for rows
 
 
 
