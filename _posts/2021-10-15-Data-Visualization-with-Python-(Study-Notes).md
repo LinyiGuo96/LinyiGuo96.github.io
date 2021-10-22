@@ -419,15 +419,75 @@ fig.show()
 - `df.sample(n= , random_state= )`: randomly select `n` rows(obs) from the dataframe under the random seed `random_state`
 - `line_data = data.groupby('Month')['ArrDelay'].mean().reset_index()` explanation: divide `data` into different groups based on `month` -> extract the `ArrDelay` from the data -> take the `mean` -> generate the index `0,1,2,3...` for rows
 
+**Intro to Dash**
+
+**Dash** is:  
+- an open source UI python library from plotly
+- easy to build GUI
+- declarative and reactive
+- rendered in web browser and can be deployed to servers
+- inherently cross-platform and mobile ready
+
+Two components: `Core` and `HTML` 
+
+```python
+import dash_core_components as dcc
+import dash_html_components as html
+```
+
+For html: layout, keyword arguments ...
+
+![image](https://user-images.githubusercontent.com/51500878/138381225-32a59730-4d36-4a25-b8e6-aae2befe60f1.png)
+
+Then we create the layout -> add components to it.
+
+![image](https://user-images.githubusercontent.com/51500878/138381283-683e2cda-56f9-4e84-a515-e6d270410aa0.png)
+
+![image](https://user-images.githubusercontent.com/51500878/138381398-801bfcde-99d7-4121-a623-d5944818e27b.png)
 
 
+`Core` is higher level components that are interactive and are generated with JavaScript, HTML, and CSS through the React.js library.
+
+Eg,
+
+![image](https://user-images.githubusercontent.com/51500878/138381596-14a83a45-4e76-4f1a-be2d-efc4f73e415d.png)  
+![image](https://user-images.githubusercontent.com/51500878/138381654-f7d99024-5ee4-476c-a9d5-adc26ee24dfe.png)  
+![image](https://user-images.githubusercontent.com/51500878/138381675-90a45cfb-9ae4-43a3-b38e-bfb603dc5157.png)
+
+**Make dashboards interactive**
+
+_Callback_ is a python function that are automatically called by Dash whenever an input component's property changes. `@app.callback`
+
+```python
+@app.callback(Output, Input)
+def callback_function:
+    ... ...
+    ... ...
+    ... ...
+    return some_result
+```    
+
+Eg, callback with one input:
+
+![image](https://user-images.githubusercontent.com/51500878/138382216-2265b48e-40c2-437b-91b2-d6bdee392c8a.png)
+
+![image](https://user-images.githubusercontent.com/51500878/138382307-87155d2a-35b3-42d7-a7b7-ce5f56e9d99e.png)
+
+![image](https://user-images.githubusercontent.com/51500878/138382393-b1c9fa1b-f1bd-43a2-8b56-345c8247d805.png)
+
+![image](https://user-images.githubusercontent.com/51500878/138382416-039b2fef-6885-49fb-96d5-4891b78273b2.png)
+
+Output: (`Input` is changeable.)
+![image](https://user-images.githubusercontent.com/51500878/138382441-f87f853d-5555-4e80-87a8-6e5de754dcb5.png)
 
 
+Eg, callback with two inputs:
 
+![image](https://user-images.githubusercontent.com/51500878/138382551-06c8c286-4db3-4d12-bac7-bf237083a4cf.png)
 
+![image](https://user-images.githubusercontent.com/51500878/138382610-2e7850af-b708-483f-9059-0e14f23f15c7.png)
 
-
-
-
+Output:  
+![image](https://user-images.githubusercontent.com/51500878/138382649-7c560000-caa7-472c-9280-93878f50a7fd.png)
 
 
