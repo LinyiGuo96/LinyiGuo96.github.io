@@ -110,6 +110,70 @@ Summary
 
 
 
+# Intro to Regression
+
+What's regression? 
+
+![image](https://user-images.githubusercontent.com/51500878/142959101-46838525-57cd-48b7-8ec4-1aa5d8c97101.png)
+
+Rergession is the process of how to predict a continuous value using other variables.
+
+X: Independent variable, Y: Dependent variable.
+
+![image](https://user-images.githubusercontent.com/51500878/142959214-eb8469c8-322d-4f1c-bc41-9e9830123fb9.png)
+
+
+Types of regression
+
+1. Simple regression (one independent variable)
+  1.1. simple LR
+  1.2. simple non-LR
+2. Multiple regression
+  2.1. Multiple LR
+  2.2. Multiple non-LR
+  
+Applications of regression
+
+1. Sales forecasting
+2. Satisfaction analysis
+3. Price estimation
+4. Employment income
+
+Algorithms
+
+1. Ordinal regression
+2. Poisson regression
+3. Fast forest quantile regression
+4. Linear, Polynomial, Lasso, Stepwise, Ridge regression
+5. Bayesian linear regression
+6. Neural network regression
+7. Decision forest regression
+8. Boosted decision tree regression
+9. KNN (K-nearest neighbors)
+
+
+## Simple Linear Regression
+
+![image](https://user-images.githubusercontent.com/51500878/142961332-e2ad0ae5-4e1d-4473-831c-cc786e49069a.png)
+
+Then fit a line throught the data:
+
+![image](https://user-images.githubusercontent.com/51500878/142961363-0d2ce15e-a443-4467-a894-fc259a5e8850.png)
+
+To do predictions, just find the corresponding Y-axis value given the X-axis value.
+
+
+Model Expression
+
+<img src="https://latex.codecogs.com/svg.image?\hat{y}&space;=&space;\theta_0&space;&plus;&space;\theta_1&space;x_1" title="\hat{y} = \theta_0 + \theta_1 x_1" />
+
+
+
+
+
+
+
+
 
 
 
