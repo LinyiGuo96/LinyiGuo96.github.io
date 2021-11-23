@@ -167,6 +167,53 @@ Model Expression
 
 <img src="https://latex.codecogs.com/svg.image?\hat{y}&space;=&space;\theta_0&space;&plus;&space;\theta_1&space;x_1" title="\hat{y} = \theta_0 + \theta_1 x_1" />
 
+So how to find the best fit? 
+
+Firstly, the best fit line should minimize the MSE (mean square error): 
+
+<img src="https://latex.codecogs.com/svg.image?MSE&space;=&space;\frac{1}{n}\sum_{i=1}^{n}(y_i&space;-&space;\hat{y}_i)^2" title="MSE = \frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y}_i)^2" />
+
+So to find the best estimate of `theta_0` and `theta_1`, we have two options: 1. math method; 2.optimization method.
+
+1. Math
+
+![image](https://user-images.githubusercontent.com/51500878/142965292-1ee8c421-c592-4cd2-99d8-279e35631d2e.png)
+
+![image](https://user-images.githubusercontent.com/51500878/142965302-b11ce100-8889-47f9-9e27-70922848f8cd.png)
+
+2. Optimization (skip)
+
+Pros
+
+- Very fast
+- No parameter tuning
+- Easy to understand and highly interpretable
+
+
+## Model Evaluation
+
+- Train and test on the same dataset
+- Train/test split
+
+How to measure the accuracy of our model?
+
+Compare the actual (dependent) values with predicted ones.
+
+We could use the one-norm error to measure this difference: 
+
+<img src="https://latex.codecogs.com/svg.image?Error&space;=&space;\frac{1}{n}\sum_{j=1}^{n}|y_j-\hat{y}_j|" title="Error = \frac{1}{n}\sum_{j=1}^{n}|y_j-\hat{y}_j|" />
+
+![image](https://user-images.githubusercontent.com/51500878/142966001-996391dc-a23a-4720-8071-0d72e00daf06.png)
+
+What's training & out-of-sample accuracy?
+
+![image](https://user-images.githubusercontent.com/51500878/142966167-29ed7054-82b0-47ea-903f-07ca88fc3236.png)
+
+![image](https://user-images.githubusercontent.com/51500878/142966300-9d1d8e40-5209-4fff-807f-99ca6a0f3649.png)
+
+K-fold Cross Validation
+
+![image](https://user-images.githubusercontent.com/51500878/142966386-407d0412-b66c-4498-84fd-69018941fb2a.png)
 
 
 
