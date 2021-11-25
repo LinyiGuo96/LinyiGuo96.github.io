@@ -216,13 +216,28 @@ K-fold Cross Validation
 ![image](https://user-images.githubusercontent.com/51500878/142966386-407d0412-b66c-4498-84fd-69018941fb2a.png)
 
 
+## Evaluation Metrics
 
+- MAE (mean absolute error)
+- MSE (mean squared error)
+- RMSE (root mean squared error)
 
+Their definitions are 
 
+![image](https://user-images.githubusercontent.com/51500878/143373004-f342dfbf-3cab-4f70-a7fb-79b6be71353d.png)
 
+![image](https://user-images.githubusercontent.com/51500878/143373039-de110b0d-8fde-4441-ba4d-8b252508498f.png)
 
+![image](https://user-images.githubusercontent.com/51500878/143373076-91a6ff1b-ebdc-499f-ac56-1d011794b1d0.png)
 
+Relative absolute error:
+![image](https://user-images.githubusercontent.com/51500878/143373099-a849163e-1be2-4f31-8687-35724a6b9050.png)
 
+Relative squared error:
+![image](https://user-images.githubusercontent.com/51500878/143373185-043cc668-5a86-477e-978a-3b5b423c323b.png)
+
+R-squared error:
+![image](https://user-images.githubusercontent.com/51500878/143373267-98e4cec0-c79f-4096-94de-c2b5304e8946.png)
 
 
 
