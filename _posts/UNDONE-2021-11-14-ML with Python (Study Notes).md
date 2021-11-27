@@ -255,7 +255,50 @@ Mathematically,
 
 <img src="https://latex.codecogs.com/svg.image?\hat{y}&space;=&space;\theta_0&space;&plus;\theta_1&space;x_1&space;&plus;&space;\theta_2&space;x_2&space;&plus;&space;...&space;&plus;&space;\theta_nx_n" title="\hat{y} = \theta_0 +\theta_1 x_1 + \theta_2 x_2 + ... + \theta_nx_n" />
 
-Or, <img src="https://latex.codecogs.com/svg.image?\hat{y}&space;=&space;\theta^T&space;X" title="\hat{y} = \theta^T X" />
-where <img src="https://latex.codecogs.com/svg.image?\theta^T&space;=&space;[\theta_0,&space;\theta_1,&space;\theta_2,&space;...,&space;\theta_n]" title="\theta^T = [\theta_0, \theta_1, \theta_2, ..., \theta_n]" /> and <img src="https://latex.codecogs.com/svg.image?X&space;=&space;\begin{bmatrix}&space;1\\&space;x_1\\&space;x_2\\&space;...\\\end{bmatrix}" title="X = \begin{bmatrix} 1\\ x_1\\ x_2\\ ...\\\end{bmatrix}" />
+Or, <img src="https://latex.codecogs.com/svg.image?\hat{y}&space;=&space;\theta^T&space;X" title="\hat{y} = \theta^T X" />  
+where   
+<img src="https://latex.codecogs.com/svg.image?\theta^T&space;=&space;[\theta_0,&space;\theta_1,&space;\theta_2,&space;...,&space;\theta_n]" title="\theta^T = [\theta_0, \theta_1, \theta_2, ..., \theta_n]" /> 
+and   
+<img src="https://latex.codecogs.com/svg.image?X&space;=&space;\begin{bmatrix}&space;1\\&space;x_1\\&space;x_2\\&space;...\\\end{bmatrix}" title="X = \begin{bmatrix} 1\\ x_1\\ x_2\\ ...\\\end{bmatrix}" />
+
+Optimal parameter: minize the error of our model, such as MSE or MAE.
+
+![image](https://user-images.githubusercontent.com/51500878/143665866-25cd3eea-e73a-4661-a228-2deab0224bfe.png)
+
+After finding good estimation of parameters, prediction is just a piece of cake. 
+
+How many independent variables should we use?
+
+- Adding too many independent variables without theoratical justification will make our model overfitting (not general enough for prediction)
+
+Should the independent variable be continuous?
+
+- Categorical variables could be converted into a numeric variable to cooperate with linear regression
+
+How to check the linear regression relationship? 
+
+- Scatter plot is one of the easiest way.
+
+
+## Intro of Non-Linear Regression
+
+We could try scatter plot to check the regression is linear or not.
+
+![image](https://user-images.githubusercontent.com/51500878/143666291-7dbef7d9-ced7-49f5-9139-64160d5ff79d.png)
+
+The regression above could be called **polynomial** regression in general.
+
+Polynomial: curvy data. 
+
+However, a polynomial regression can be transformed into linear regression model.
+
+![image](https://user-images.githubusercontent.com/51500878/143666376-48792654-78be-4151-b919-ef3cea64b878.png)
+
+Then we could apply the _least square_ to the transformed 'linear' regression.
+
+![image](https://user-images.githubusercontent.com/51500878/143666462-9bea8554-44a4-4239-9a8b-456a0548f1a4.png)
+
+
+
 
 
