@@ -240,9 +240,22 @@ R-squared error:
 ![image](https://user-images.githubusercontent.com/51500878/143373267-98e4cec0-c79f-4096-94de-c2b5304e8946.png)
 
 
+## Multiple LR
 
+![image](https://user-images.githubusercontent.com/51500878/143665457-f4527a74-a3b9-4701-8f74-84f3a4f2d910.png)
 
+Two applications:
 
+- Independent variables effectiveness on prediction
+  - Does revision time, test anxiety, lecture attendance and gender have any effect on the exam performance of students?
+- Predict impacts of changes
+  - How much does blood pressure go up or down for every unit increase (or decrease) in the BMI of a patient?
 
+Mathematically, 
+
+<img src="https://latex.codecogs.com/svg.image?\hat{y}&space;=&space;\theta_0&space;&plus;\theta_1&space;x_1&space;&plus;&space;\theta_2&space;x_2&space;&plus;&space;...&space;&plus;&space;\theta_nx_n" title="\hat{y} = \theta_0 +\theta_1 x_1 + \theta_2 x_2 + ... + \theta_nx_n" />
+
+Or, <img src="https://latex.codecogs.com/svg.image?\hat{y}&space;=&space;\theta^T&space;X" title="\hat{y} = \theta^T X" />
+where <img src="https://latex.codecogs.com/svg.image?\theta^T&space;=&space;[\theta_0,&space;\theta_1,&space;\theta_2,&space;...,&space;\theta_n]" title="\theta^T = [\theta_0, \theta_1, \theta_2, ..., \theta_n]" /> and <img src="https://latex.codecogs.com/svg.image?X&space;=&space;\begin{bmatrix}&space;1\\&space;x_1\\&space;x_2\\&space;...\\\end{bmatrix}" title="X = \begin{bmatrix} 1\\ x_1\\ x_2\\ ...\\\end{bmatrix}" />
 
 
