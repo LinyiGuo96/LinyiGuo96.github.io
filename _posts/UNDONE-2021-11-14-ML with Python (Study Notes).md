@@ -390,7 +390,7 @@ Performance of a classifier where the predicted output is a **probability** valu
 
 Using the following formula to calculate the log loss:
 
-![image](https://user-images.githubusercontent.com/51500878/144540364-52800bca-45e3-4b2f-9f55-bdff817a8b6e.png)
+<img src="https://latex.codecogs.com/svg.image?LogLoss&space;=&space;-\frac{1}{n}\sum(y\times&space;log(\hat{y})&plus;&space;(1-y)&space;\times&space;log(1-\hat{y}))" title="LogLoss = -\frac{1}{n}\sum(y\times log(\hat{y})+ (1-y) \times log(1-\hat{y}))" />
 
 where `y_hat` is the probability value.
 
