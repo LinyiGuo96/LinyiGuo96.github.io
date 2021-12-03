@@ -14,6 +14,14 @@ In this blog:
 Skills: regression, classification, Clustering, Scikit Learn, Scipy ...
 Projects: cancer detection, predicting economic trends, customer churn, recommendation systems ...
 
+Table of Contents
+=================
+
+* [Intro to ML](#Intro-to-ML)
+* [Intro to Regression](#Intro-to-Regression)  
+* [Intro to Classification](#Intro-to-Classification)
+
+
 # Intro to ML 
 
 _Project: is this benign or malignant cell?_
@@ -299,6 +307,6 @@ Then we could apply the _least square_ to the transformed 'linear' regression.
 ![image](https://user-images.githubusercontent.com/51500878/143666462-9bea8554-44a4-4239-9a8b-456a0548f1a4.png)
 
 
-
+# Intro to Classification
 
 
