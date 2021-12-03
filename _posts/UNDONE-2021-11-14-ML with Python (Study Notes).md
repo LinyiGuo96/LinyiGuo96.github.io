@@ -334,7 +334,7 @@ Given an example,
 
 ![image](https://user-images.githubusercontent.com/51500878/144528605-4e5e06cf-be4b-4887-bb04-6866407388e4.png)
 
-**What's KNN? **
+**What's KNN?**
 
 - A method for classifying cases based on their similarity to other cases
 - Cases that are near each other are said to be `neighbors`
