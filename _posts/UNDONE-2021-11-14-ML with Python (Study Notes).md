@@ -309,4 +309,109 @@ Then we could apply the _least square_ to the transformed 'linear' regression.
 
 # Intro to Classification
 
+- Supervised-learning
+- Target attribute is a category/discrete
+
+Eg, the bank can clssify a user to the default group (value = 1) or NOT-default group (value = 0) based on the user's information.
+
+![image](https://user-images.githubusercontent.com/51500878/144528237-0bbe40e7-9344-430e-b725-7f4ab0cf8525.png)
+
+The target/dependent variable could also have multiple (>2) values.
+
+Classification algorithms in ML: 
+
+- Decision trees (ID3, C4.5, C5.0)
+- Naive Bayes
+- Linear Discriminant Analysis
+- K-Nearest Neighbor (KNN)
+- Logistic Regression
+- Neural Networks
+- Support Vector Machines (SVM)
+
+## KNN
+
+Given an example,
+
+![image](https://user-images.githubusercontent.com/51500878/144528605-4e5e06cf-be4b-4887-bb04-6866407388e4.png)
+
+**What's KNN? **
+
+- A method for classifying cases based on their similarity to other cases
+- Cases that are near each other are said to be `neighbors`
+- Based on similar cases with same calss labels are near each other 
+
+**Algo**
+
+![image](https://user-images.githubusercontent.com/51500878/144529120-344ba0fa-ed92-4bb0-bbee-b4eb377fda8d.png)
+
+Then we might have two questions: 1. how to select parameter `k`; 2. how to measure the distance between two cases. 
+
+For Q2, apparently we could use the Euclid distance as following but there are also many other method we could use.
+
+![image](https://user-images.githubusercontent.com/51500878/144530430-14296c3e-02ef-4e76-8782-b6e6e4d6f204.png)
+
+For Q1, let's take the income and age as two independent variables as an example:
+
+![image](https://user-images.githubusercontent.com/51500878/144538375-6c6b4b8a-0c5b-43fe-b868-5f1bcb0eaca5.png)
+
+## Evaluation matrics in classification
+
+How to measure the accuracy? 
+
+![image](https://user-images.githubusercontent.com/51500878/144538824-94613cba-f0e8-4468-b2e3-1ade173f4615.png)
+
+**Jaccard index**
+
+![image](https://user-images.githubusercontent.com/51500878/144538897-a40ab211-d833-4b50-9067-4ae172ebf871.png)
+
+ If `J(y, y_hat) = 1` then it means a perfect prediction. 
+ 
+_The higher the index is, the more accurate our model is._
+
+**F1-score**
+
+Confusion matrix: (which shows the model's ability to correctly classify the object)
+
+![image](https://user-images.githubusercontent.com/51500878/144539166-4beb6bb9-9836-4ac3-9c6c-8512991df948.png)
+
+Further,
+
+![image](https://user-images.githubusercontent.com/51500878/144539554-39522f2f-0fe1-46f3-8306-388ebf1f3a55.png)
+
+**F1-score = 2 * (prc * rec) / (prc + rec)**
+
+_The higher the F1-score is, the more accurate our model is._
+
+**Comment**: the Jaccard index and F1-score can be used for multiple discrete variable as well.
+
+**Log loss**
+
+Performance of a classifier where the predicted output is a **probability** value between 0 and 1.
+
+Using the following formula to calculate the log loss:
+
+![image](https://user-images.githubusercontent.com/51500878/144540364-52800bca-45e3-4b2f-9f55-bdff817a8b6e.png)
+
+where `y_hat` is the probability value.
+
+_The lower the logloss is, the more accurate our model is._
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
