@@ -396,6 +396,27 @@ where `y_hat` is the probability value.
 
 _The lower the logloss is, the more accurate our model is._
 
+## Decision Trees (DT)
+
+What's a decision tree? 
+
+The basic intuition is to map out all possible decision paths in the form of a tree.
+
+For example, say we need to decide which drug the patient `p15` need to take.
+
+![image](https://user-images.githubusercontent.com/51500878/144696877-8e58ac5c-5a68-422b-9817-016ea2b4a129.png)
+
+Suppose we have the following decision tree:
+
+![image](https://user-images.githubusercontent.com/51500878/144696973-1873ca55-270e-4fa9-b929-40c34583da92.png)
+
+- `Sex` here is called a _internal node_, and each internal node corresponds to a test
+- `M` here is called a _branch_, and each branch corresponds to a result of the test
+- `B` here is called a _leaf node_, and each leaf node assigns a classification
+
+So how to build a DT? 
+
+![image](https://user-images.githubusercontent.com/51500878/144697058-45e0707c-3de7-4e99-8079-146cb0f7446b.png)
 
 
 
