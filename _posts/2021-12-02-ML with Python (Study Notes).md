@@ -12,6 +12,7 @@ In this blog:
 
 
 Skills: regression, classification, Clustering, Scikit Learn, Scipy ...
+
 Projects: cancer detection, predicting economic trends, customer churn, recommendation systems ...
 
 Table of Contents
