@@ -483,6 +483,79 @@ Therefore, we should go with the `sex` attribute. As we can imagine, the next st
 ![image](https://user-images.githubusercontent.com/51500878/144761830-b09fa939-5145-4797-b084-5a90094d8d98.png)
 
 
+## Intro to Logistic Regression
+
+- what is LR (logistic regression, same as below, not linear regression)?
+- what problem we could solve with LR?
+- which situation do we use with LR? 
+
+What is LR? 
+
+- A classification algo for categorial variables
+- Applications:![image](https://user-images.githubusercontent.com/51500878/144762176-8ee8c8bd-ba7a-4e71-8d63-31d07692e5bd.png)
+
+When should we use?
+
+- if your data is binary: 1/0, T/F, Y/N
+- if you need probabilistic results (because for LR, we computed the probability of one object belonging to a specific class and then map it to the class type)
+- when you need a linear decision boundary (line, plan, or hyperplane) 
+![image](https://user-images.githubusercontent.com/51500878/144762261-b19dbf1e-1cf5-4b19-a2df-b48623fe3fdd.png)
+- if you need to understand the impact of a feature (attribute/independent variable)
+
+Logistic Regression vs Linear Regression
+
+Can we use the linear regression to predict a categorial data? 
+
+![image](https://user-images.githubusercontent.com/51500878/144762476-8e72c49f-ea38-4539-aac5-747732455336.png)
+
+![image](https://user-images.githubusercontent.com/51500878/144762485-de587559-6a7a-450a-a616-d7b8f1fd8af8.png)
+
+Our job is to predict a point is red or blue given its X (age) value. Because the output is only 0/1, so we may end up with a stepwise function like this
+
+![image](https://user-images.githubusercontent.com/51500878/144762800-4c7cc958-6f19-4f39-9358-17ee397c8b93.png)
+
+Note, in this case, no matter how large the <img src="https://latex.codecogs.com/svg.image?\theta^TX" title="\theta^TX" /> is, the output is always 1, as long as it's greater than 0.5.
+
+Therefore it would be nice if we could find some method to map the value of y_hat into the range `[0,1]`. 
+
+Fortunately, `sigmoid` function could help us achieve this.
+
+![image](https://user-images.githubusercontent.com/51500878/144762908-89c45014-d932-4f37-9b7a-320b52f952ea.png)
+
+> So what is sigmoid function?
+> 
+> - also called logistic function
+> - ![image](https://user-images.githubusercontent.com/51500878/144762936-51dbf2b0-ce9d-45d2-bc0b-d706be04c155.png)
+> - As <img src="https://latex.codecogs.com/svg.image?\theta^TX" title="\theta^TX" /> ⬆️, the value of the exponential of the -<img src="https://latex.codecogs.com/svg.image?\theta^TX" title="\theta^TX" /> becomes to 0, then the value of the sigmoid function becomes to 1; on the other hand, if <img src="https://latex.codecogs.com/svg.image?\theta^TX" title="\theta^TX" /> is very small, then the sigmoid function value is 0
+![image](https://user-images.githubusercontent.com/51500878/144763048-8cc11813-3bed-4153-9b33-03bbc2b1866b.png)
+
+So now how to explain the output of our model if we use the sigmoid function?
+
+![image](https://user-images.githubusercontent.com/51500878/144764358-8e8aaac0-6195-42a6-9537-9eede0fece91.png)
+
+Having understood the output, how to train our model to find the θ is the only question left.
+
+1. Initialize θ; 
+2. Calculate y_hat = σ(θ^T X) for a customer;
+3. Compare the output of y_hat with actual output of customer, y, and record it as error;
+4. Calculate the error for all customers;
+5. Change the θ to reduce the cost;
+6. Go back to step 2.
+
+Now let's talk more details in this training process, such as how to change the parameter to have a better outcome, as well as the cost function.
+
+To find the best parameter, we should formulate the expression of our cost, and by finding its derivative, we could know how to change θ to have a better outcome.
+
+General cost function could be ![image](https://user-images.githubusercontent.com/51500878/144764657-a0ba58b9-6f8d-421b-8559-f972b341fa11.png)
+
+But because of the negativity and simplicity, we take ![image](https://user-images.githubusercontent.com/51500878/144764684-9a5c382a-65d7-400b-bba1-0a5cf2e07728.png) as our cost function. Thus for all customers, our final cost is ![image](https://user-images.githubusercontent.com/51500878/144764708-266dca73-53e5-4a7d-9c8f-e5a9d77f19cf.png)
+
+Given its complexity, it's not easy to find the global minimal value of this function using derivative. But if we could find its GM (global minimal), then we could find the best estimate of our parameter. ➡️ _Gradient Descent_
+
+
+
+
+
 
 
 
