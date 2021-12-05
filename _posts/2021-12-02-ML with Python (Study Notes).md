@@ -419,13 +419,68 @@ So how to build a DT?
 
 ![image](https://user-images.githubusercontent.com/51500878/144697058-45e0707c-3de7-4e99-8079-146cb0f7446b.png)
 
+Let's talk more about this process. How to choose the attribute we used to split the tree? That is, which attribute is the best? 
 
+Let's say we used `cholesterol` as the attribute, then we have
 
+![image](https://user-images.githubusercontent.com/51500878/144760839-fab029a2-a050-4416-8e49-b4fe7022d946.png)
 
+Apparently it's not a good choice. If we used the `sex` attribute, we have 
 
+![image](https://user-images.githubusercontent.com/51500878/144760904-274e2f98-541c-4817-90f0-115ff0cf1eb1.png)
 
+Compared with `cholesterol`, using `sex` attribute give us more predictiveness, less impurity and lower entropy. But the results for `men` is still not very good. Then we take a further step:
 
+![image](https://user-images.githubusercontent.com/51500878/144761084-358d2fd6-99fe-4d46-9f3a-a8258f2a63fc.png)
 
+The node with only one class is called _pure nodde_.
+
+As the internal nodes increase, the impurity decreases. And the impurity is measured by `entropy`. 
+
+So what is **entropy**? 
+
+- Measure of randomness or uncertainty
+- The lower the entropy, the less uniform the distrubution, the purer the node.
+
+![image](https://user-images.githubusercontent.com/51500878/144761200-fe488fa7-617c-4a9d-88ac-409728392291.png)
+
+Mathematically,
+
+**Entropy = -p(A)log(p(A)) - p(B)log(p(B))**
+
+where `p` is the proportion of drug A/B.
+
+For example, we could calculate the entropy before spliting.
+
+![image](https://user-images.githubusercontent.com/51500878/144761285-3f7d7ce3-21c3-4adb-98a8-bc27d41c29f2.png)
+
+> 9 B, 5 A, 14 in Total
+> E = -(9/14)log(9/14) - (5/14)log(5/14)
+> E = 0.94
+
+If we use the `cholesterol` to split, then we have entropy as
+
+![image](https://user-images.githubusercontent.com/51500878/144761352-65afad2b-3222-42ce-9865-7ca0337c64ca.png)
+
+But if we use the `sex`, then 
+
+![image](https://user-images.githubusercontent.com/51500878/144761372-8df8ebb1-c7e2-4c42-a7d1-ca7580822f95.png)
+
+Now back to our question, which one is a bette choice?
+
+Ans: we need to choose the tree with the **higher information gain** after splitting.
+
+> So what is information gain?
+>
+> - The information that can increase the level of certainty after splitting
+> - IG(information gain) = entropy before split - weighted entropy after split
+> - The weighted entropy ⬆️, the IG ⬇️
+
+![image](https://user-images.githubusercontent.com/51500878/144761773-664e385b-77f7-451d-8d58-eaca0440eadd.png)
+
+Therefore, we should go with the `sex` attribute. As we can imagine, the next step is to repeat the same process as above until we find the purest leaf node as below.
+
+![image](https://user-images.githubusercontent.com/51500878/144761830-b09fa939-5145-4797-b084-5a90094d8d98.png)
 
 
 
