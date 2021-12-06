@@ -552,11 +552,78 @@ But because of the negativity and simplicity, we take ![image](https://user-imag
 
 Given its complexity, it's not easy to find the global minimal value of this function using derivative. But if we could find its GM (global minimal), then we could find the best estimate of our parameter. ➡️ _Gradient Descent_
 
+So we chose another cost function, which is easier to find the GM. Let's see how to find such a cost function:
+
+Since we know ![image](https://user-images.githubusercontent.com/51500878/144772729-ed352d4b-8235-4520-af4b-d87d2bf96b9a.png)
+
+if we plot the cost function ![image](https://user-images.githubusercontent.com/51500878/144772778-4210e955-f9a1-4d2a-a61c-642aee923c2d.png)
+
+we could find the function `-log(y_hat)` could provide us a good fit for this curve.
+
+Therefore, we could replace the cost function and the total cost function as following:
+
+![image](https://user-images.githubusercontent.com/51500878/144772916-6258fcbf-b2fb-4729-b5be-f06766bab94e.png)
+
+Now we could minimize the total cost function to find the best estimate of parameters.
+
+And here are some Q&A regarding minimizing the cost function:
+
+![image](https://user-images.githubusercontent.com/51500878/144773127-ae8ba829-286d-4b61-9d3a-5719b2196e7b.png)
+
+How gradient descend works? 
+
+**Important**
+
+![image](https://user-images.githubusercontent.com/51500878/144773517-c8d727c3-c455-4408-9873-c40ac2470ba3.png)
+
+**COMMENT**
+
+- With the new total cost function, compute its derivative of all parameters separately, then we could get the _gradient vector_ 
+- Given a _learning rate_, we could update our parameter with a specific speed, just like the step width.
+
+Training Algorithm Recap
+
+![image](https://user-images.githubusercontent.com/51500878/144776106-2c81607d-99b4-4280-8f99-9b78fc9ec49b.png)
 
 
+## Intro to SVM （Support Vector Machine）
 
+![image](https://user-images.githubusercontent.com/51500878/144776397-a64adc03-e48f-41cd-8f11-595bd72d1886.png)
 
+Now we have two new challenges: 1. How to transform the data into a higher dimension space? 2. How to find the best/optimized separator? 
 
+Data Transformation
+
+![image](https://user-images.githubusercontent.com/51500878/144776632-fc767b34-9324-482e-a0cb-c258abc918a4.png)
+
+The function we used to transform the data is called **kernal function**. The four common types are linear, polynomial, radial basis function (RBF) and sigmoid function.
+
+Using SVM to find the hyperplane
+
+Our goal is to find such a hyperplane with a bigger margin as possible
+
+![image](https://user-images.githubusercontent.com/51500878/144776883-0b1564c4-2234-42d7-9ee0-3190304988fc.png)
+
+The points on the boundary are called support vectors.
+
+Mathematically, our goal is 
+
+![image](https://user-images.githubusercontent.com/51500878/144777014-16112d37-b4ae-40b3-9f3b-5ad53b1b69ab.png)
+
+Not surprisingly, we still need to use the gradient descent. (skip for now)
+
+Pros & Cons of SVM
+
+![image](https://user-images.githubusercontent.com/51500878/144777213-a0444b80-f135-402f-96bc-bf4cc35e7df3.png)
+
+Therefore when should we use SVM?
+
+- image recognition
+- text category assignment
+- detecting spam
+- sentiment analysis
+- gene expression classification
+- regression, outlier detection and clustering
 
 
 
