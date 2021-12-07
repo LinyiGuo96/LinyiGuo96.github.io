@@ -21,6 +21,7 @@ Table of Contents
 * [Intro to ML](#Intro-to-ML)
 * [Intro to Regression](#Intro-to-Regression)  
 * [Intro to Classification](#Intro-to-Classification)
+* [Intro to Clustering](#Intro to Clustering)
 
 
 # Intro to ML 
@@ -626,6 +627,7 @@ Therefore when should we use SVM?
 - regression, outlier detection and clustering
 
 
+# Intro to Clustering <a name='Intro to Clustering'></a>
 
 
 
