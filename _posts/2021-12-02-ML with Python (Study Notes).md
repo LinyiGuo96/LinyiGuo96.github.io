@@ -21,7 +21,7 @@ Table of Contents
 * [Intro to ML](#Intro-to-ML)
 * [Intro to Regression](#Intro-to-Regression)  
 * [Intro to Classification](#Intro-to-Classification)
-* [Intro to Clustering](#Intro to Clustering)
+* [Intro to Clustering](#Intro-to-Clustering)
 
 
 # Intro to ML 
