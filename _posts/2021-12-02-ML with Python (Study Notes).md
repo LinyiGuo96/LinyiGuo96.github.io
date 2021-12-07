@@ -15,16 +15,15 @@ Skills: regression, classification, Clustering, Scikit Learn, Scipy ...
 
 Projects: cancer detection, predicting economic trends, customer churn, recommendation systems ...
 
-Table of Contents
-=================
+# Table of Contents
 
-* [Intro to ML](#Intro-to-ML)
-* [Intro to Regression](#Intro-to-Regression)  
-* [Intro to Classification](#Intro-to-Classification)
-* [Intro to Clustering](#Intro-to-Clustering)
+1. [Intro to ML](#Intro-to-ML)
+2. [Intro to Regression](#Intro-to-Regression)  
+3. [Intro to Classification](#Intro-to-Classification)
+4. [Intro to Clustering](#Intro-to-Clustering)
 
 
-# Intro to ML 
+# Intro to ML
 
 _Project: is this benign or malignant cell?_
 
