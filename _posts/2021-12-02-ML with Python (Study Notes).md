@@ -627,7 +627,7 @@ Therefore when should we use SVM?
 - regression, outlier detection and clustering
 
 
-# Intro to Clustering <a name='Intro to Clustering'></a>
+# Intro to Clustering
 
 
 
