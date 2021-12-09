@@ -628,6 +628,109 @@ Therefore when should we use SVM?
 
 # Intro to Clustering
 
+Say we have a dataset like 
+
+![image](https://user-images.githubusercontent.com/51500878/145330366-f02f1916-dba6-4358-900f-8ab3bae37f87.png)
+
+We need to derive segments and groups from large datasets. That is, how to use this unlabelled dataset to understand and identify how customers are similar to each other.
+
+> **Clustering**
+
+_Client segmentation_ is one of the popular usage of clustering. But clustering also has many other applications in different domains.
+
+What's a cluster?
+
+A group of objects that are similar to other objects in the cluster and dissimilar to data points in other clusters.
+
+![image](https://user-images.githubusercontent.com/51500878/145331032-07634972-b8e4-4597-98de-9c6cfb75fc90.png)
+
+What's the difference between clustering and classification?
+
+Classification is a supervised learning algorithm to predict the label of objects.
+
+However, clustering is an unsupervised learning algorithm, to group similar objects and assign them to different clusters.
+
+![image](https://user-images.githubusercontent.com/51500878/145331111-52d75e0d-8e24-4b84-8362-e1e687f02d1e.png)
+
+More Applications
+
+- Retail/marketing
+  - identifying buying patterns of customers
+  - recommending new books or movies to new customers
+- Banking
+  - Fraud detection in credit card use
+  - identifying clusters of customers
+- Insurance
+  - fraud detection in claims analysis
+  - insurance risk of customers
+- Publication Media
+  - auto-categorizing news based on their content
+  - recommending similar news articles
+- Medicine
+  - Characterizing patient behavior 
+- Biology
+  - Clustering genetic markers to identify family ties 
+
+Why clustering? 
+
+- Exploratory data analysis
+- summary generation
+- outlier detection
+- finding duplicates
+- pre-processing step
+
+Clustering algorithms
+
+- Partitioned-based clustering (for medium/large databases)
+  - Relatively _efficient_
+  - eg, K-means, K-median, Fuzzy c-Means
+- Hierarchical Clustering (intuitive, small sets)
+  - Produces _trees_ of clusters
+  - eg, agglomerative, divisive
+- Density-based clustering (good for spatial datasets or datasets with noise)
+  - produces arbitrary shaped clusters
+  - eg DBSCAN
+
+## Intro to K-means
+
+![image](https://user-images.githubusercontent.com/51500878/145332279-6942b598-de4f-4698-b6ac-1cedf628752f.png)
+
+- Partitioning Clustering
+- K-means divides the data into _non-overlapping_ subsets without any cluster-internal structure
+- objects within a cluster are very similar
+- objects within different clusters are very different
+
+The _distance_ between samples from each other is used to shape the clusters. K-means is to minimize the intra-cluster(集群内) distance and maximize the inter-cluster(集群间) distance. 
+
+So how can we compute the dissimilarity/distance? Let's look at following examples with Euclidean distance.
+
+![image](https://user-images.githubusercontent.com/51500878/145332883-415af9cd-1a00-4ec6-91f1-978f143b4347.png)
+
+![image](https://user-images.githubusercontent.com/51500878/145332913-972074e1-a745-44e5-aa77-551d0fe8163c.png)
+
+We could also use [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity), average distance, etc.
+
+Now let's suppose our data has only two features and looks as following:
+
+![image](https://user-images.githubusercontent.com/51500878/145333345-fb0ee99d-bb86-40ec-88bd-42f709eb9e51.png)
+
+Then to start our process, we need to initialize `k` points as the cluster center. 
+
+> We will talk more about how to select `k` later
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
