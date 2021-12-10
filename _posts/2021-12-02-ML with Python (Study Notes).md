@@ -714,25 +714,56 @@ Now let's suppose our data has only two features and looks as following:
 
 ![image](https://user-images.githubusercontent.com/51500878/145333345-fb0ee99d-bb86-40ec-88bd-42f709eb9e51.png)
 
-Then to start our process, we need to initialize `k` points as the cluster center. 
+1. Then to start our process, we need to initialize `k` points as the cluster center. These points could be random.
 
 > We will talk more about how to select `k` later
 
+![image](https://user-images.githubusercontent.com/51500878/145493142-c6427520-1200-4d6f-9e07-1942b6642c1e.png)
 
+2. Distance calculation
 
+Compute the distance between each point and all cluster centers, and put them together to form the _distance matrix_.
 
+![image](https://user-images.githubusercontent.com/51500878/145493178-8f2e0a8f-5a15-4490-9dba-366364003d3e.png)
 
+3. Assign points to its closest centroid
 
+With SSE (sum of squared error), we could easily compare which clustering is better. In another word, our job is to find such a clustering with a minimal SSE. Apparently the initialized points are not good enough, therefore we need to move them.
 
+![image](https://user-images.githubusercontent.com/51500878/145493340-7972854c-7ebb-4eed-a45c-f62c928bd9bb.png)
 
+4. Compute the new centroids for each cluster
 
+Use the mean of points in each cluster as the new centroids.
 
+![image](https://user-images.githubusercontent.com/51500878/145493717-c72f6c92-7e1c-4123-8521-8d0da764fdf2.png)
 
+Repeat this process until the centroids no longer move.
 
+**Note**: there is no guarantee that it will converge to the global optimum and the result may depend on the initial clusters.
 
+## K-means Accuracy and Characteristics
 
+Algo summary:
 
+1. randomly placing `k` centroids, one for each cluster
+2. calculate the distance of each point from each centroid
+3. assign each data point to its closest centroid, creating a cluster
+4. recalculate the position of the `k` centroids
+5. Repeat the steps 2-4, until the centroids no longer move
 
+How to measure its accuracy?
+
+- External: compare the culters with the ground truth, if it is available
+- Internal: average the distance between data points within a cluster
+
+How to choose K?
+
+Run the algorithm with different K, and then compare their accuracy (this accuracy could be the average distance of points to its centroid). 
+
+However, the truth is, as K increase, the average distance will always decrease (accuracy increase). Therefore, we mainly need to find the _elbow point_, where the rate of accuracy sharply changes. This method is called the **elbow method**. 
+
+![image](https://user-images.githubusercontent.com/51500878/145494715-e10b954b-f338-4b64-a244-33e84abb19f0.png)
 
 
 
