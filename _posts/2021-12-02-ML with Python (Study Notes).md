@@ -742,7 +742,7 @@ Repeat this process until the centroids no longer move.
 
 **Note**: there is no guarantee that it will converge to the global optimum and the result may depend on the initial clusters.
 
-## K-means Accuracy and Characteristics
+### K-means Accuracy and Characteristics
 
 Algo summary:
 
@@ -764,6 +764,51 @@ Run the algorithm with different K, and then compare their accuracy (this accura
 However, the truth is, as K increase, the average distance will always decrease (accuracy increase). Therefore, we mainly need to find the _elbow point_, where the rate of accuracy sharply changes. This method is called the **elbow method**. 
 
 ![image](https://user-images.githubusercontent.com/51500878/145494715-e10b954b-f338-4b64-a244-33e84abb19f0.png)
+
+## Intro to Hierarchical Clustering
+
+![image](https://user-images.githubusercontent.com/51500878/145664676-40f79222-0afb-4ef3-82ec-33627984fedc.png)
+
+![image](https://user-images.githubusercontent.com/51500878/145664695-f8234714-23fa-4567-ac36-e992c9f815bf.png)
+
+Agglomerative would be our focus in this video. As the picture above shows, agglomerative starts with each observation as one cluster and then combine them one by one.
+
+So how to do agglomerative clustering?
+
+Say we want to cluster these 6 cities in Canada, the numbers are distances between each city.
+
+![image](https://user-images.githubusercontent.com/51500878/145664972-b107c973-9879-4785-a1b2-6a51f6a4873b.png)
+
+Start with 6 clusters, and then we select the minimal distance and put them together, which is `OT-MO` at 167.
+
+![image](https://user-images.githubusercontent.com/51500878/145665383-0d949be3-cb50-4d2e-b3f3-6b5e8932e712.png)
+
+And then we take `OT/MO`as one cluster and re-compute the distance: 
+
+> As for how to compute the distance to `OT/MO`, one sensible choice is to use the midpoint as the location of `OT/MO`.
+
+![image](https://user-images.githubusercontent.com/51500878/145665420-8557fc22-ecaa-4051-918a-26a073b9a959.png)
+
+And then repeat this process until we reach the _threhold_. If there is no threshold, we will finally merge all clusters at the begining into a single cluster.
+
+> What's the threshold?
+> The hierarchical clustering typically can be visualized by a _dendrogram_.  
+> ![image](https://user-images.githubusercontent.com/51500878/145665568-32d0f155-e4bf-4793-92a9-91044c2a0d5a.png)
+> If we pre-defined a `y`, then the hierarchy would be cutted into different disjoint clusters.
+> ![image](https://user-images.githubusercontent.com/51500878/145665626-0d545ed7-ef17-4088-ac04-116962346215.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
