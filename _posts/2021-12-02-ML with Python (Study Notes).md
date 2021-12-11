@@ -773,7 +773,7 @@ However, the truth is, as K increase, the average distance will always decrease 
 
 Agglomerative would be our focus in this video. As the picture above shows, agglomerative starts with each observation as one cluster and then combine them one by one.
 
-So how to do agglomerative clustering?
+So how to do agglomerative `/əˈɡlɑːməˌreɪtɪv/` clustering?
 
 Say we want to cluster these 6 cities in Canada, the numbers are distances between each city.
 
@@ -797,9 +797,35 @@ And then repeat this process until we reach the _threhold_. If there is no thres
 > If we pre-defined a `y`, then the hierarchy would be cutted into different disjoint clusters.
 > ![image](https://user-images.githubusercontent.com/51500878/145665626-0d545ed7-ef17-4088-ac04-116962346215.png)
 
+### More about HC
 
+Let's say our dataset has n points. Now let's summarize the agglomerative algorithm: (Note that the final `until` statement could also be `until we reach the threshold`.)
 
+![image](https://user-images.githubusercontent.com/51500878/145665742-24472a0a-e334-4e4c-91ff-9a3df531ed79.png)
 
+If we look at this summary, we will found our real problems are
+
+1. Which distance should we use?
+2. How to compute the distance, especially after merging part of them?
+3. How to find the lowest distance? 
+
+Take the following patient info as an example, then our data is `3-d`, here we take the Euclidean distance.
+
+The example here shows how to compute the distance between two points, so how about the distance between two clusters?
+
+![image](https://user-images.githubusercontent.com/51500878/145665843-eb62b023-a220-4386-b3c2-551b34cd577d.png)
+
+There are a lot of choices as shown below. But generally it depends on the data type, the dimension and most importantly, the domain knowledge of the dataset. In fact these different distance definition distinguishs different algorithms.
+
+![image](https://user-images.githubusercontent.com/51500878/145666045-e3adec9d-8622-4e8f-85bc-1bc1888acc7a.png)
+
+Pros VS Cons
+
+![image](https://user-images.githubusercontent.com/51500878/145666069-fe82e8c3-51e8-4b1d-906b-ecdccbf144d5.png)
+
+Hierarchical Clustering vs K-means
+
+![image](https://user-images.githubusercontent.com/51500878/145666104-934c4841-d859-477c-b8f4-cbc0fe98d961.png)
 
 
 
