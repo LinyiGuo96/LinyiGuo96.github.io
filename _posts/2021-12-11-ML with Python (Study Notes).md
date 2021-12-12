@@ -827,7 +827,18 @@ Hierarchical Clustering vs K-means
 
 ![image](https://user-images.githubusercontent.com/51500878/145666104-934c4841-d859-477c-b8f4-cbc0fe98d961.png)
 
+## DBSCAN Clustering
 
+Density-based clustering
+
+![image](https://user-images.githubusercontent.com/51500878/145697577-25b93a0e-ea4c-4d48-af3e-89449fa48de1.png)
+
+K-Means vs Density-based clustering
+
+![image](https://user-images.githubusercontent.com/51500878/145697596-91bd8317-762f-4029-a20b-52362f7d1473.png)
+
+- DBSCAN is one of density-based clustering methods.
+- DBSCAN: Density-Based Spatial Clutering of Applciations with Noise
 
 
 
