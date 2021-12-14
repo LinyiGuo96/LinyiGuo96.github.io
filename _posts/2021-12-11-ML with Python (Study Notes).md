@@ -829,6 +829,8 @@ Hierarchical Clustering vs K-means
 
 ## DBSCAN Clustering
 
+DBSCAN: Density-Based Spatial Clutering of Applciations with Noise
+
 Density-based clustering
 
 ![image](https://user-images.githubusercontent.com/51500878/145697577-25b93a0e-ea4c-4d48-af3e-89449fa48de1.png)
@@ -837,11 +839,23 @@ K-Means vs Density-based clustering
 
 ![image](https://user-images.githubusercontent.com/51500878/145697596-91bd8317-762f-4029-a20b-52362f7d1473.png)
 
+
+About DBSCAN
+
 - DBSCAN is one of density-based clustering methods.
-- DBSCAN: Density-Based Spatial Clutering of Applciations with Noise
+- DBSCAN: Density-Based **Spatial** Clutering of Applciations with Noise
+- It can find out any arbitrary shaped cluster without getting effected by noise
+- Based on two parameters: `R` (radius) and `M` (Min number of neighbors)
 
+![image](https://user-images.githubusercontent.com/51500878/145920745-e269529c-b950-40ee-af33-2a30cf7c1921.png)
 
+The points meet the requirement `R` and `M` are called _core points_; the points which can be reached by a core point but whose neighbors are less tha `M` are called _border points_. But if a point is not neither a core point nor a border point, then it's called an _outlier_.
 
+Advantages of DBSCAN
+
+1. Arbitrarily shaped clusters
+2. Robust to outliers
+3. Does not require specification of the number of clusters
 
 
 
