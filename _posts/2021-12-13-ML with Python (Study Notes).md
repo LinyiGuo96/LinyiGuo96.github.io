@@ -885,12 +885,52 @@ Advantages
 
 ![image](https://user-images.githubusercontent.com/51500878/145933787-d62fd7a6-100b-4a4c-b57b-32c65edab7a3.png)
 
+## Content-based recommender system
 
+- Recommend based on user's profile
+- based on similarity of user's liked/disliked items
 
+Take the movie recommendation as an example:
 
+![image](https://user-images.githubusercontent.com/51500878/146110229-25f8ab0b-2f7b-4421-a496-9c6c79159628.png)
 
+And then normalized the weight to define user's profile.
 
+![image](https://user-images.githubusercontent.com/51500878/146110356-a5e88d81-ca5f-4fe7-80e0-f32505a56750.png)
 
+And then use the user's profile to find the most suitable movie for user.
+
+![image](https://user-images.githubusercontent.com/51500878/146110636-6ae26e6a-97cc-4b37-807a-c7312b35909a.png)
+
+But this method doesn't work if the user has never seen some specific types of movie, such as drama. That is, the content-based RS won't recommend those types of movie that user has never watched before.
+
+Therefore, in this case we need to introduce other methods such as _collaborative filtering_.
+
+## Collaborative Filtering
+
+Two types:
+
+![image](https://user-images.githubusercontent.com/51500878/146111105-45cd3d54-924b-4780-a9ab-e83d27509d41.png)
+
+![image](https://user-images.githubusercontent.com/51500878/146111411-a2c673c4-610f-468f-a250-46f04d494722.png)
+
+Suppose we already know the correlation among different user are 0.7, 0.9 and 0.4, and we want to calculate the expected score for the last user.
+
+![image](https://user-images.githubusercontent.com/51500878/146111743-5d899605-673f-4f78-84dd-a50285112d78.png)
+
+Then calculate the weighted rating matrix for the movie of interest:
+
+![image](https://user-images.githubusercontent.com/51500878/146112024-082ea02a-356e-447c-a091-e295fb8bd01b.png)
+
+Then we divide the sum of weighted rating for each movie by the total weight (because not all movies have all users' weighted rating, we need to eliminate this influence).
+
+![image](https://user-images.githubusercontent.com/51500878/146112183-134cc372-4c2a-4f5b-ae21-529fdd46466e.png)
+
+Actually both collaborative filtering types are similar. The difference is, their objective is opposite.
+
+![image](https://user-images.githubusercontent.com/51500878/146112697-336d9790-f535-425e-ba85-b00cec6c6b54.png)
+
+![image](https://user-images.githubusercontent.com/51500878/146113071-1cc2f65d-ae67-403b-9e2d-1db9a361fd6e.png)
 
 
 
