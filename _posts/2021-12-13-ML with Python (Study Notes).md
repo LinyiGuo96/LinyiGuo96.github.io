@@ -21,7 +21,7 @@ Projects: cancer detection, predicting economic trends, customer churn, recommen
 2. [Intro to Regression](#Intro-to-Regression)  
 3. [Intro to Classification](#Intro-to-Classification)
 4. [Intro to Clustering](#Intro-to-Clustering)
-5. [Intro to Recommender Systems](#Intro-to-Recommender-System)
+5. [Intro to Recommender Systems](#Intro-to-Recommender-Systems)
 
 
 # Intro to ML
@@ -857,6 +857,7 @@ Advantages of DBSCAN
 1. Arbitrarily shaped clusters
 2. Robust to outliers
 3. Does not require specification of the number of clusters
+
 
 
 # Intro to Recommender Systems
