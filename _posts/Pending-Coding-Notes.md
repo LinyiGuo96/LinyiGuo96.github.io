@@ -42,5 +42,5 @@ Video2:
 
 [Video1: Machine Learning Project in Python: Predicting California Housing Prices](https://www.youtube.com/watch?v=_-UCcuB8nbw&ab_channel=GregHogg)
 
-[Video2: House Price Regression LIVESTREAM | Data Science | Kaggle | 4/27/21](https://www.youtube.com/watch?v=zwYHloLXH0c)
+[Video2 (Recommend): House Price Regression LIVESTREAM | Data Science | Kaggle | 4/27/21](https://www.youtube.com/watch?v=zwYHloLXH0c)
 
