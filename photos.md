@@ -4,13 +4,16 @@ subtitle: Some moments of my life
 published: true
 ---
 
-This is a demo from somewhere:
+Gaspé:
+
+![Gaspe](/img/Gaspe.JPG)
+
+
+Percé:
+
+![Perce](/img/Perce.JPG)
   
-  
-![pic1](https://github.com/LinyiGuo96/LinyiGuo96.github.io/blob/master/img/5243c949aadb6.jpg?raw=true)
-  
-  
-One photo taken in Quebec City:
+Quebec City:
   
 ![quebec city](/img/quebec.jpg)
   
