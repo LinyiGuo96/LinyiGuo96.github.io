@@ -18,7 +18,7 @@ I am also a project-oriented data analyst with 2+ years of experience in data ma
 
 我也是一名以项目为导向的数据分析师，在数据管理、数据分析、统计建模和机器学习方面拥有两年以上的经验，并拥有出色的分析能力，能够创建报告并清晰简洁地传达结果。有事实证明我可以在研究的基础上促进预测和执行特别的分析。精通多种数据编程语言。无论是独立工作，还是作为具有出色沟通技巧的协作团队的一员，都能很好地工作。
 
-My master's study was majored in statistics and supervised by [Prof. Aaron Smith](http://aix1.uottawa.ca/~asmi28/), who is an excellent and kindly young associate professor at [uOttawa](https://science.uottawa.ca/mathstat/en). Before that, I obtained my bachelor's degree in Mathematics and Applied Mathematics from the [Zhengzhou University](https://en.wikipedia.org/wiki/Zhengzhou_University), China, and my undergraduate thesis was supervised by [Prof. Feng Li](http://www5.zzu.edu.cn/math/info/1054/2133.htm).
+My master's study was majored in statistics and supervised by [Prof. Aaron Smith](https://science.uottawa.ca/mathstat/en/people/smith-aaron), who is an excellent and kindly young associate professor at [uOttawa](https://science.uottawa.ca/mathstat/en). Before that, I obtained my bachelor's degree in Mathematics and Applied Mathematics from the [Zhengzhou University](https://en.wikipedia.org/wiki/Zhengzhou_University), China, and my undergraduate thesis was supervised by [Prof. Feng Li](http://www5.zzu.edu.cn/math/info/1054/2133.htm).
 
 我的硕士专业是统计学，Aaron Smith教授是我的导师，他也是渥太华大学一位非常杰出和蔼的年轻教授。在此之前，我从郑州大学获取了我的数学与应用数学本科证书，同时我的本科论文是由李锋老师指导的。
 
