@@ -27,6 +27,14 @@ My initial of learning this course is to strengthen my background/understanding 
 - Long-Term Investing 
 
 
+# Stock Market Basics
+
+## Time value of Money
+
+Present value (PV)  VS  Future value (FV)
+
+FV= PV * (1+r)^n
+
 
 
 
