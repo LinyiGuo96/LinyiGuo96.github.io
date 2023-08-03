@@ -33,9 +33,22 @@ My initial of learning this course is to strengthen my background/understanding 
 
 Present value (PV)  VS  Future value (FV)
 
-FV= PV * (1+r)^n
+$$FV= PV * (1+r)^n$$
 
+With continuous models, we have differential equations:
+$$x(t+dt) - x(t) = \frac{dx(t)}{dt}dt$$
 
+Also we have 
+$$x(t+dt) - x(t) = r x(t) dt$$
+
+That is 
+$$\frac{dx(t)}{dt} = r x(t)$$
+
+The solution to this differential equation is 
+$$x(t) = x(0) e^{rt}$$
+
+Under FV and PV, we have 
+$$FV = PV e^{rt}$$
 
 
 
