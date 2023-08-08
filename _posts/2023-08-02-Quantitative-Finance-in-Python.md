@@ -64,9 +64,23 @@ Derivative: Futures, avoid market volatility
 
 Commodities <-> future market <-> future broker firms <-> investors/companies
 
-## Currencies
+## Currencies (Forex, foreign exchange)
+
+Interest rate: positive correlation with exchange rate
+
+Money supply: print too much currency will trigger inflation
+
+Financial stability: impact exchange rate 
+
+Arbitrage on the FOREX: [Bellman-Ford shortest path algorithm](https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm), where negative cycles are the arbitrage opportunities.
+ 
+## Long and short
+
+Long: own the security we buy, loss at most 100%
+Short: sell the security we borrow, loss no limit, riskier
 
 
+# Bonds
 
 
 
