@@ -50,5 +50,31 @@ $$x(t) = x(0) e^{rt}$$
 Under FV and PV, we have 
 $$FV = PV e^{rt}$$
 
+## Stocks
+
+Company <-> stock exchange <-> broker firms <-> investors
+
+Risky - measure : volatility, standard deviation/variance, measurere of dispersion, CAPM (the $\beta$)
+
+## Commodities
+
+Extremely Volatile
+
+Derivative: Futures, avoid market volatility
+
+Commodities <-> future market <-> future broker firms <-> investors/companies
+
+## Currencies
+
+
+
+
+
+ 
+
+
+
+
+
 
 
