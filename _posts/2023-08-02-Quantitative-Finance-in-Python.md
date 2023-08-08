@@ -77,6 +77,7 @@ Arbitrage on the FOREX: [Bellman-Ford shortest path algorithm](https://en.wikipe
 ## Long and short
 
 Long: own the security we buy, loss at most 100%
+
 Short: sell the security we borrow, loss no limit, riskier
 
 
