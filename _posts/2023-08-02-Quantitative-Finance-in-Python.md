@@ -83,6 +83,13 @@ Short: sell the security we borrow, loss no limit, riskier
 
 # Bonds
 
+Principle
+
+Interest rate
+
+Time
+
+Frequency 
 
 
  
