@@ -83,13 +83,26 @@ Short: sell the security we borrow, loss no limit, riskier
 
 # Bonds
 
-Principle
+Several factors: Principle (aka par value, face value, and nominal value), Interest rate, Time, Frequency 
 
-Interest rate
+Zero coupon bond vs Coupon bond
 
-Time
+In general, bond price = PV(payments/coupons) + PV(principle)
 
-Frequency 
+## Yields
+
+Yield = annual coupon amount / bond price
+
+Yield to Maturity (y): "average" interest rate, or the interest rate which will make the sum of all cashflows' PVs equals the bond price.
+
+$$V = \sum c_i e^{y(t_i-t} + P e^{-y(T-t)}$$
+
+Then we need to solve this equation for **y**.
+
+
+
+
+
 
 
  
