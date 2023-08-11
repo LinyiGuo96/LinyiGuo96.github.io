@@ -99,6 +99,26 @@ $$V = \sum c_i e^{y(t_i-t} + P e^{-y(T-t)}$$
 
 Then we need to solve this equation for **y**.
 
+## Interest Rate
+
+Negatively correlated to bond price. 
+
+## Macaulay Duration
+
+Macaulay Duration (MD) reflects how long it takes for a bond to be paid by its cash flows.
+
+$$MD = - \frac{1}{V} \frac{dV}{dy}$$
+
+where V is the bond price and y is yield to maturity. 
+
+Remember, bonds with longer maturity are more sensitive to changes in the market. The Macaulay duration defines how sensitive the bond is to the market interest rate. 
+
+Investors prefer long maturity bonds when interest rates are expected to fall, and prefer short maturity bonds when interest rates are expected to increase. 
+
+## Risk with Bonds
+
+
+
 
 
 
