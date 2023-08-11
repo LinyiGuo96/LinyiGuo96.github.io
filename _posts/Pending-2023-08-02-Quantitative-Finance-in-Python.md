@@ -117,6 +117,19 @@ Investors prefer long maturity bonds when interest rates are expected to fall, a
 
 ## Risk with Bonds
 
+- Interest rate risk  
+- Default risk  
+- Inflation risk
+
+## Stocks and Bonds
+
+stock: shares of the ownership; holders can vote; dividends; riskier
+
+bonds: form of debt; no vote; no dividends; safer
+
+
+
+
 
 
 
