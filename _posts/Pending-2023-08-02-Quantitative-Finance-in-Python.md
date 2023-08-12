@@ -143,25 +143,62 @@ Assumptions:
 1. Returns are normally distributed (however this is not always true in financial world)
 2. Investors are risk-adverse (fundamental principle in finance): willing to take more risk if they want to make more money
 
-The most efficient portfolio: the highest return given a fixed risk; the lowest risk given a fixed return.
+The most efficient portfolio: the highest return (mean) given a fixed risk (variance); the lowest risk given a fixed return.
 
 ## Mathematical Formulation
 
+Daily return: $\frac{S(t+1) - S(t)}{S(t)}$
+
+Log daily return: $ln\frac{S(t+1)}{S(t)}$
+
+## Expected Return
+
+$$\mu_portfolio = \sum_i w_i\mu_i = \bold{w}^T\bold{\mu}$$
+
+## Expected Variance (Risk)
+
+$$\sigma_ij = E[(r_i-\mu_i)(r_j-\mu_j)]$$
+
+If $\sigma$ < 0, stock i and stock j move inversely; positive means move at the same direction.
+
+Assets with high positive covariance: low diversification.
+
+The aim of diversification is to eliminate the fluctuations.
+
+Therefore we should include uncorrelated stocks in the portfolio.
+
+Risk of portfolio: **volatility**
+
+$$\sigma_{portfolio}^2 = \E[(r_i - \mu_i)^2] = \sum_i\sum_j w_i w_j \sigma_{ij} = \bold{w}^T \bold{\sum} \bold{w}$$
+
+where $w_i$ means weights.
+
+## Efficient Frontier
+
+![img_1.png](img_1.png)
+
+Under the modern portfolio model, if investors want to make money, they have to take risk.
+
+However, under Black-Scholes model, people can eliminate risks in principle.
+
+## Sharpe Ratio
+
+Measure whether the investment is good or not. Defined as how much excess return you are receiving for extra volatility that you endure holding a riskier asset(stock).
+
+$$S(x) = \frac{r_x - R_f}{\sigma(x)}$$
+
+where $r_x$ is the average rate of return of investment (stock, bond, etc.) and $R_f$ is the risk-free interest rate.
+
+If SR > 1, then it's considered as a good investment. Greater than 2, very good; greater than 3, excellent.
 
 
+## Capital Allocation Line
 
+![img_2.png](img_2.png)
 
+If investors buy risk-free assets (lend money to government) and  with the maximum SR, their portfolio falls into line 1;
 
-
-
-
-
-
-
-
-
-
- 
+If investors borrow money and put into the portfolio with maximum SR, then their portfolio falls into line 2.
 
 
 
