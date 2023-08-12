@@ -128,6 +128,29 @@ stock: shares of the ownership; holders can vote; dividends; riskier
 bonds: form of debt; no vote; no dividends; safer
 
 
+# Modern Portfolio Theory (Markowitz-Model)
+
+Statistics: mean, variance, covariance, correlation
+
+## Modern Portfolio Theory
+
+1952, formulated by Harry Markowitz. 
+
+Combine multiple assets to reduce the risk - Diversification. Same idea as the Black-Scholes model.
+
+Assumptions:
+
+1. Returns are normally distributed (however this is not always true in financial world)
+2. Investors are risk-adverse (fundamental principle in finance): willing to take more risk if they want to make more money
+
+The most efficient portfolio: the highest return given a fixed risk; the lowest risk given a fixed return.
+
+## Mathematical Formulation
+
+
+
+
+
 
 
 
