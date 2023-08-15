@@ -201,6 +201,77 @@ If investors buy risk-free assets (lend money to government) and  with the maxim
 If investors borrow money and put into the portfolio with maximum SR, then their portfolio falls into line 2.
 
 
+# Capital Asset Pricing Model (CAPM) Theory
+
+Unsystematic (Specific) risk: specific to individual stocks, which can be diversified by holding multiple stocks in a portfolio. 
+
+Systematic (Market) risk: can't be diversified away. Includes interest rate changes, recessions, wars etc. The CAPM model measures this risk with the **$\beta$** parameter.
+
+_Black-Scholes model can be used to eliminate the market (systematic) risk._
+
+
+## Formula
+
+$$E[r_a] = r_f + \beta_a (E[r_m] - r_f)$$
+
+where $r_m$ is the market risk rate, it could be some market index, such as S&P 500, DOW, S&P/TSX, etc. 
+
+As we can see, this is a linear relation, where $\beta$ measures the risk we will take if we want to make more money, and is defined as:
+
+$$\beta_a = \frac{Cov(r_a, r_m)}{Var(r_m)}$$
+
+- Per CAPM, $\beta$ is the only relevant measure of a stock's risk
+- $\beta$ measures the stock's relative volatility, or how risky it is compared to the market
+
+
+## The Beta
+
+$$\beta_a = \frac{Cov(r_a, r_m)}{Var(r_m)}$$
+
+- if $\beta = 1$, stock/portfolio moves exactly the same as the market
+- if $\beta > 1$, stock/portfolio is more volatile (has more expected return) compared to the market
+- if $\beta < 1$, stock/portfolio is less volatile (has less expected return) compared to the market
+
+The portfolio's beta equals to the weighted sum of each single stock's beta.
+
+
+## Linear Regression
+
+MSE (mean Squared Error) = $(\hat{y}- y)^2$ -- Cost function
+
+Minimize the cost function to find the optimal parameter estimate.
+
+$R^2 = 1 - \frac{RSS}{TSS}$ can be used to measure the accuracy of the linear regression models. The higher the better. 
+
+
+## CAPM and Linear Regression
+
+$$E[r_a] - r_f = \alpha + \beta_a (E[r_m] - r_f)$$
+
+**$\alpha$** is the difference between the return and the expected return.
+
+$$\alpha = E[r_a] - (r_f  + \beta_a (E[r_m] - r_f))$$
+
+In CAPM, the alpha is 0.
+
+
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
