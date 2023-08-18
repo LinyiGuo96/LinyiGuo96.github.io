@@ -255,15 +255,50 @@ $$\alpha = E[r_a] - (r_f  + \beta_a (E[r_m] - r_f))$$
 In CAPM, the alpha is 0.
 
 
-#
+
+# Derivatives Basics
+
+Security with the price that is calculated from one or more underlying assets.
+
+where 
+- The underlying assets could be stocks, bonds, currencies, and interest rates.
+- the value is determined by the fluctuation in the underlying asset
+
+Derivatives can 
+- hedge risk
+- speculation
+
+Four main types:
+- Forward
+- Future
+- Swaps
+- Options
 
 
+## Forward and Future
+
+- both between 2 parties, price pre-agreed
+- Forwards: private, not traded on exchanges, not regulated
+- Futures: regulated and standardized, traded guaranteed 
 
 
+## Swaps
+
+First swap was constructed back to 1981, IBM and World Bank.
+
+Types of swaps
+- Interest rate swaps
+- Currency swaps
+- Credit Default Swap (CDS)
 
 
+Floating interest rate: [Libor](https://en.wikipedia.org/wiki/Libor)
 
+![swaps.png](swaps.png)
 
+## CDS
+
+CDS seller will compensate the buyer in the event of a debt default, the buyer needs to pay instalments (fixed payments) to the seller until the date of maturity.
 
 
 
