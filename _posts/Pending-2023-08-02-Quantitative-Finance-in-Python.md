@@ -300,12 +300,36 @@ Floating interest rate: [Libor](https://en.wikipedia.org/wiki/Libor)
 
 CDS seller will compensate the buyer in the event of a debt default, the buyer needs to pay instalments (fixed payments) to the seller until the date of maturity.
 
+Company (bond seller) - Investor (bond buyer, CDS buyer) - Investment bank (CDS seller)
 
+## Options Basics
 
+Similar to forwards and futures, but option gives the holder the **right** to trade. 
 
+So how much we need to pay for an option? The price is calculated by **Black-Scholes** model.
 
+## Call Option
 
+People speculate stock price will increase. 
 
+Right to buy a stock (or other asset) at a given price (strike price/exercise price) after time T.
+
+Ignoring the option price, we can make money at the end of time T by $max(S-E, 0)$, where S is the real-time stock price and E is the strike price.
+
+If we want to calculate the price before the end T, we need to use Black-Scholes model, otherwise, we can use the simple formula $max(S-E, 0)$.
+
+## Put Option
+
+People speculate stock price will fall.
+
+Right to sell a stock (or other asset) at a given price E (strike price/exercise price) after time T.
+
+## American and European Options
+
+- American: can be exercised at any time t < T.
+- European: can only be exercised at time T.
+
+In most cases, we assume we are dealing with the European options.
 
 
 
