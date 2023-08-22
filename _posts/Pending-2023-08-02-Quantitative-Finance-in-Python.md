@@ -333,6 +333,10 @@ In most cases, we assume we are dealing with the European options.
 
 
 
+# Random Behavior in Finance
+
+
+
 
 
 
