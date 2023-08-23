@@ -398,3 +398,14 @@ Given a F(X), we can have a solution like dF(X) = ...dX + ...dt.
 In the end, the solution to a geometric random walk will be 
 
 $$S(t) = S(0) * e^{(\mu - \frac{1}{2} \sigma^2)t + \sigma W_t}$$
+
+## Implementation Summary
+
+Under the Ito's lemma, we can solve the geometric random walk and get the final solution as
+$$S(t) = S(0) * e^{(\mu - \frac{1}{2} \sigma^2)t + \sigma W_t}$$
+
+- If we want to simulate the price trend of a given stock, we need to specify its mean and variance, i.e. $\mu$ and $\sigma$.
+
+- As the final simulation will be a time series, $t$ and $W_t$ will be a time series as well, where $t$ will be a set of time steps with equal distances, and W(t) will be a cumulative sum of random numbers from N(0, dt), where dt is the distance between each time step.
+
+
