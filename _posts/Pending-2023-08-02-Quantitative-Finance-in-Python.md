@@ -339,7 +339,7 @@ In most cases, we assume we are dealing with the European options.
 
 P/E (price-to-earning ratio) ratio: 
 
-$$\frac{Net Income}{# Shares} = EPS $$
+$$\frac{Net Income}{Shares} = EPS$$
 
 where **EPS** means earnings per share
 
@@ -358,7 +358,26 @@ Model the _random_ behavior of financial assets. Stochastic calculus and stochas
 
 $$R(t) = mean + x * sd$$
 
-Daily return R(t)  can be viewed as a random variable drawn from a normal distribution.
+Daily return R(t) can be viewed as a random variable drawn from a normal distribution.
+
+
+## Wiener Process and Random Walk
+
+- Normal distribution is not working fine because stock price cannot be negative.
+- Stock prices follow log-normal distribution, i.e. ln(x) ~ Normal
+
+**Wiener-process**
+
+- W(t+dt)- W(t) are independent of past values
+- W(t) has Gaussian increments
+- crutial for geometric random walk
+
+$$dS = \mu S dt + \sigma S dW$$
+
+This is a stochastic differential equation, where dS is the stock price change, $\mu S dt$ is the deterministic part (the drift), $\sigma S dW$ is the stochastic part with Wiener-process, $dW ~ Normal(0, dt)$.
+
+- Continuous model of asset prices
+- Fundamental assumption for most of the modern financial models
 
 
 
