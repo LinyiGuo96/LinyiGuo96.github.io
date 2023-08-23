@@ -374,7 +374,7 @@ Daily return R(t) can be viewed as a random variable drawn from a normal distrib
 
 $$dS = \mu S dt + \sigma S dW$$
 
-This is a stochastic differential equation, where dS is the stock price change, $\mu S dt$ is the deterministic part (the drift), $\sigma S dW$ is the stochastic part with Wiener-process, $dW ~ Normal(0, dt)$.
+This is a stochastic differential equation, where dS is the stock price change, $\mu S dt$ is the deterministic part (the drift), $\sigma S dW$ is the stochastic part with Wiener-process, $dW\~Normal(0, dt)$.
 
 - Continuous model of asset prices
 - Fundamental assumption for most of the modern financial models
