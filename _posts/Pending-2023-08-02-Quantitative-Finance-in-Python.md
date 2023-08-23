@@ -335,6 +335,35 @@ In most cases, we assume we are dealing with the European options.
 
 # Random Behavior in Finance
 
+**Fundamental analysis**: e.g., assets, liabilities, the income, P/E ratio and etc.
+
+P/E (price-to-earning ratio) ratio: 
+
+$$\frac{Net Income}{# Shares} = EPS $$
+
+where **EPS** means earnings per share
+
+$$P/E = \frac{Stock Price}{EPS}$$ 
+
+**Technical Analysis**
+
+It's about the historical data. 
+
+**Quantitative Analysis**
+
+Model the _random_ behavior of financial assets. Stochastic calculus and stochastic differential equations are needed. 
+
+
+## Random Behavior
+
+$$R(t) = mean + x * sd$$
+
+Daily return R(t)  can be viewed as a random variable drawn from a normal distribution.
+
+
+
+
+
 
 
 
