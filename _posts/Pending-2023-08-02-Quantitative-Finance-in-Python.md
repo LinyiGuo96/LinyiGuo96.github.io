@@ -370,7 +370,7 @@ Daily return R(t) can be viewed as a random variable drawn from a normal distrib
 
 - W(t+dt)- W(t) are independent of past values
 - W(t) has Gaussian increments
-- crutial for geometric random walk
+- crucial for geometric random walk
 
 $$dS = \mu S dt + \sigma S dW$$
 
@@ -380,11 +380,19 @@ This is a stochastic differential equation, where dS is the stock price change, 
 - Fundamental assumption for most of the modern financial models
 
 
+## Stochastic Calculus
+
+Ito's lemma:
+
+$$dF(X) = \frac{dF(x)}{dX}dX + \frac{1}{2} \frac{d^2F(x)}{dX^2} dt$$
+
+Given a F(X), we can have a solution like dF(X) = ...dX + ...dt.
 
 
+## High Dimensional Ito's Lemma
 
+![Ito.png](Ito.png)
 
-
-
+![img_2.png](img_2.png)
 
 
