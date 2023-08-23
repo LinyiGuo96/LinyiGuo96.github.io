@@ -395,4 +395,6 @@ Given a F(X), we can have a solution like dF(X) = ...dX + ...dt.
 
 ![img_2.png](img_2.png)
 
+In the end, the solution to a geometric random walk will be 
 
+$$S(t) = S(0) * e^{(\mu - \frac{1}{2} \sigma^2)t + \sigma W_t}$$
