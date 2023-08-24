@@ -409,3 +409,47 @@ $$S(t) = S(0) * e^{(\mu - \frac{1}{2} \sigma^2)t + \sigma W_t}$$
 - As the final simulation will be a time series, $t$ and $W_t$ will be a time series as well, where $t$ will be a set of time steps with equal distances, and W(t) will be a cumulative sum of random numbers from N(0, dt), where dt is the distance between each time step.
 
 
+
+# Black-Scholes Model
+
+First published in 1973 by Fisher Blackm Robert Merton and Myron Scholes.
+
+- yield option price before T -> combining risky assets can eliminate risk itself
+  - modern portfolio theory (MPT) is about reducing unsystematic(specific) risk by including several stocks
+  - CAPM is used to eliminate the systematic risk (market risk), it's about beta
+- Market-neutral strategies: delta hedging and pairs-trading can eliminate all risk
+
+
+The value $V$ of an option is a function of various parameters:
+- S: stock price
+- t: time
+- sigma: stock volatility
+- mu: stock mean
+- E: strike price
+- T: expiry date
+- r: risk-free interest rate
+
+$$ P = V(S,t) - \deltaS $$
+
+V is the long position and $\deltaS$ is the short position. $\delta$ means we only short some quantity of the underlying.
+
+## Dynamic Delta Hedge
+
+Assumption: the underlying asset follows a lognormal random walk
+
+$$dS = \mu*S*dt + \sigma*S*dW$$
+
+The change in the portfolio value is (the change in the option and the change in the underlying asset)
+
+$$dP = dV(S,t) - \delta dS$$
+
+With the formula for $dV$ (high dimensional Ito's lemma), we will have the formula below:
+
+![dynamic_delta_hedge.png](dynamic_delta_hedge.png)
+
+We can use delta-hedging to eliminate the stochastic part. Remember the delta is the quantity of underlyings we will short.
+
+Note: this is a dynamic hedging, because dV/dS changes all the time.
+
+Explanation: take put option as an example, if we buy a put and part of the underlying (that is 2 risky assets), then we can eliminate the risk!
+
