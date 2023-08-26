@@ -453,3 +453,73 @@ Note: this is a dynamic hedging, because dV/dS changes all the time.
 
 Explanation: take put option as an example, if we buy a put and part of the underlying (that is 2 risky assets), then we can eliminate the risk!
 
+
+## No Arbitrage Principle
+
+Under no arbitrage principle, the dP change should be the same amount as we lend the cash to the bank at the risk-free interest rate: (remember the fundamental principle, if you want to make more money, you have to take more risk.)
+
+$$dP = r_f * P * dt$$
+
+So if "no arbitrage" is not true, it means investors can make riskless profit by borrowing money from bank and put it into option/stock portfolio. Usually we assume there is no arbitrage opportunities, or they just stay for a very short time. 
+
+Now, based on the formula on the figure above plus no arbitrage theory, removing stochastic part, we have:
+
+![black_scholes.png](black_scholes.png)
+
+
+## Solutions to Black-Scholes Equation
+
+![black_scholes2.png](black_scholes2.png)
+
+## Greeks
+
+1. Delta
+The delta of a portfolio/option is the sensitivity of the portfolio/option to the underlying:
+$$\Delta = \frac{\partial V}{\partial S}$$
+
+The Delta of a portfolio equals to the sum of all individual positions.
+
+2. Gamma
+
+The gamma of a portfolio/option is the second derivative of the position w.r.t the underlying:
+
+$$\Gamma = \frac{\partial^2V}{\partialS^2}$$
+
+It's also the sensitivity of the delta, measures how often a position must be rehedged in order to maintain a delta-neural position.
+
+3. Theta
+
+$\Theta$ is the rate of change of the option price with time.
+
+$$\Theta = \frac{\partial V}{\partial t}$$
+
+4. Vega
+
+Vega $\nu = \frac{\partial V}{\partial \sigma}$
+
+Some models rely heavily on the volatility so vega is to monitor the change according to volatility.
+
+![Greeks.png](Greeks.png)
+
+
+## How to use Black-Scholes model?
+
+- Eliminate risk
+  - calculate greeks to hedge a given portfolio
+- Find mispriced options in the market
+
+
+## LTCM
+
+- Black-Scholes Model
+- Pair-
+
+
+
+
+2. 
+
+
+
+
+
