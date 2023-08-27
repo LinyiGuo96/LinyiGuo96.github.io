@@ -512,7 +512,7 @@ Some models rely heavily on the volatility so vega is to monitor the change acco
 ## LTCM
 
 - Black-Scholes Model
-- Pair-
+- Pair-wise trading
 
 
 
