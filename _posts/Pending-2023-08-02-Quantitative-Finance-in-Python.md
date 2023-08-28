@@ -522,7 +522,29 @@ Key of success?
 - Combining long and short positions in different assets
 
 
+# Black-Scholes Model Implementation
 
+## Monte-Carlo Simulations
+
+How to use Monte-Carlo simulation to repeat the same result from BS model.
+
+- Estimate the possible outcomes of an uncertain events
+- Generate possible outcomes and calculate the average of outcomes
+- The more iterations the better prediction
+
+
+Given the geometric random walk formula below, if we know the starting point (original price) S, the mean and variance of the stock, then we could make multiple simulations and calculate the average as the prediction of future price of the stock.
+
+$$dS = \mu S dt + \sigma S dX$$
+
+
+## Predict Stock Price With Monte-Carlo
+
+Recall the solution to the geometric random walk is 
+
+$$S(t) = S(0) * e^{(\mu - \frac{1}{2} \sigma^2)t + \sigma W_t}$$
+
+We will use it to simulate paths of stock prices and calculate the mean as the price predictions.
 
 
 
