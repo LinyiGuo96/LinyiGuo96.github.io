@@ -509,15 +509,19 @@ Some models rely heavily on the volatility so vega is to monitor the change acco
 - Find mispriced options in the market
 
 
-## LTCM
+## LTCM (Long Term Capital Management)
+
+Key of success?
 
 - Black-Scholes Model
-- Pair-wise trading
+- Pairs-trading
+
+-> Market-neutral strategies
+
+- Profit from both increasing and decreasing stock prices
+- Combining long and short positions in different assets
 
 
-
-
-2. 
 
 
 
