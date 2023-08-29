@@ -547,5 +547,51 @@ $$S(t) = S(0) * e^{(\mu - \frac{1}{2} \sigma^2)t + \sigma W_t}$$
 We will use it to simulate paths of stock prices and calculate the mean as the price predictions.
 
 
+## Option price with Black-Scholes Model and Monte-Carlo Simulation
+
+We can first predict stock price by using Monte-Carlo simulations, and then calculate the option price using the predicted stock price at maturity T.
+
+
+
+# Value at Risk (VaR)
+
+Recall how we did in the modern portfolio theory ad CAPM, we didn't cover the risk with a probability distribution. -> Value at Risk (VaR)
+
+VaR is 
+- A number measure in price units, the worst loss we might suffer at a certain percentage.
+- Easy to understand and interpret
+- Compare with different assets/portfolios
+
+
+## Introduction
+
+Variance method: assumes returns are normally distributed. 99% VaR equals to the loss where we have 99% possibility to have a loss less than this number.
+
+$$ VaR = \mu - Z * \sigma $$
+
+where we need to make sure mu, sigma and VaR they are at the same period level.
+
+$$\sigma_{n-day} = \sigma_{daily} * \sqrt{n}$$
+
+The formula we implemented:
+
+$$VaR = S * (\mu * N - \sigma * \sqrt{N} * Z_{1-\alpha})$$
+ 
+## VaR with Monte-Carlo Simulation
+
+Recall that the stock price follows geometric random walk (Brownian motion), we have the solution formula to simulate stock price.
+
+With a large amount of simulations, we can order them and pick the lowest 1% percentile price S'(t), and calculate VaR as below, because there is 1% chance that stock price fall to S'(t) or less.
+
+$$VaR = S(t) - S'(t)$$
+
+
+ 
+
+
+
+
+
+
 
 
