@@ -586,6 +586,32 @@ With a large amount of simulations, we can order them and pick the lowest 1% per
 $$VaR = S(t) - S'(t)$$
 
 
+
+# Collateralized Debt Obligations (CDOs) and the Financial Crisis
+
+Loans:
+- student loans
+- credit card loans
+- mortgage
+- car loans
+
+Investment bank can buy these loans from commercial banks, and create CDOs. Then they sell CDOs to investors for higher revenue than treasury bills or bonds.
+
+
+## CDOs and diversification
+
+- contain more uncorrelated assets in a credit derivative, such as CDO
+- the diversification is to eliminate the fluctuations in the long term
+
+
+## CDO Tranches
+
+- Senior: safest tranche: lower risk, lower return
+- Junior (Mezzanine): riskier than senior, higher return; still relatively safe tranche
+- Risky (Equity)
+
+
+
  
 
 
