@@ -612,6 +612,26 @@ Investment bank can buy these loans from commercial banks, and create CDOs. Then
 
 
 
+# Interest Rate Modelling
+
+Unlike the stock price, which follows a geometric random walk and have a increase trend in general, the interest rate follows another pattern called mean-reversion. 
+
+
+## Ornstein-Uhlenbeck Process
+
+$$dx_t = \theta (\mu - x_t) dt + \sigma dW_t$$
+
+- This process is the fundamental of interest rate models and currency exchange rate models
+- One application is pairs trading strategy
+
+where $\sigma$ is the degree of volatility around the mean $\mu$, and $\theta$ is the rate by which the process reverts towards the mean.
+
+- Pairs-trading strategy is related to mean reversion.
+
+
+
+
+
  
 
 
