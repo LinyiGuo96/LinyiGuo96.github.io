@@ -629,6 +629,18 @@ where $\sigma$ is the degree of volatility around the mean $\mu$, and $\theta$ i
 - Pairs-trading strategy is related to mean reversion.
 
 
+## Vasicek Model
+
+![img_3.png](img_3.png)
+
+
+# Pricing Bonds with Vasicek Model
+
+- Use MC simulation to get numerous interest rate paths
+- Calculate the bond price prediction using the simulated interest rate paths
+
+
+# Long Term Investing
 
 
 
