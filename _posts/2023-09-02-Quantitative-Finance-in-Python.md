@@ -640,16 +640,3 @@ where $\sigma$ is the degree of volatility around the mean $\mu$, and $\theta$ i
 - Calculate the bond price prediction using the simulated interest rate paths
 
 
-# Long Term Investing
-
-
-
- 
-
-
-
-
-
-
-
-
