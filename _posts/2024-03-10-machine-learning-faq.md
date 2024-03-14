@@ -3,6 +3,13 @@ layout: post
 title: Machine learning FAQs
 ---
 
+Here is the list I prepared about ML. Keep updating...
+
+- [Foundamental](#Foundamental)
+- [Regression](#Regression)
+- [Reguarlization](#Reguarlization)
+
+
 # Foundamental 
 
 ## 1. What is overfitting/underfitting?
@@ -135,7 +142,8 @@ In summary, the main difference between L1 and L2 regularization lies in the typ
 - Higher values of lambda result in more aggressive shrinkage of the coefficient estimators.
 
   
-4. 为什么L1比L2稀疏
+## 4. Why L1 is sparser than L2?
+
 - L1 norm has corners at zero, while L2 norm is smooth and continuously differentiable
 - L1 norm penalty creates diamond-shaped constraint regions in the coefficient space, centered around the origin. As a result, the optimization process may drive some coefficient exactly to zero, leading to sparsity (the optimum solution/plain usually hits the vertex of the dimond) Whereas L2 norm is a ball, the optimum solution usually hits a point where the coefficients are non zero.
 5. 为什么regularization works
