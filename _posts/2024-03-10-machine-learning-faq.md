@@ -3,6 +3,13 @@ layout: post
 title: Machine learning FAQs
 ---
 
+Here is the list I prepared about ML. Keep updating...
+
+- [Foundamental](#Foundamental)
+- [Regression](#Regression)
+- [Reguarlization](#Reguarlization)
+
+
 # Foundamental 
 
 ## 1. What is overfitting/underfitting?
