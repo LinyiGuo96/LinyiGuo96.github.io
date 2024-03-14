@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Machine learning FAQs
+title: Machine Learning FAQs
 ---
 
 Here is the list I prepared about ML. Keep updating...
