@@ -132,7 +132,7 @@ In summary, the main difference between L1 and L2 regularization lies in the typ
 - objective: find the value of the coefficients that minimize the sum of the squared differences between the predicted values and the actual values, while also minimizing the L1 regularization term
 - $L=|| \hat{y} - y ||_2 + \lambda || \beta ||_1$,
 - where $\hat{y} = f_{\beta}(x)$
-- Lasso regression can shrink the coefficients towards zero. when $\lambda$ is sufficiently large, some coefficients are driven to zero. Useful for feature selection
+- Lasso regression can shrink the coefficients towards zero. when $\lambda$ is sufficiently large, some coefficients are driven to zero. Useful for feature selection.
 
 
 ## 3. What is Ridge Regression?
@@ -145,50 +145,119 @@ In summary, the main difference between L1 and L2 regularization lies in the typ
 ## 4. Why L1 is sparser than L2?
 
 - L1 norm has corners at zero, while L2 norm is smooth and continuously differentiable
-- L1 norm penalty creates diamond-shaped constraint regions in the coefficient space, centered around the origin. As a result, the optimization process may drive some coefficient exactly to zero, leading to sparsity (the optimum solution/plain usually hits the vertex of the dimond) Whereas L2 norm is a ball, the optimum solution usually hits a point where the coefficients are non zero.
-5. 为什么regularization works
+- L1 norm penalty creates diamond-shaped constraint regions in the coefficient space, centered around the origin. As a result, the optimization process may drive some coefficient exactly to zero, leading to sparsity (the optimum solution/plain usually hits the vertex(顶点) of the dimond) Whereas L2 norm is a ball, the optimum solution usually hits a point where the coefficients are non zero.
+
+![image](https://github.com/LinyiGuo96/LinyiGuo96.github.io/assets/51500878/717a4789-2a18-4494-b0a6-b235179e4da4)
+
+
+## 5. Why regularization works?
+
 Regularization works by introducing penalty term into the objective function of a machine learning model. This penalty term encourage the model to have certain desirable properties, such as simplicity, sparsity, or smoothness (Adding more constrains to the coefficient). Reduce the variance.
-6. 为什么regularization用L1 L2，而不是L3, L4..
-- mathematical properties, L1 L2 norms have well-studied mathematical properties that make them particularly useful for regularization. Their properties align with the goals for reducing model complexity, handling Multicollinearity and identifying important features
-- Computational simplicity, high order can introduce additional computational complexity without providing significant advantages over L1 and L2 norm
-- Interpretability
-## Metrics
-1. precision and recall, trade-off
-- Precision is a measure of how many of the **positively predicted instances are actually true** positives. =
-- true positive / (true positive + false positive).
-- Precision focuses on the quality of the positive predictions, high precision aiming for **a low number of false positives**.
-- Recall is a measure of how many of the actual positive instances are correctly identified
-- True positive / (true positive + false negative).
+
+
+## 6. Why regularization uses L1 and L2, instead of L3 and L4?
+
+- Mathematical properties (theoretical foundation): L1 L2 norms have well-studied mathematical properties that make them particularly useful for regularization. Their properties align with the goals for reducing model complexity, handling Multicollinearity and identifying important features
+- Computational simplicity: high order can introduce additional computational complexity without providing significant advantages over L1 and L2 norm
+- Geometric Interpretation: clear geometric interpretations, intuitive for understanding regularization effects.
+
+
+
+# Metrics
+
+## 1. What are accuracy, precision, recall, trade-off, F1-score, ROC, AUC?
+
+**Accuracy** is the base metric used for model evaluation, describing the number of correct predictions over all predictions.
+
+$$\frac{TP + TN}{TP+TN+FP+FN}$$
+
+
+**Precision(精确率)** is a measure of how many of the **positively predicted instances are actually true** positives.
+  
+$$\frac{TP}{TP + FP}$$
+
+- Precision focuses on **the quality of the positive predictions**, high precision aiming for **a low number of false positives**.
+
+
+**Recall(召回率)** is a measure of how many of **the actual positive instances are correctly identified**.
+
+$$\frac{TP}{TP + FN}$$
+
 - Recall emphasizes the completeness of the positive predictions, high recall aiming for a **low number of false negatives.**
-- Trade-off:
-- improving one metric might lead to a decrease in the other.
-- high precision, low recall: tuned to prioritize precision. more conservative in predicting positive instances. result in a **low number of false positives but may lead to missing some true positive instances, resulting in a low recall.**
-- low precision, high recall: be more liberal in predicting positive instances, lead to a **high number of true positives, but may also generate more false positives, reducing precision.**
+
+  
+**Trade-off**: improving one metric might lead to a decrease in the other.
+
+- high precision, low recall: tuned to prioritize precision. more **conservative** in predicting positive instances. result in a **low number of false positives but may lead to missing some true positive instances, resulting in a low recall.** 
+- low precision, high recall: be more **liberal(自由的,不精确的)** in predicting positive instances, lead to a **high number of true positives, but may also generate more false positives, reducing precision.**
 - the consequences of false positives and false negatives
 - the desired balance between avoiding mis-classification errors and capturing all relevant positive instances
-- It's important to consider precision and recall together and select the appropriate balance
-2. label 不平衡时用什么metric
+- It's important to consider precision and recall together and select the appropriate balance -> F1 score (harmonic mean (调和平均) of precision and recall)
+  
+**F1-score**
+
+$$2 * \frac{Precision * Recall}{Precision+Recall}$$
+
+- Balenced measure: It penalizes models with imbalanced precision and recall values, making it suitable for evaluating classifiers on imbalanced datasets.
+- Trade-off: F1-score is much more sensitive to one of the two inputs having a **lower** value
+
+
+**ROC (Receiver Operating Characteristic) Curve** and **AUC (Area Under the ROC Curve)**
+
+
+ROC is the graphical representation of the trade-off between sensitivity (**true positive rate**) and specificity (**true negative rate**) **across various threshold values**.
+
+AUC quantifies the **overall performance** of a classifier across all possible threshold values. It represents the area under the ROC curve and ranges from 0 to 1.
+<img width="700" alt="image" src="https://github.com/LinyiGuo96/LinyiGuo96.github.io/assets/51500878/22229217-e3e7-4ba4-9dbd-69d9d19e8bb6">
+
+- X-axis: FP rate (FPR)
+- Y-axis: TP rate (TPR) (FPR+TPR = 1)
+- Diagonal line: represents for random guessing, i.e. TP rate = FP rate
+- Perfect Classifier: A perfect classifier would have an ROC curve that passes through the top-left corner of the plot, where sensitivity is 1 and specificity is 1 
+- AUC = 0.5: the classifier performs no better than random guessing; AUC = 1: perfect classification performance
+- AUC is robust to imbalanced datasets
+- AUC is used for evaluating models trained using algorithms that **don't output probability scores** directly
+
+
+## 2. What metrics to use when labels are imbalanced? 
+
 - Precision and Recall
 - F1-score (harmonic mean of precision and recall) provides a balanced evaluation metric for imbalanced dataset
-- Area Under the Precision-Recall Curve (AUPRC) always use when the focus is on the positive class robust to class imbalance
-- Receiver Operating Characteristic (ROC) curve and the Area Under The Curve (AUC). ROC curve plots the true positive rate (recall) against the false positive rate at different classification thresholds. AUC is the area under the ROC curve it is widely used metric that quantifies the model’s discriminative power and is suitable for imbalanced dataset
-3. 分类问题该选用什么metric，and why
+- **Area Under the Precision-Recall Curve (AUPRC)** always use when the focus is on the positive class robust to class imbalance
+- **Receiver Operating Characteristic (ROC)** curve and the **Area Under The Curve (AUC)**. ROC curve plots the true positive rate (recall) against the false positive rate at **different classification thresholds**. AUC is the area under the ROC curve it is widely used metric that quantifies the model’s discriminative power and is suitable for imbalanced dataset
+
+
+
+## 3. what type of metrics should be used in classification problems? and why?
+
 - Understand the problem, identify the importance of correctly classifying each class and whether there is a class imbalance in the dataset
 - Define evaluation goals, consider false positive vs false negative, different impacts? Decide whether the emphasis is on overall accuracy, precision or recall, or a balanced trade-off
 - class imbalance
 - domain knowledge
 - multiple metrics
-4. confusion matrix
+
+  
+## 4. what is confusion matrix?
+
 A confusion matrix is a table that summarizes the performance of a classification model by showing the counts of true positives (TP), true negatives (TN), false positives (FP), and false negatives (FN) for each class. By examining the values in the confusion matrix, you can gain insights into different performance aspects of the classification model, such as accuracy, precision, recall, and F1-score.
-5. true positive rate, false positive rate, ROC (for binary classification)
+
+
+## 5. What is true positive rate, false positive rate, ROC (for binary classification)?
+
 - **True Positive Rate (TPR) or Sensitivity or Recall**: The TPR measures the proportion of actual positive instances that are correctly classified as positive by the classifier. It is calculated as the ratio of true positives (TP) to the sum of true positives and false negatives (FN). **TPR = TP / (TP + FN) = TP / (ALL Actual positive examples)**
 - **False Positive Rate (FPR):** The FPR measures the proportion of actual negative instances that are incorrectly classified as positive by the classifier. It is calculated as the ratio of false positives (FP) to the sum of false positives and true negatives (TN). **FPR = FP / (FP + TN) = FP / (All Actual Negative examples).** The TPR indicates the classifier's ability to correctly identify positive instances from the actual positive class. A higher TPR suggests better sensitivity or recall.
 - **Receiver Operating Characteristic (ROC) Curve**: plots the true positive rate (TPR) against the false positive rate (FPR) at various classification thresholds
-6. AUC的解释 (for binary classification)
+
+  
+## 6. AUC explanation (for binary classification)
+
 - The AUC represents the area under the receiver operating characteristic (ROC) curve, which plots the true positive rate (TPR) against the false positive rate (FPR) at various classification thresholds.
 - It represents the probability that the model will rank a randomly chosen positive instance higher than a randomly chosen negative instance.
 - The AUC value ranges from 0 to 1. A model with an AUC of 0.5 performs no better than random guessing, as the ROC curve coincides with the diagonal line connecting (0,0) and (1,1). A perfect classifier achieves an AUC of 1, as it can perfectly separate positive and negative instances.
-7. Ranking metrics
+
+
+## 7. Ranking metrics
+
 - **Mean reciprocal rank (MRR)**: This metric measures the quality of the model by considering the rank of the first relevant item in each output list produced by the model, and then averaging them.
 - $$MRR = \frac{1}{m} \sum_{i=1}^m \frac{1}{\text{rank}_i}$$
 - shortcoming: only considers the first relevant item and ignores other relevant items in the list, it does not measure the precision and ranking quality of a ranked list.
@@ -208,7 +277,9 @@ A confusion matrix is a table that summarizes the performance of a classificatio
 - **nDCG divides the DCG by the DCG of an ideal ranking. The formula is:**
 - $$nDCG_p = \frac{DCG_p}{IDCG_p}$$
 - Its primary shortcoming is that **deriving ground truth relevance scores is not always possible**.
-8. Recommender System Metrics
+
+
+## 8. Recommender System Metrics
 - **Precision@k: proportion of relevant content among the top k recommended items**
 - MRR: focuses on the rank of the first relevant item in the list, suitable in system where only one relevant item is expected
 - mAP: average of all recommended items AP, measures the ranking quality of recommended items. mAP works only when the relevance scores are binary (if the score is ether relevant vs irrelevant, mAP is a better fit)
