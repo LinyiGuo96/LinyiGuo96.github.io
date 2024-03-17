@@ -286,3 +286,9 @@ A confusion matrix is a table that summarizes the performance of a classificatio
 - nDCG: relevance score between a user and an item is non-binary ( [relevant vs irrelevant case(mAP)] vs [how relevant case(nDCG)]
 - Diversity: This metric measures how dissimilar recommended videos are to each other. This metric is important to track, as users are more interested in diversified videos. To measure diversity, we calculate the average pairwise similarity (e.g., cosine similarity or dot product) between videos in the list. A low average pairwise similarity score indicates the list is diverse.
 mAP, MRR, nDCG are commonly used to measure ranking quality
+
+# Ensembles
+
+## LightGBM
+
+
