@@ -9,10 +9,10 @@ Here is the list I prepared about ML. Keep updating...
 
 - [Foundamental](#foundamental)
 - [Regression](#regression)
-- [Reguarlization](#reguarlization)
+- [Regularization](#regularization)
 
 
-# Foundamental 
+# Foundamental
 
 ## 1. What is overfitting/underfitting?
    
@@ -51,7 +51,6 @@ Overfitting: machine learning model becomes too complex and starts to memorize t
 - Domain Experties
 
 
-  
 # Regression
 
 ## 1. What's the assumptions of Linear Regression?
@@ -117,7 +116,7 @@ Solution:
 
 
   
-# Reguarlization
+# Regularization
 
 ## 1. What is L1 vs L2 regularization? what's the difference?
 
