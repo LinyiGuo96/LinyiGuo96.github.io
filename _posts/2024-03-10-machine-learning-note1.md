@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Machine Learning Notes (1)
+bigimg:
+- "/img/hands-on-ml.jpg" : "Hands-On Machine Learning"
 ---
 
 Here is the list I prepared about ML. Keep updating...
