@@ -5,9 +5,9 @@ title: Machine Learning Notes (1)
 
 Here is the list I prepared about ML. Keep updating...
 
-- [Foundamental](#Foundamental)
-- [Regression](#Regression)
-- [Reguarlization](#Reguarlization)
+- [Foundamental](#foundamental)
+- [Regression](#regression)
+- [Reguarlization](#reguarlization)
 
 
 # Foundamental 
