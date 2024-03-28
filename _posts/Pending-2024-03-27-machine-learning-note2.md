@@ -34,9 +34,11 @@ Besides GBDT, there are some others under BT including `AdaBoost` (trained seque
 
 **Boosted Tree**
 
-At each step, a new tree will be trained with the residual from last step. The goal is to fit residuals step by step and finally we will take the weighted sum of all precitions at each step. 
+At each step, a new tree will be trained with the **residual** from last step. The goal is to fit residuals step by step and finally we will take the weighted sum of all precitions at each step. 
 
 **GBDT**
+
+
 
 
 ### Difference
