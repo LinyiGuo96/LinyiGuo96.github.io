@@ -121,7 +121,7 @@ Solution:
 ## 1. What is L1 vs L2 regularization? what's the difference?
 
 - Add a term of L1 norm of the parameters in the loss function (sum of absolute values) (Lasso regression)
-- Add a term of L2 norm of the parameters in the loss function ($||\beta||_2 = (\sum \beta_i^2)^{1/2}$) (Ridge regression)
+- Add a term of L2 norm of the parameters in the loss function ($\|\|\beta\|\|_2 = (\sum \beta_i^2)^{1/2}$) (Ridge regression)
 
 In summary, the main difference between L1 and L2 regularization lies in the type of penalty applied to the coefficients and their impact on the resulting model. L1 regularization encourages **sparsity** and **automatic feature selection**, while L2 regularization penalizes **large coefficients** and helps to improve **generalization** performance without necessarily leading to sparse solutions.
 
@@ -131,7 +131,7 @@ In summary, the main difference between L1 and L2 regularization lies in the typ
 - Least Absolute Shrinkage and Selection Operator
 - Introduces an additional penalty term based on the absolute values of the coefficients, L1 norm of the coefficients
 - objective: find the value of the coefficients that minimize the sum of the squared differences between the predicted values and the actual values, while also minimizing the L1 regularization term
-- $L=|| \hat{y} - y ||_2 + \lambda || \beta ||_1$,
+- $L=\|\| \hat{y} - y \|\|_2 + \lambda \|\| \beta \|\|_1$,
 - where $\hat{y} = f_{\beta}(x)$
 - Lasso regression can shrink the coefficients towards zero. when $\lambda$ is sufficiently large, some coefficients are driven to zero. Useful for feature selection.
 
@@ -139,7 +139,7 @@ In summary, the main difference between L1 and L2 regularization lies in the typ
 ## 3. What is Ridge Regression?
 
 - Linear Regression with L2 Regularization
-- $L = ||\hat{y} - y||_2 + \lambda||\beta||_2$
+- $L = \|\|\hat{y} - y\|\|_2 + \lambda\|\|\beta\|\|_2$
 - Higher values of lambda result in more aggressive shrinkage of the coefficient estimators.
 
   
