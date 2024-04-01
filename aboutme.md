@@ -44,11 +44,14 @@ Quant:
 * SACCR
 * IMM
 * Stress testing
-
+* etc...
+  
 ML:
 * House price analysis and prediction
 * Customer behavior anlaysis and prediction
 * Credit Default analysis and modeling
+* etc...
+
 
 # Research Interests
 
