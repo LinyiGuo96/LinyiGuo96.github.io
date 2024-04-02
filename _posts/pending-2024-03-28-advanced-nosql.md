@@ -94,6 +94,7 @@ Metrics, visualizations ...
 PMML (Predictive Modelling Markup Language) can be used for sharing models between tools. 
 
 
+
 # Document Database for Data Science
 
 Documents are
@@ -135,4 +136,11 @@ NoSQL commands
 - `Aggregate` (in mongodb): matching and grouping
 
 
+
+
+# Wide-Column Databases
+
+
+
+# Graph Databases
 
