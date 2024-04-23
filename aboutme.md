@@ -14,9 +14,9 @@ I am currently doing CCR-related quantitative analytics at [Scotiabank](https://
 
 我目前在丰业银行做交易对手信用风险相关的量化分析的工作。如果你想了解更多关于我的工作经验，欢迎浏览我的领英简介。
 
-I am also an experienced data science professional (practitioner) with over 5 years (actually 3 years, I added another 2 years in academia ^,^) of expertise in ETL development, data analysis (aka quant analysis in finance), model optimization, machine learning, data manipulation, and etc. Highly skilled in Python, PySpark, SQL, Git and DevOps with proven track record of reducing exposure by 3 billion CAD and improving efficiency by 30-50%. Strong communicator and strategic thinker, dedicated to lifelong learning and passionate about data-driven and tech-driven projects. 
+I am an experienced data science professional with over 5 years of expertise in ETL development, data analysis (aka quant analysis in finance), model optimization, machine learning, data manipulation, and etc. Highly skilled in Python, PySpark, SQL, Git and DevOps with proven track record of reducing exposure by 3 billion CAD and improving efficiency by 30-50%. Strong communicator and strategic thinker, dedicated to lifelong learning and passionate about data-driven and tech-driven projects. 
 
-我也是一位经验丰富的数据科学专业人士（也就是个从业者），拥有超过5年（实际上是3年，我加了2年master的经验）的ETL开发、数据分析（在金融里叫量化）、模型优化、 机器学习、数据处理等。精通 Python、PySpark、SQL、Git 和 DevOps，累计帮Scotiabank减少了30亿加元的风险并提高30-50%的工作效率。 强大的沟通者和战略思想家，致力于终身学习，对数据驱动和技术驱动的项目充满热情。
+我是一位经验丰富的数据科学专业人士，在ETL开发、数据分析（量化分析）、模型优化、 机器学习、数据处理等方面拥有超过5年经验。精通 Python、PySpark、SQL、Git 和 DevOps，累计帮Scotiabank减少了30亿加元的风险并提高30-50%的工作效率。 强大的沟通者和战略思想家，致力于终身学习，对数据驱动和技术驱动的项目充满热情。
 
 My master's study was majored in statistics and supervised by [Prof. Aaron Smith](https://science.uottawa.ca/mathstat/en/people/smith-aaron), who is an excellent and kindly young associate professor at [uOttawa](https://science.uottawa.ca/mathstat/en). Before that, I obtained my bachelor's degree in Mathematics and Applied Mathematics from the [Zhengzhou University](https://en.wikipedia.org/wiki/Zhengzhou_University), China, and my undergraduate thesis was supervised by [Prof. Feng Li](http://www5.zzu.edu.cn/math/info/1054/2133.htm).
 
