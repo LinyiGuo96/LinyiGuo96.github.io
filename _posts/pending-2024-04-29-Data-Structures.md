@@ -10,7 +10,7 @@ _The motivation behind this blog is coming from my preparation for software/data
 # Content
 
 1. [Arrays](#Arrays)
-2. [Linked Lists](#LinkedLists)
+2. [Linked Lists](#linkedlists)
 3. [Hash Maps](#HashMaps)
 4. []
 5. []
