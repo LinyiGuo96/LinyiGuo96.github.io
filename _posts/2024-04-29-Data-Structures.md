@@ -6,7 +6,7 @@ subtitle: last update 2024-04-30
 
 # _Preface_
 
-_The motivation behind this blog is coming from my preparation for software/data engineer interviews. If you are an experienced expert, please go watch some YouTube videos so you won't waste a few minutes here (just a joke). If you find there is anything wrong, please correct me because there might be something incorrect._
+_The motivation behind this blog is coming from my preparation for software/data engineer interviews. If you are an experienced expert, please go watch some YouTube videos so you won't waste a few minutes here (just a joke). If you find there is anything wrong, please do not hesitate to let me know, email provided at the bottom._
 
 _The data structures below might not be a lot, but they are the common ones that professionals use in the real coding/programming projects. They are not just useful for the SDE/DE roles, for any jobs related to coding/programming/algorithms, they will be very handy!_
 
@@ -16,8 +16,9 @@ _The data structures below might not be a lot, but they are the common ones that
 2. [LinkedLists](#linkedlists)
 3. [HashMaps](#hashmaps)
 4. [Queues](#queues)
-5. [Heap](#heap)
-7. [Trees](#trees)
+5. [Trees](#trees)
+6. [Heap](#heap)
+7. [Tries](#tries)
 8. [Graphs](#graphs)
 
 
@@ -87,9 +88,21 @@ The common operations and complexities are
 
 **deque** (double-ended queue) is another powerful data structure, but I will not cover it here. 
 
-# Heap
-
 # Trees
+
+Tree is a non-linear and a hierarchical data structure, it's a collection of nodes and each node stores a value and a list of reference to other nodes (aka `children`). The common trees include binary tree, binary search tree, balanced tree, trie, heap. 
+
+Trees are extensively used in Artificial Intelligence and complex algorithms to provide an efficient storage mechanism for problem-solving.
+
+|Operation |Complexity |
+| :------ | :------ |
+| traversal | |
+| search | |
+| insert | |
+| delete | |
+
+
+# Heap
 
 # Tries
 
