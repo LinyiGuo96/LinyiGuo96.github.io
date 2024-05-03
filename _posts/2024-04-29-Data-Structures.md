@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Common Data Structures
-subtitle: last update 2024-04-30
+subtitle: last update 2024-05-03
 ---
 
 # _Preface_
@@ -94,16 +94,76 @@ Tree is a non-linear and a hierarchical data structure, it's a collection of nod
 
 Trees are extensively used in Artificial Intelligence and complex algorithms to provide an efficient storage mechanism for problem-solving.
 
+For binary tree:
+
 |Operation |Complexity |
 | :------ | :------ |
-| traversal | |
-| search | |
-| insert | |
-| delete | |
+| search | O(n)|
+| insert | O(1) if parent root is known, O(n) if unknown|
+| delete | O(1) / O(n) |
+| traversal | O(n) |
+| depth | O(n) |
+
+
+For binary search tree:
+
+|Operation |Complexity |
+| :------ | :------ |
+| search | O(n) if unbalanced, O(logn) if balanced |
+| insert | O(n) / O(logn)|
+| delete | O(n) / O(logn) |
+| traversal | O(n) |
+| depth | O(n) |
+
+_A balanced Binary Search Tree (BST) is a type of binary tree where the heights of the left and right subtrees of every node differ by at most one, ensuring that the tree remains balanced. The primary advantage of a balanced BST is that it guarantees logarithmic time complexity for search, insertion, and deletion operations, even in the worst case scenario._
 
 
 # Heap
 
+A Heap is a special Tree-based data structure in which the tree is a complete binary tree. There are mainly two types: min-heap and max-heap. 
+
+- Min-Heap: In a min-heap, the root node contains the smallest element, and for every parent node, the value of the parent is less than or equal to the values of its children.  
+- Max-Heap: In a max-heap, the root node contains the largest element, and for every parent node, the value of the parent is greater than or equal to the values of its children.  
+
+The common operations and complexities are
+
+|Operation |Complexity |
+| :------ | :------ |
+| insert | O(logn)|
+| remove | O(logn), for the min/max |
+| search | O(1), for min/max|
+| extract | O(logn), remove and return the min/max |
+
 # Tries
 
+Aka prefix tree, is a tree-like data structure used to strore a dynamic set of **strings** where keys are usually strings. It provides fast retrieval, and is mostly used for searching words in a dictionary, providing auto suggestions in a search engine, and even for IP routing.
+
+The common operations and complexities are
+
+|Operation |Complexity |
+| :------ | :------ |
+| insert | O(m), m is the length of insterted string|
+| remove | O(m) |
+| search | O(m) |
+| Prefix search | O(p+k), where p is prefix, k is the number of strings |
+
+
 # Graphs
+
+A graph is a set of nodes that are connected to each other in the form of a network. Based on this definition, all tree structures we talked about above, they are all graphs but we usually don't say that. In graphs, nodes are also called vertices, and nodes are connected by edges.
+
+Types of Graphs:
+- Undirected Graph (edges have no direction)
+- Directed Graph
+
+In a programming language, graphs can be represented using two forms:
+- Adjacency Matrix 
+- Adjacency List 
+
+Common graph traversing algorithms:
+- Breadth First Search
+- Depth First Search
+
+The common operations and complexities really depends on situations. 
+
+
