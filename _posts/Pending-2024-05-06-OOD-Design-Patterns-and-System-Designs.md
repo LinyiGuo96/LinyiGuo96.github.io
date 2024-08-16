@@ -21,7 +21,28 @@ A brief overview of some key concepts:
 
 # Design Patterns
 
-Design patterns provide reusable solutions to common design problems at a lower level of abstraction. They focus on the structure of individual components or classes within a software system. Learning design patterns first can help you understand fundamental principles of software design, such as abstraction, encapsulation, and modularity. It can also improve your ability to design and implement well-structured and maintainable code.
+Design patterns provide reusable solutions to common design problems at a lower level of abstraction. They focus on the structure of individual components or classes within a software system. Learning design patterns first can help you understand fundamental principles of software design, such as abstraction, encapsulation, and modularity. It can also improve your ability to design and implement well-structured and maintainable code. 
+
+Let's have a review of 23 design patterns written in the book _Design Patterns - Elements of Reusable Object-Oriented Software By GoF_ in this section.
+
+There are 3 categories: creational, sturtural and behavioural. 
+
+Some essentials about Java used in this section:
+
+1. Encapsulation
+2. Abstraction
+3. Inheritance
+4. Polymorphism
+
+
+## The Essentials
+
+
+
+
+
+
+
 
 
 # System Design (SD)
