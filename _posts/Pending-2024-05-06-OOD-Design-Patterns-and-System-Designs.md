@@ -37,6 +37,12 @@ Some essentials about Java used in this section:
 
 ## The Essentials
 
+Coupling - loosely coupled applications, so no need to recompile all classes everytime when there is a change.
+
+Interface - a contract that specifies the capabilities that a class should provide
+
+
+
 
 
 
