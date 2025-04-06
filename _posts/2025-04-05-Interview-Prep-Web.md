@@ -68,14 +68,13 @@ HackerRank provides structured challenges for algorithms, data structures, SQL, 
 
 ## Hack2Hire
 
-Probably the most popular site among job seekers preparing for coding interviews. LeetCode offers a massive collection of algorithm and data structure problems, categorized by topic and company.
+Hack2Hire provides one of the most convenient and quickest ways to prepare the **real** coding questions for tech companies. 
 
 **Features:**
-- Difficulty levels: Easy, Medium, Hard  
-- Discuss section where users share solutions and interview experiences  
-- Company-specific problem tags (e.g., Google, Amazon)  
-- Contest mode for timed problems  
-- Paid premium for access to more problems and mock interviews
+- All questions are extracted from real OA/screening/VO interviews
+- Each question are tagged with companies and methods
+- Every question's solution and explanation has been cross-validated by experienced SDE and AI
+- Live coding IDE and free LC question posts
 
 🔗 https://leetcode.com/
 
@@ -266,14 +265,6 @@ Short for "Practice Makes Perfect," Pramp connects you with peers for free live 
 
 
 
-# Final Words
+# Final Words (Mainly for myself)
 
-_Take your time, be consistent, and don’t get discouraged by tough problems. Interview prep is a marathon, not a sprint._
-
-💬 *Spot a mistake? Want to suggest another great resource? Shoot me an email: yourname@example.com*
-
-💬 Spot a mistake? Want to suggest another great resource? Shoot me an email: yourname@example.com
-
-⸻
-
-Let me know if you’d like me to add code editor recommendations, behavioral interview prep tools, or system design-specific platforms too!
+Take your time, be consistent, and don’t get discouraged by tough problems and rejections. Like Rome wasn't built in a day, Interview prep is a marathon, not a sprint. 
