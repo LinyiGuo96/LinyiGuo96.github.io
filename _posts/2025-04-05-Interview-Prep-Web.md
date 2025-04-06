@@ -12,9 +12,14 @@ This list is far from exhaustive, but it should give you a solid start. If you t
 
 Programming:
 1. [LeetCode](#leetcode)  
-2. [HackerRank](#hackerrank)  
-3. [Blind 75 & NeetCode](#blind-75--neetcode)
-4. [Hack2Hire](#hack2hire)
+2. [HackerRank](#hackerrank)
+3. [Hack2Hire](#hack2hire)
+4. [Blind 75 & NeetCode](#blind-75--neetcode)
+
+System Design & OOD:
+1. [ByteByteGo by Alex Xu](#bytebytego-by-alex-xu)  
+2. [System Design Primer (GitHub)](#system-design-primer-github)  
+3. [Grokking the System Design Interview](#grokking-the-system-design-interview)  
 
 
 More resources for your reference:
@@ -25,9 +30,12 @@ More resources for your reference:
 4. [Interviewing.io](#interviewingio)  
 5. [Exercism](#exercism)  
 6. [GeeksforGeeks](#geeksforgeeks)  
-7. [Pramp](#pramp)  
+7. [Pramp](#pramp)
+8. [Object-Oriented Design Interview (Educative)](#object-oriented-design-interview-educative)  
+9. [High Scalability Blog](#high-scalability-blog)
 
 ---
+# Programming
 
 ## LeetCode
 
@@ -86,6 +94,81 @@ These aren’t platforms but *curated lists*. They provide must-do problems for 
 🔗 https://www.techinterviewhandbook.org/grind75
 
 ---
+
+# System Design & OOD
+
+## ByteByteGo by Alex Xu
+
+Created by the author of the best-selling "System Design Interview" book series. Offers paid and free content.
+
+**Features:**
+- High-quality animated videos on system design concepts  
+- Blog posts and newsletter content explaining real-world systems  
+- Books that dive deep into system design problems with architecture diagrams  
+- Also available on YouTube
+
+🔗 https://bytebytego.com/  
+🔗 https://www.youtube.com/c/ByteByteGo
+
+---
+
+## System Design Primer (GitHub)
+
+An open-source goldmine. This repo is one of the most comprehensive resources for learning how to design scalable systems.
+
+**Features:**
+- Covers key topics like load balancing, sharding, caching, and more  
+- Real-world design problems (e.g., design Twitter, URL shortener)  
+- Visual diagrams and trade-off discussions  
+- Perfect for both beginners and experienced engineers
+
+🔗 https://github.com/donnemartin/system-design-primer
+
+---
+
+## Grokking the System Design Interview
+
+A paid, interactive course that walks through common system design problems in an easy-to-understand manner.
+
+**Features:**
+- Step-by-step solutions to problems like designing Facebook, Netflix, or Dropbox  
+- Great balance of theory and practical architecture diagrams  
+- Bite-sized lessons with illustrations  
+- Especially useful for people who struggle with structuring their thoughts
+
+🔗 https://www.educative.io/courses/grokking-the-system-design-interview
+
+---
+
+
+# More Resources
+
+## Object-Oriented Design Interview (Educative)
+
+If your interview has a heavy emphasis on OOD, this course is a great pick. It focuses on how to structure class-based solutions.
+
+**Features:**
+- Detailed walkthroughs of OOD questions like designing a parking lot or elevator  
+- Covers SOLID principles, UML, design patterns  
+- Code-based explanations in Java (but transferable to other languages)  
+- Ideal for companies like Amazon or Google that ask OOD questions
+
+🔗 https://www.educative.io/courses/grokking-the-object-oriented-design-interview
+
+---
+
+## High Scalability Blog
+
+A long-running blog that documents architecture and scalability decisions from real-world companies.
+
+**Features:**
+- “How They Do It” posts about companies like Uber, LinkedIn, Amazon  
+- Deep dives into distributed system patterns  
+- Good for understanding production-grade architecture choices  
+- More advanced, great complement to system design learning
+
+🔗 http://highscalability.com/
+
 
 ## Codeforces
 
