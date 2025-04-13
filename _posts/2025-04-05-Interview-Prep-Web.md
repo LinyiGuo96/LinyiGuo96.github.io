@@ -76,7 +76,7 @@ Hack2Hire provides one of the most convenient and quickest ways to prepare the *
 - Every question's solution and explanation has been cross-validated by experienced SDE and AI
 - Live coding IDE and free LC question posts
 
-🔗 https://leetcode.com/
+🔗 https://www.hack2hire.com/
 
 ---
 
