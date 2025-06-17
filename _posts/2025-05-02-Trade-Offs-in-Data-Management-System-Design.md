@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Trade-offs in Data Management System Design
+categories: [技术, 数据库]
+tags: [数据系统, 系统设计, 数据库, 架构]
 ---
 
 # Key Trade-offs in Data Management System Design
