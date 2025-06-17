@@ -108,6 +108,10 @@ pwa:
 
 paginate: 10
 
+# Excerpt word length
+# Truncates the excerpt to the specified number of words on the index page
+excerpt_length: 50
+
 # The base URL of your site
 baseurl: ""
 

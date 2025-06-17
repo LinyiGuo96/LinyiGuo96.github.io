@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  jekyll:
+    image: jekyll/jekyll:latest
+    platform: linux/amd64
+    command: bash -c "gem install bundler && bundle install && jekyll serve --livereload --force_polling"
+    ports:
+      - 4000:4000
+    volumes:
+      - .:/srv/jekyll
+      - ./vendor/bundle:/usr/local/bundle
+    environment:
+      - JEKYLL_ENV=development 
