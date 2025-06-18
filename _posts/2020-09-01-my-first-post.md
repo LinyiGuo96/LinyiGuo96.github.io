@@ -1,6 +1,7 @@
 ---
 layout: post
 title: My First Post
+comments: true
 ---
 I have wished to build my own website and write some blogs on it for a
 long time. Now, this wish finally comes true, but after my graduation.
