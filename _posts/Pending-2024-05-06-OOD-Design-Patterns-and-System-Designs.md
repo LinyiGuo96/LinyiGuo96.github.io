@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: Object-Oriented Design, Design Patterns and System Design
 subtitle: last update 2024-05-06

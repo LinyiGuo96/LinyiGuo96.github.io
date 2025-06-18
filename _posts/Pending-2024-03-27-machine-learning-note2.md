@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: Machine Learning Notes (2)
 bigimg:

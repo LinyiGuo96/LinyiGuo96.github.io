@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: Interview Prep Website Recommendations!
 ---
@@ -6,7 +7,7 @@ title: Interview Prep Website Recommendations!
 
 Software engineering interviews are no joke. Whether you're brushing up for Big Tech, startups, or anything in between, having the right resources makes all the difference. Here are some of the most popular and effective websites that I use to prepare for technical interviews.
 
-This list is far from exhaustive, but it should give you a solid start. If you think I've missed a gem or have corrections, my inbox is always open — you’ll find the contact info at the bottom.
+This list is far from exhaustive, but it should give you a solid start. If you think I've missed a gem or have corrections, my inbox is always open — you'll find the contact info at the bottom.
 
 # Content
 
@@ -82,7 +83,7 @@ Hack2Hire provides one of the most convenient and quickest ways to prepare the *
 
 ## Blind 75 & NeetCode
 
-These aren’t platforms but *curated lists*. They provide must-do problems for technical interviews.
+These aren't platforms but *curated lists*. They provide must-do problems for technical interviews.
 
 **Features:**
 - Blind 75 is a set of 75 hand-picked problems based on frequency in top company interviews  
@@ -161,7 +162,7 @@ If your interview has a heavy emphasis on OOD, this course is a great pick. It f
 A long-running blog that documents architecture and scalability decisions from real-world companies.
 
 **Features:**
-- “How They Do It” posts about companies like Uber, LinkedIn, Amazon  
+- "How They Do It" posts about companies like Uber, LinkedIn, Amazon  
 - Deep dives into distributed system patterns  
 - Good for understanding production-grade architecture choices  
 - More advanced, great complement to system design learning
@@ -171,7 +172,7 @@ A long-running blog that documents architecture and scalability decisions from r
 
 ## Codeforces
 
-Codeforces is more competitive-programming oriented. It’s great if you want to sharpen your problem-solving speed and accuracy.
+Codeforces is more competitive-programming oriented. It's great if you want to sharpen your problem-solving speed and accuracy.
 
 **Features:**
 - Regular contests and rating system  
@@ -267,4 +268,4 @@ Short for "Practice Makes Perfect," Pramp connects you with peers for free live 
 
 # Final Words (Mainly for myself)
 
-Take your time, be consistent, and don’t get discouraged by tough problems and rejections. Like Rome wasn't built in a day, Interview prep is a marathon, not a sprint. 
+Take your time, be consistent, and don't get discouraged by tough problems and rejections. Like Rome wasn't built in a day, Interview prep is a marathon, not a sprint. 

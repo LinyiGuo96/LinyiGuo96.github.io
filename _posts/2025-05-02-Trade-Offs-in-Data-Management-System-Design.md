@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: Trade-offs in Data Management System Design
 ---

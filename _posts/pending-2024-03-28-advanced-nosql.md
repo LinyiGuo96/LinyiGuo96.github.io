@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: Advanced NoSQL in Python for Data Science
 ---

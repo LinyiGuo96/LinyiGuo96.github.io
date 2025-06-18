@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: Common Data Structures
 subtitle: last update 2024-05-03

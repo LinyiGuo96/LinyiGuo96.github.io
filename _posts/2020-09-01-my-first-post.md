@@ -12,7 +12,7 @@ that prevented me from doing this stuff.
 Anyway, now I have it and am able to share my study/learning record on
 it, which is good enough!
 
-The world is always unknown, let’s see what will happen in the future!
+The world is always unknown, let's see what will happen in the future!
 Cheers :)
 
 ![](/img/blogs/space.webp)
