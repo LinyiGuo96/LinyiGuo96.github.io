@@ -19,7 +19,6 @@ baseurl: ""
 navbar-links:
   Blog: "/"
   About me: "aboutme"
-  Resume: "Linyi_(Lincoln)_Guo.pdf"
   Publications: "publications/publications"
   For Fun: "photos"
 
