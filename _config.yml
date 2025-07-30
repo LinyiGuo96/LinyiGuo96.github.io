@@ -18,7 +18,7 @@ baseurl: ""
 # List of links in the navigation bar
 navbar-links:
   Blog: "/"
-  About me: "aboutme"
+  About me: "Linyi_(Lincoln)_Guo.pdf"
   Publications: "publications/publications"
   For Fun: "photos"
 
