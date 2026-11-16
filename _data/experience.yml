@@ -1,0 +1,50 @@
+work:
+  - role: Senior Software Engineer
+    org: Scotiabank · GBM Engineering
+    period: 2025 — Now
+    summary: >-
+      Cash-flow pipelines and analytics tooling for global equity derivatives
+      trading. Led the migration and upgrade of core infrastructure — Python
+      services, MongoDB and PostgreSQL.
+  - role: Software Engineer
+    org: Scotiabank · GBM Engineering
+    period: 2024 — 2025
+    summary: >-
+      Data pipelines for fixed income electronic trading. Added a Redis caching
+      layer (≈1 ms latency) and led an AWS migration that cut compute cost by 16%.
+  - role: Risk Quantitative Developer
+    org: Scotiabank · Global Risk Management
+    period: 2021 — 2024
+    summary: >-
+      Counterparty credit risk analytics: automated ETL for month-end
+      settlement, Python frameworks for scenario analysis and stress testing,
+      ML-based data validation.
+  - role: Statistical Programmer
+    org: Everest Clinical Research
+    period: 2021
+    summary: >-
+      Validated statistical reporting pipelines for clinical trial deliverables.
+
+education:
+  - degree: M.Sc. Statistics
+    org: University of Ottawa
+    period: 2018 — 2020
+    note: >-
+      Supervised by Prof. Aaron Smith. Thesis on Bayesian seasonal adjustment
+      with state-space models.
+  - degree: B.Sc. Mathematics & Applied Mathematics
+    org: Zhengzhou University
+    period: 2014 — 2018
+    note: >-
+      Undergraduate thesis on customer churn with survival analysis and tree
+      models, supervised by Prof. Feng Li.
+
+skills:
+  - group: Languages & Data
+    items: [Python, SQL, Pandas, NumPy, Spark]
+  - group: Systems
+    items: [Redis, MongoDB, PostgreSQL, Kafka, Airflow]
+  - group: Cloud & Delivery
+    items: [AWS, Docker, Git, CI/CD]
+  - group: Domain
+    items: [Equity Derivatives, Fixed Income, Credit Risk, Statistics, ML]

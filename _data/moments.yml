@@ -1,0 +1,30 @@
+# Photos shown on the home page strip and on /photos/.
+# `src` is the full-size image; `thumb` is a ~800px version for grids.
+- src: /assets/img/moments/bruce.jpg
+  thumb: /assets/img/moments/bruce-sm.jpg
+  place: Bruce Peninsula
+  region: Ontario
+- src: /assets/img/moments/perce.jpg
+  thumb: /assets/img/moments/perce-sm.jpg
+  place: Percé
+  region: Québec
+- src: /assets/img/moments/algonquin.jpg
+  thumb: /assets/img/moments/algonquin-sm.jpg
+  place: Algonquin Park
+  region: Ontario
+- src: /assets/img/moments/gaspe.jpg
+  thumb: /assets/img/moments/gaspe-sm.jpg
+  place: Gaspé
+  region: Québec
+- src: /assets/img/moments/ottawa-sunset.jpg
+  thumb: /assets/img/moments/ottawa-sunset-sm.jpg
+  place: Ottawa
+  region: "2020"
+- src: /assets/img/moments/quebec.jpg
+  thumb: /assets/img/moments/quebec-sm.jpg
+  place: Québec City
+  region: Québec
+- src: /assets/img/moments/quebec-faces.jpg
+  thumb: /assets/img/moments/quebec-faces-sm.jpg
+  place: Québec City
+  region: "2019"

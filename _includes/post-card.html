@@ -1,0 +1,12 @@
+{%- assign p = include.post -%}
+<a class="card{% if include.feature %} card--feature{% endif %}" href="{{ p.url | relative_url }}" data-reveal>
+  <div class="card__top">
+    <span class="card__num">№ {{ include.number | prepend: '00' | slice: -2, 2 }}</span>
+    <time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: '%b %-d, %Y' }}</time>
+  </div>
+  <h3 class="card__title">{{ p.title }}</h3>
+  {%- assign body = p.content | split: '<p>' | slice: 1, 9999 | join: ' ' -%}
+  {%- if body == '' %}{% assign body = p.content %}{% endif -%}
+  <p class="card__excerpt">{{ p.description | default: body | strip_html | normalize_whitespace | truncate: 220 }}</p>
+  <span class="card__more">Read {% include icon.html name="arrow" %}</span>
+</a>

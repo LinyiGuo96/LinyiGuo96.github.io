@@ -1,0 +1,6 @@
+<ul class="social" aria-label="Elsewhere">
+  {% if site.social.github %}<li><a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener" aria-label="GitHub">{% include icon.html name="github" %}<span>GitHub</span></a></li>{% endif %}
+  {% if site.social.linkedin %}<li><a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">{% include icon.html name="linkedin" %}<span>LinkedIn</span></a></li>{% endif %}
+  {% if site.social.email %}<li><a href="mailto:{{ site.social.email }}" aria-label="Email">{% include icon.html name="mail" %}<span>Email</span></a></li>{% endif %}
+  <li><a href="{{ '/feed.xml' | relative_url }}" aria-label="RSS">{% include icon.html name="rss" %}<span>RSS</span></a></li>
+</ul>

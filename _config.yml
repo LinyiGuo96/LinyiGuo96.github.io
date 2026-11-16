@@ -1,188 +1,89 @@
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-sitemap
-  
-# Name of website
-title: 郭林怡 Lincoln Guo
-
-# Short description of your site
-description: Personal Homepage
-
-# url is the the website domain URL without a trailing slash
-url: "https://linyiguo96.github.io/"
-
-# baseurl should be an empty string
+# ---------------------------------------------------------------
+#  Site identity
+# ---------------------------------------------------------------
+title: Lincoln Guo
+title_zh: 郭林怡
+tagline: Life is not a zero-sum game.
+description: >-
+  Lincoln Guo (郭林怡) — software engineer working on data systems for global
+  markets. Notes on data engineering, machine learning, quant finance and life.
+url: "https://linyiguo96.github.io"
 baseurl: ""
+lang: en
 
-# List of links in the navigation bar
-navbar-links:
-  Blog: "/"
-  About me: "Linyi__Lincoln__Guo.pdf"
-  Publications: "publications/publications"
-  For Fun: "photos"
-
-avatar: "/img/gly.jpg"
-round-avatar: true
-
-# --- Background colour/image options --- #
-navbar-col: "#F5F5F5"
-navbar-text-col: "#404040"
-navbar-children-col: "#F5F5F5"
-page-col: "#FFFFFF"
-link-col: "#008AFF"
-hover-col: "#0085A1"
-footer-col: "#F5F5F5"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
-
-# --- Footer options --- #
 author:
-  name: 郭林怡
+  name: Lincoln Guo
+  email: lincoln.gly@gmail.com
 
-# --- Social Network --- #
-social-network-links:
-  email: "lincoln.gly@gmail.com"
-  facebook: linyiguo0521
+# Shown under the name on the home hero
+role: Software Engineer · Data · Quant
+resume: /Linyi__Lincoln__Guo.pdf
+
+# Main navigation
+nav:
+  - title: Blog
+    url: /blog/
+  - title: About
+    url: /about/
+  - title: Moments
+    url: /photos/
+
+social:
   github: LinyiGuo96
   linkedin: lincolnguo
-#  youtube: user
+  email: lincoln.gly@gmail.com
 
-# Select which share links to show in posts
-share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: true 
+# Hero media. Leave `video` empty to use the generative canvas animation.
+# To use a video instead, drop an mp4 (ideally < 8 MB, 1080p, muted) into
+# /assets/video/ and point `video` at it; `poster` is shown while it loads.
+hero:
+  video: ""
+  poster: ""
 
-# --- Web Statistics Section --- #
-
-# Fill in your Google Analytics gtag.js ID to track your website using gtag
+# --- Services ---
 gtag: "G-BGNPCMS6BH"
 
-# Fill in your Google Analytics ID to track your website using GA
-# google_analytics: "G-BGNPCMS6BH"
+giscus:
+  repo: LinyiGuo96/LinyiGuo96.github.io
+  repo_id: MDEwOlJlcG9zaXRvcnkzNjc5OTA4NzA=
+  category: General
+  category_id: DIC_kwDOFe8YVs4Croxg
 
-# Google Tag Manager ID
-#gtm: ""
+# --- Build ---
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
-# --- Comments --- #
-
-# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "lincolnguo"
-
-# To use Facebook Comments, fill in a Facebook App ID
-# fb_comment_id: ""
-
-# --- Misc --- #
-
-# Facebook App ID
-# fb_app_id: ""
-
-# Excerpt Word Length
-# Truncates the excerpt to the specified number of words on the index page
-excerpt_length: 50
-
-# Character used to separate site title and description in HTML document title
-# and RSS feed title
-title-separator: "-"
-
-# Ruby Date Format
-date_format: "%B %-d, %Y"
-
-# --- Don't need to touch anything below here (but you can if you want) --- #
-
-# Output options (more information on Jekyll's site)
 timezone: "America/Toronto"
 markdown: kramdown
 highlighter: rouge
+# Keep the old post URLs so existing links and giscus threads keep working
 permalink: /:year-:month-:day-:title/
-paginate: 10
 
 kramdown:
   input: GFM
+  syntax_highlighter_opts:
+    disable: false
 
-# Default YAML values (more information on Jekyll's site)
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "post"
-      comments: true  # add comments to all blog posts
-      social-share: true # add social media sharing buttons to all blog posts
-  -
-    scope:
-      path: "" # all files
+      layout: post
+      comments: true
+  - scope:
+      path: ""
     values:
-      layout: "page"
-      show-avatar: true
+      layout: page
+      image: /assets/img/og.png
 
-# Use tags index page and make tags on each post clickable
-link-tags: true
-
-# Exclude these files from production site
 exclude:
-  - CHANGELOG.md
-  - CNAME
-  - Dockerfile
   - Gemfile
   - Gemfile.lock
-  - LICENSE
   - README.md
-  - Vagrantfile
-
-# prose.io config
-prose:
-  rooturl: '_posts'
-  media: 'img'
-  ignore:
-    - 404.html
-    - LICENSE
-    - feed.xml
-    - _config.yml
-    - /_layouts
-    - /_includes
-    - /css
-    - /img
-    - /js
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Post title"
-          placeholder: "Title"
-          alterable: true
-      - name: "subtitle"
-        field:
-          element: "textarea"
-          label: "Subtitle"
-          placeholder: "A description of your post."
-          alterable: true
-      - name: "date"
-        field:
-          element: "text"
-          label: "Date"
-          help: "Enter date of post."
-          placeholder: "yyyy-mm-dd"
-          alterable: true
-      - name: "image"
-        field:
-          element: "text"
-          label: "Image"
-          help: "Add a thumbnail image to your post."
-          placeholder: "Thumbnail"
-          alterable: true
-      - name: "published"
-        field:
-          element: "checkbox"
-          label: "Publish"
-          help: "Check to publish post, uncheck to hide."
-
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
+  - LICENSE
+  - .idea
+  - .Rhistory
+  - "*.Rhistory"
+  - vendor

@@ -1,25 +1,14 @@
 ---
-layout: base
+layout: default
 ---
+<header class="page-head wrap">
+  {% if page.eyebrow %}<p class="eyebrow" data-reveal>{{ page.eyebrow }}</p>{% endif %}
+  <h1 class="page-head__title" data-reveal>{{ page.title }}</h1>
+  {% if page.subtitle %}<p class="page-head__sub" data-reveal>{{ page.subtitle }}</p>{% endif %}
+</header>
 
-{% include header.html type="page" %}
-
-<div class="container" role="main">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      {{ content }}
-	    {% if page.comments %}
-        <div class="disqus-comments">
-	        {% include disqus.html %}
-        </div>
-	        {% include fb-comment.html %}
-        <div class="staticman-comments">
-          {% include staticman-comments.html %}
-        </div>
-        <div class="justcomments-comments">
-          {% include just_comments.html %}
-        </div>
-	    {% endif %}
-    </div>
+<div class="wrap">
+  <div class="prose">
+    {{ content }}
   </div>
 </div>

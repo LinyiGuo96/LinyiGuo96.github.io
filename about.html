@@ -1,0 +1,106 @@
+---
+layout: default
+title: About
+permalink: /about/
+description: Lincoln Guo (郭林怡) — software engineer at Scotiabank GBM Engineering, M.Sc. in Statistics from the University of Ottawa.
+---
+<section class="about-hero wrap">
+  <div>
+    <p class="eyebrow" data-reveal>About · 关于</p>
+    <h1 class="page-head__title" data-reveal>Hi, I'm<br>Lincoln.</h1>
+    <p class="lead" data-reveal>
+      I'm a software engineer in Scotiabank's Global Banking &amp; Markets, building data pipelines and backend
+      systems for equity derivatives and fixed income trading. I trained as a statistician, started in
+      counterparty credit risk, and moved into engineering — so I care about both the numbers and the systems that produce them.
+    </p>
+    <p class="lead-zh" lang="zh" data-reveal>
+      嘿，我叫郭林怡。目前在丰业银行全球银行与市场部（GBM）做软件工程师，为股票衍生品和固定收益交易搭建数据管道与后端系统。统计学硕士出身，从交易对手信用风险的量化分析起步，后来转向软件工程。
+    </p>
+    <div class="actions" data-reveal>
+      <a class="btn btn--primary" href="{{ site.resume | relative_url }}" target="_blank" rel="noopener">{% include icon.html name="download" %} Download résumé</a>
+      <a class="btn" href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank" rel="noopener">{% include icon.html name="linkedin" %} LinkedIn</a>
+    </div>
+  </div>
+  <figure class="about-hero__photo" data-reveal>
+    <img src="{{ '/assets/img/portrait.jpg' | relative_url }}" alt="Portrait of Lincoln Guo" width="767" height="656">
+  </figure>
+</section>
+
+<section class="section wrap">
+  <div class="section-label" data-reveal><span>01</span>Experience · 经历</div>
+  <ol class="timeline">
+    {%- for job in site.data.experience.work -%}
+    <li class="tl" data-reveal>
+      <span class="tl__period">{{ job.period }}</span>
+      <div>
+        <h3 class="tl__role">{{ job.role }}</h3>
+        <p class="tl__org">{{ job.org }}</p>
+      </div>
+      <p class="tl__sum">{{ job.summary }}</p>
+    </li>
+    {%- endfor -%}
+  </ol>
+</section>
+
+<section class="section wrap">
+  <div class="section-label" data-reveal><span>02</span>Education · 教育</div>
+  <ol class="timeline">
+    {%- for school in site.data.experience.education -%}
+    <li class="tl" data-reveal>
+      <span class="tl__period">{{ school.period }}</span>
+      <div>
+        <h3 class="tl__role">{{ school.degree }}</h3>
+        <p class="tl__org">{{ school.org }}</p>
+      </div>
+      <p class="tl__sum">{{ school.note }}</p>
+    </li>
+    {%- endfor -%}
+  </ol>
+</section>
+
+<section class="section wrap">
+  <div class="section-label" data-reveal><span>03</span>Toolbox · 技能</div>
+  <div class="skills">
+    {%- for group in site.data.experience.skills -%}
+    <div class="skill" data-reveal>
+      <h3>{{ group.group }}</h3>
+      <ul class="chips">
+        {%- for item in group.items -%}<li>{{ item }}</li>{%- endfor -%}
+      </ul>
+    </div>
+    {%- endfor -%}
+  </div>
+</section>
+
+<section class="section wrap">
+  <div class="section-label" data-reveal><span>04</span>Research · 研究</div>
+  <div class="research">
+    <a class="card card--feature" href="{{ '/publications/Guo_Linyi_2020_thesis.pdf' | relative_url }}" target="_blank" rel="noopener" data-reveal>
+      <div class="card__top"><span>M.Sc. Thesis · uOttawa</span><span>2020</span></div>
+      <h3 class="card__title">Constructing an Informative Prior Distribution of Noises in Seasonal Adjustment</h3>
+      <p class="card__excerpt">Using state-space (hidden Markov) models for seasonal adjustment, aiming to match or beat conventional methods built on ARIMA models.</p>
+      <span class="card__more">Read the thesis (PDF) {% include icon.html name="arrow-up-right" %}</span>
+    </a>
+    <a class="card" href="https://github.com/LinyiGuo96/MyBachelorThesis" target="_blank" rel="noopener" data-reveal>
+      <div class="card__top"><span>B.Sc. Thesis · Zhengzhou University</span><span>2018</span></div>
+      <h3 class="card__title">Predicting Mobile Customer Churn</h3>
+      <p class="card__excerpt">Survival analysis to rank the drivers of churn, plus tree models (CART, C5.0) and logistic regression to flag customers likely to leave.</p>
+      <span class="card__more">View on GitHub {% include icon.html name="arrow-up-right" %}</span>
+    </a>
+  </div>
+</section>
+
+<section class="section wrap">
+  <div class="section-label" data-reveal><span>05</span>Beyond work · 生活</div>
+  <div class="beyond">
+    <p class="statement" data-reveal>
+      Off the clock you'll find me <strong>hiking, camping, fishing</strong> or on a road trip — or playing
+      <strong>soccer, badminton</strong> and snowboarding. One promise I keep: <strong>a long trip every year.</strong>
+    </p>
+    <p class="statement-zh" lang="zh" data-reveal>
+      喜欢户外：徒步、露营、钓鱼、公路旅行；也喜欢足球、健身、单板滑雪和羽毛球。喜欢和不同领域、不同国家、不同爱好的人交朋友。一个不那么有趣的有趣的人。
+    </p>
+    <a class="link-arrow" href="{{ '/photos/' | relative_url }}" data-reveal>See the moments {% include icon.html name="arrow" %}</a>
+  </div>
+</section>
+

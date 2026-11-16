@@ -1,9 +1,17 @@
----
-layout: base
----
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang }}">
+{% include head.html %}
+<body class="{% if page.hero %}has-hero{% endif %} layout-{{ page.layout }}">
+  <a class="skip" href="#main">Skip to content</a>
+  {% include nav.html %}
 
-<div class="intro-header"></div>
+  <main id="main">
+    {{ content }}
+  </main>
 
-<div role="main" class="container">
-  {{ content }}
-</div>
+  {% include footer.html %}
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+  {% if page.hero %}<script src="{{ '/assets/js/hero.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>{% endif %}
+</body>
+</html>

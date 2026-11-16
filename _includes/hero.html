@@ -1,0 +1,25 @@
+<section class="hero" data-hero>
+  {% if site.hero.video and site.hero.video != "" %}
+    <video class="hero__media" autoplay muted loop playsinline preload="metadata"{% if site.hero.poster != "" %} poster="{{ site.hero.poster | relative_url }}"{% endif %}>
+      <source src="{{ site.hero.video | relative_url }}" type="video/mp4">
+    </video>
+  {% else %}
+    <canvas class="hero__media" id="hero-canvas" aria-hidden="true"></canvas>
+  {% endif %}
+  <div class="hero__shade" aria-hidden="true"></div>
+
+  <div class="hero__content wrap">
+    <p class="hero__eyebrow"><span class="dot" aria-hidden="true"></span>{{ site.role }}</p>
+    <h1 class="hero__title"><span class="line">Lincoln</span> <span class="line">Guo<span class="hero__zh" lang="zh">{{ site.title_zh }}</span></span></h1>
+    <div class="hero__meta">
+      <p class="hero__tagline">{{ site.tagline }}</p>
+      <a class="hero__scroll" href="#intro" aria-label="Scroll to content">
+        <span>Scroll</span><span class="hero__scroll-line" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+
+  {% unless site.hero.video and site.hero.video != "" %}
+  <p class="hero__caption" aria-hidden="true">Y<sub>t</sub> = T<sub>t</sub> + S<sub>t</sub> + I<sub>t</sub><span>trend · season · noise</span></p>
+  {% endunless %}
+</section>
