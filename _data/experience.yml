@@ -1,24 +1,33 @@
 work:
+  - role: Senior Manager, Solution Engineer
+    org: Scotiabank · Global Equity Derivatives
+    period: 2026 — Now
+    summary: >-
+      Lead platform delivery for the structured notes business across Europe,
+      Canada and the U.S., bridging traders, structurers, quant and engineering
+      on pricing, booking, product data and release automation. Also look after
+      the stability of the equity derivatives application stack.
   - role: Senior Software Engineer
     org: Scotiabank · GBM Engineering
-    period: 2025 — Now
+    period: 2025 — 2026
     summary: >-
-      Cash-flow pipelines and analytics tooling for global equity derivatives
-      trading. Led the migration and upgrade of core infrastructure — Python
-      services, MongoDB and PostgreSQL.
+      Worked on a new pricing platform and supported vendor pricing systems.
+      Built cash-flow pipelines and alerts for equity derivatives, and moved
+      legacy cron jobs onto Airflow.
   - role: Software Engineer
     org: Scotiabank · GBM Engineering
     period: 2024 — 2025
     summary: >-
-      Data pipelines for fixed income electronic trading. Added a Redis caching
-      layer (≈1 ms latency) and led an AWS migration that cut compute cost by 16%.
-  - role: Risk Quantitative Developer
+      Real-time market data pipelines for fixed income electronic trading,
+      built on Bloomberg feeds, Kafka and a Redis caching layer, plus reporting
+      automation and an AWS migration.
+  - role: Quantitative Analytics Manager
     org: Scotiabank · Global Risk Management
     period: 2021 — 2024
     summary: >-
-      Counterparty credit risk analytics: automated ETL for month-end
-      settlement, Python frameworks for scenario analysis and stress testing,
-      ML-based data validation.
+      Counterparty credit risk analytics: automated risk-data ETL and month-end
+      reporting, Python tooling for scenario analysis and stress testing, and
+      ML-based anomaly detection for data quality.
   - role: Statistical Programmer
     org: Everest Clinical Research
     period: 2021
@@ -40,11 +49,11 @@ education:
       models, supervised by Prof. Feng Li.
 
 skills:
-  - group: Languages & Data
-    items: [Python, SQL, Pandas, NumPy, Spark]
-  - group: Systems
-    items: [Redis, MongoDB, PostgreSQL, Kafka, Airflow]
-  - group: Cloud & Delivery
-    items: [AWS, Docker, Git, CI/CD]
-  - group: Domain
-    items: [Equity Derivatives, Fixed Income, Credit Risk, Statistics, ML]
+  - group: Capital Markets
+    items: [Structured Notes, Equity Derivatives, Fixed Income E-Trading, Counterparty Credit Risk, Pricing Workflows]
+  - group: Delivery
+    items: [Requirements & Workflows, UAT & Releases, Scrum, Regression Automation]
+  - group: Data & Engineering
+    items: [Python, SQL, Java, Airflow, Kafka, Redis, MongoDB, PostgreSQL]
+  - group: Cloud & Credentials
+    items: [AWS, Docker, CI/CD, FRM, AWS Cloud Practitioner]

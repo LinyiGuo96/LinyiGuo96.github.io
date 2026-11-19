@@ -5,8 +5,8 @@ title: Lincoln Guo
 title_zh: 郭林怡
 tagline: Life is not a zero-sum game.
 description: >-
-  Lincoln Guo (郭林怡) — software engineer working on data systems for global
-  markets. Notes on data engineering, machine learning, quant finance and life.
+  Lincoln Guo (郭林怡) — capital markets technologist working on structured
+  products, trading systems and data. Notes on data engineering, machine learning, quant finance and life.
 url: "https://linyiguo96.github.io"
 baseurl: ""
 lang: en
@@ -16,8 +16,7 @@ author:
   email: lincoln.gly@gmail.com
 
 # Shown under the name on the home hero
-role: Software Engineer · Data · Quant
-resume: /Linyi__Lincoln__Guo.pdf
+role: Capital Markets · Trading Tech · Data
 
 # Main navigation
 nav:
